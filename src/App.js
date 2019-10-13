@@ -1,15 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LogIn from './LogIn';
 
-function App() {
+class App extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      isLoggedIn: false
+    }
+    this.handleLogInClick=this.handleLogInClick.bind(this);
+  }
+
+  handleLogInClick (e) {
+    e.preventDefault();
+    console.log('made it to e handler!');
+}
+
+  render () {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
-      <LogIn />
+      <LogIn handleLogInClick={this.handleLogInClick} />
     </div>
   );
+  }
 }
 
 export default App;
