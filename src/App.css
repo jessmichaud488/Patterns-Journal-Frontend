@@ -13,3 +13,12 @@
   /*margin: auto;*/
   background-color: white;
 }
+
+.signup {
+  position: relative;
+  top: 15vw;
+  left: 25vw;
+  width: 50vw;
+  /*margin: auto;*/
+  background-color: white;
+}
