@@ -3,6 +3,7 @@
   background: rgb(0,212,255);
   background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 43%, rgba(2,0,36,1) 95%);
   height: 100vh;
+  font-family: 'Crete Round', serif;
 }
 
 .login {
@@ -11,7 +12,10 @@
   left: 25vw;
   width: 50vw;
   /*margin: auto;*/
-  background-color: white;
+  background-color: rgb(255,255,255, 0.2);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .signup {
@@ -20,5 +24,29 @@
   left: 25vw;
   width: 50vw;
   /*margin: auto;*/
-  background-color: white;
+  background-color: rgb(255,255,255, 0.2);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.form {
+  position: relative;
+  top: 15vw;
+  left: 25vw;
+  width: 50vw;
+  /*margin: auto;*/
+  background-color: rgb(255,255,255, 0.2);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid;
+  padding: 10px;
+  width: 30vh;
+  background-color: rgb(255,255,255, 0.2);
+  box-shadow: 5px 10px 18px #888888;
 }

@@ -8,9 +8,9 @@ render () {
     <h1>Weclome back, its great to see you again!</h1>
     <input 
         type="text" 
-        placeholder="Your email" 
-        value={this.props.email} 
-        onChange={this.props.changeEmailHandler}
+        placeholder="Your userName" 
+        value={this.props.userName} 
+        onChange={this.props.changeUserNameHandler}
     />
     <input
         type="text" 
@@ -18,7 +18,7 @@ render () {
         value={this.props.password} 
         onChange={this.props.changePasswordHandler}
     />
-    
+
     <button type="submit" onClick={this.props.handleLogInClick}>Submit</button>
     </div>
     );
