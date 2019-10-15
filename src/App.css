@@ -1,9 +1,10 @@
-.App {
+body {
   text-align: center;
+  color: rgb(245,245,245);
   background: rgb(0,212,255);
   background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 43%, rgba(2,0,36,1) 95%);
   height: 100vh;
-  font-family: 'Crete Round', serif;
+  font-family: 'Vollkorn', serif;
 }
 
 .login {
@@ -13,7 +14,7 @@
   width: 50vw;
   /*margin: auto;*/
   background-color: rgb(255,255,255, 0.2);
-  border: 1px solid;
+  border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -25,7 +26,7 @@
   width: 50vw;
   /*margin: auto;*/
   background-color: rgb(255,255,255, 0.2);
-  border: 1px solid;
+  border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -37,16 +38,22 @@
   width: 50vw;
   /*margin: auto;*/
   background-color: rgb(255,255,255, 0.2);
-  border: 1px solid;
+  border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .card {
   display: inline-block;
-  border: 1px solid;
+  border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
   width: 30vh;
   background-color: rgb(255,255,255, 0.2);
   box-shadow: 5px 10px 18px #888888;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(#e7fda3 2%,  #75d5fc 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

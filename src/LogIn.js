@@ -8,9 +8,9 @@ render () {
     <h1>Weclome back, its great to see you again!</h1>
     <input 
         type="text" 
-        placeholder="Your userName" 
-        value={this.props.userName} 
-        onChange={this.props.changeUserNameHandler}
+        placeholder="Your username" 
+        value={this.props.username} 
+        onChange={this.props.changeUsernameHandler}
     />
     <input
         type="text" 

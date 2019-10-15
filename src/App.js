@@ -11,7 +11,7 @@ class App extends React.Component {
     this.state = {
       isLoggedIn: false,
       firstName: '',
-      userName: '',
+      username: '',
       password: '',
       title: '',
       entry: '',
@@ -25,7 +25,7 @@ class App extends React.Component {
     this.handleFormClick=this.handleFormClick.bind(this);
 
     this.changeFirstNameHandler=this.changeFirstNameHandler.bind(this);
-    this.changeUserNameHandler = this.changeUserNameHandler.bind(this);
+    this.changeUsernameHandler = this.changeUsernameHandler.bind(this);
     this.changePasswordHandler = this.changePasswordHandler.bind(this);
 
     this.changeEntryHandler = this.changeEntryHandler.bind(this);
@@ -41,9 +41,9 @@ class App extends React.Component {
     console.log('made it to sign up e handler!');
     console.log('e')
     
-    fetch('http://localhost:8080/auth/signUp', {
+    /*fetch('http://localhost:8080/auth/signUp', {
       method: 'POST',
-      body: JSON.stringify({firstName: this.state.firstName, username: this.state.userName, password: this.state.password}),
+      body: JSON.stringify({firstName: this.state.firstName, username: this.state.username, password: this.state.password}),
       headers: {
         'Content-Type': 'application/json'
       }
@@ -53,18 +53,18 @@ class App extends React.Component {
         console.log(data.authToken)
         localStorage.setItem("auth", data.authToken)
         this.setState ({ isLoggedIn: true })
-      })
+      })*/
 };
 
   handleLogInClick (e) {
     e.preventDefault();
     console.log('made it to log in e handler!');
     console.log('e')
-    console.log(this.state.userName, this.state.password)
+    console.log(this.state.username, this.state.password)
 
     fetch('http://localhost:8080/auth/logIn', {
       method: 'POST',
-      body: JSON.stringify({username: this.state.userName, password: this.state.password}),
+      body: JSON.stringify({username: this.state.username, password: this.state.password}),
       headers: {
         'Content-Type': 'application/json'
       }
@@ -82,9 +82,34 @@ class App extends React.Component {
   console.log('made it to form e handler!');
   console.log('e')
 
-  fetch('http://localhost:8080/auth/logIn', {
+  fetch('http://localhost:8080/entryRouter', {
     method: 'POST',
-    body: JSON.stringify({username: this.state.userName, password: this.state.password}),
+    body: JSON.stringify({title: this.state.title, 
+                          date: this.state.date, 
+                          entry: this.state.entry, 
+                          sleep: this.state.sleep,
+                          mood: this.state.mood,
+                          emotions: this.state.emotions
+                        }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then((res) => res.json())
+  .then(data => {
+    console.log('find get by id');
+    this.setState ({
+      title: '',
+      entry: '',
+      sleep: '',
+      mood: '',
+      emotions: ''
+    })
+  })
+    
+  /*fetch('http://localhost:8080/auth/logIn', {
+    method: 'POST',
+    body: JSON.stringify({username: this.state.username, password: this.state.password}),
     headers: {
       'Content-Type': 'application/json'
     }
@@ -94,7 +119,7 @@ class App extends React.Component {
       console.log(data.authToken)
       localStorage.setItem("auth", data.authToken)
       this.setState ({ isLoggedIn: true })
-    })
+    })*/
 };
 
 changeFirstNameHandler (e) {
@@ -106,76 +131,40 @@ changeFirstNameHandler (e) {
     this.setState(() => ({ error: "" }));*/
 };
 
-changeUserNameHandler (e) {
-  this.setState({ userName: e.target.value });
+changeUsernameHandler (e) {
+  this.setState({ username: e.target.value });
 
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changePasswordHandler (e) {
   this.setState({ password: e.target.value });
 
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changeTitleHandler (e) {
   this.setState({ title: e.target.value });
 
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changeEntryHandler (e) {
   this.setState({ entry: e.target.value });
 
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changeSleepHandler (e) {
   this.setState({ sleep: e.target.value });
-
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changeMoodHandler (e) {
   this.setState({ mood: e.target.value });
-
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changeEmotionsHandler (e) {
   this.setState({ emotions: e.target.value });
-
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
 changeDateHandler (e) {
   this.setState({ date: e.target.value });
-
-  /*if (!this.state.title || !this.state.entry || !this.state.hoursSlept) {
-    this.setState(() => ({ error: "Please fill in all fields" }));
-  } else {
-    this.setState(() => ({ error: "" }));*/
 };
 
   render () {
@@ -184,14 +173,14 @@ changeDateHandler (e) {
       <HomePage />
       <LogIn 
         handleLogInClick={this.handleLogInClick} 
-        changeUserNameHandler={this.changeUserNameHandler} 
+        changeUsernameHandler={this.changeUsernameHandler} 
         changePasswordHandler={this.changePasswordHandler} 
       />
 
       <SignUp 
         handleSignUpClick={this.handleSignUpClick} 
         changeFirstNameHandler={this.changeFirstNameHandler} 
-        changeUserNameHandler={this.changeUserNameHandler} 
+        changeUsernameHandler={this.changeUsernameHandler} 
         changePasswordHandler={this.changePasswordHandler} 
         />
 
