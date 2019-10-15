@@ -46,6 +46,8 @@ class Form extends React.Component {
                 value={this.props.emotions} 
                 onChange={this.props.changeEmotionsHandler}
             />
+            <button type="submit" onClick={this.props.handleDeleteEntry}>Delete</button>
+            <button type="submit" onClick={this.props.handleEditEntry}>Edit</button>
             <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
         </div>
         );

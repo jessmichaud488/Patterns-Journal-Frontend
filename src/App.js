@@ -23,6 +23,8 @@ class App extends React.Component {
     this.handleSignUpClick=this.handleSignUpClick.bind(this);
     this.handleLogInClick=this.handleLogInClick.bind(this);
     this.handleFormClick=this.handleFormClick.bind(this);
+    this.handleEditEntry=this.handleEditEntry.bind(this);
+    this.handleDeleteEntry=this.handleDeleteEntry.bind(this);
 
     this.changeFirstNameHandler=this.changeFirstNameHandler.bind(this);
     this.changeUsernameHandler = this.changeUsernameHandler.bind(this);
@@ -97,7 +99,7 @@ class App extends React.Component {
   })
   .then((res) => res.json())
   .then(data => {
-    console.log('find get by id');
+    console.log('POST entry');
     this.setState ({
       title: '',
       entry: '',
@@ -106,21 +108,55 @@ class App extends React.Component {
       emotions: ''
     })
   })
-    
-  /*fetch('http://localhost:8080/auth/logIn', {
-    method: 'POST',
-    body: JSON.stringify({username: this.state.username, password: this.state.password}),
+};
+
+handleEditEntry (e) {
+  e.PreventDefault();
+
+  fetch('http://localhost:8080/entryRouter/:id', {
+    method: 'PUT',
+    body: JSON.stringify({title: this.state.title, 
+                          date: this.state.date, 
+                          entry: this.state.entry, 
+                          sleep: this.state.sleep,
+                          mood: this.state.mood,
+                          emotions: this.state.emotions
+                        }),
     headers: {
       'Content-Type': 'application/json'
     }
   })
-    .then((res) => res.json())
-    .then(data => {
-      console.log(data.authToken)
-      localStorage.setItem("auth", data.authToken)
-      this.setState ({ isLoggedIn: true })
-    })*/
-};
+  .then((res) => res.json())
+  .then(data => {
+    console.log('PUT entry');
+    this.setState ({
+      title: '',
+      entry: '',
+      sleep: '',
+      mood: '',
+      emotions: ''
+      })
+    })
+  };
+  
+  handleDeleteEntry (e) {
+    e.PreventDefault();
+
+    fetch('http://localhost:8080/entryRouter/:id', {
+      method: 'DELETE',
+      body: JSON.stringify({title: this.state.title, 
+                            date: this.state.date, 
+                            entry: this.state.entry, 
+                            sleep: this.state.sleep,
+                            mood: this.state.mood,
+                            emotions: this.state.emotions
+                          }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then((res) => res.json().end())
+  };
 
 changeFirstNameHandler (e) {
   this.setState({ firstName: e.target.value});
@@ -185,7 +221,9 @@ changeDateHandler (e) {
         />
 
       <Form 
-        handleFormClick={this.handleFormClick} 
+        handleFormClick={this.handleFormClick}
+        handleEditEntry={this.handleEditEntry}
+        handleDeleteEntry={this.handleDeleteEntry}
         changeTitleHandler={this.changeTitleHandler} 
         changeEntryHandler={this.changeEntryHandler} 
         changeDateHandler={this.changeDateHandler}
