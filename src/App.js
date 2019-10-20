@@ -20,6 +20,7 @@ class App extends React.Component {
       emotions: '',
       error: ''
     }
+
     this.handleSignUpClick=this.handleSignUpClick.bind(this);
     this.handleLogInClick=this.handleLogInClick.bind(this);
     this.handleLogOutClick=this.handleLogOutClick.bind(this);
@@ -63,16 +64,13 @@ class App extends React.Component {
       body: JSON.stringify({username: this.state.username, 
                             password: this.state.password}),
       headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then((res) => res.json())
-      .then(data => {
-        console.log(data.authToken)
-        localStorage.setItem("auth", data.authToken)
-        this.setState ({ isLoggedIn: true })
-      })
-};
+        "Content-Type": "application/json; charset=utf-8"
+    }
+  })
+    .catch(function() {
+    console.log("error");
+    });
+  };
 
   handleLogInClick (e) {
     e.preventDefault();
@@ -87,13 +85,16 @@ class App extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       }
-    })
       .then((res) => res.json())
       .then(data => {
         console.log(data.authToken)
-        localStorage.getItem("auth", data.authToken)
+        //localStorage.getItem("auth")
         this.setState ({ isLoggedIn: true })
       })
+      .catch(function() {
+        console.log("error");
+    })
+  })
 };
 
   handleLogOutClick (e) {
@@ -102,9 +103,9 @@ class App extends React.Component {
   };
 
   handleFormClick (e) {
-  e.preventDefault();
-  console.log('made it to form e handler!');
-  console.log('e')
+    e.preventDefault();
+    console.log('made it to form e handler!');
+    console.log('e')
 
   fetch('http://localhost:8080/entryRouter', {
     method: 'POST',
@@ -116,7 +117,7 @@ class App extends React.Component {
                           emotions: this.state.emotions
                         }),
     headers: {
-      'Content-Type': 'application/json'
+      'Accept': 'application/json'
     }
   })
   .then((res) => res.json())

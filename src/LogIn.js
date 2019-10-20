@@ -5,7 +5,7 @@ class LogIn extends React.Component {
 render () {
     return (
     <div className="login">
-    <h1>Weclome back, its great to see you again!</h1>
+    <h1 className="gradient">Weclome back, its great to see you again!</h1>
     <input 
         type="text" 
         placeholder="Your username" 
