@@ -219,3 +219,43 @@ body {
     width: 30vh;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .card{
+    margin-right: 210px;
+    display: block;
+    padding-top: 10px;
+    height: 45vh;
+    width: 30vh;
+  }
+
+  .card p {
+    font-size: 24px;
+  }
+
+  .homePageButton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 248px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card{
+    margin-right: 275px;
+    display: block;
+    padding-top: 10px;
+    height: 32vh;
+    width: 30vh;
+  }
+
+  .card p {
+    font-size: 24px;
+  }
+
+  .homePageButton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 340px;
+  }
+}
