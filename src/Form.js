@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class Form extends React.Component {
     
@@ -49,10 +50,10 @@ class Form extends React.Component {
             <button type="submit" onClick={this.props.handleDeleteEntry}>Delete</button>
             <button type="submit" onClick={this.props.handleEditEntry}>Edit</button>
             <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
-            <button type="submit" oncLick={this.props.handleLogOutClick}>Log Out</button>
+            <button type="submit" onClick={this.props.handleLogOutClick}>Log Out</button>
         </div>
         );
     }
 }
 
-export default Form
+export default withRouter(Form)

@@ -4,7 +4,7 @@ import LogIn from './LogIn';
 import SignUp from './SignUp';
 import Form from './Form';
 import HomePage from './HomePage';
-import { Route, Link, Redirect, BrowserRouter as Router } from 'react-router-dom';
+import { Route, withRouter, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
 class App extends React.Component {
   constructor (props) {
@@ -59,7 +59,7 @@ class App extends React.Component {
     console.log('made it to sign up e handler!');
     console.log('e')
     
-    fetch('http://localhost:8080/auth/signUp', {
+    fetch('http://localhost:8080/userRouter/signUp', {
       method: 'POST',
       body: JSON.stringify({username: this.state.username, 
                             password: this.state.password}),
@@ -67,10 +67,32 @@ class App extends React.Component {
         "Content-Type": "application/json; charset=utf-8"
     }
   })
-    .catch(function() {
-    console.log("error");
+  .then(res => {
+        return res.json();
+      })
+  .then(data => {
+        fetch('http://localhost:8080/auth/logIn', {
+          method: 'POST',
+          body: JSON.stringify({username: this.state.username, 
+                                password: this.state.password}),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+          .then((res) => res.json())
+          .then(data => {
+            console.log(data.authToken)
+            localStorage.setItem("auth", data.authToken)
+            this.setState ({ isLoggedIn: true })
+          })
+          .catch(err => {
+            console.log("error", err);
+        })
+      })
+    .catch(err => {
+    console.log("error", err);
     });
-  };
+  }
 
   handleLogInClick (e) {
     e.preventDefault();
@@ -85,17 +107,17 @@ class App extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       }
+    })
       .then((res) => res.json())
       .then(data => {
         console.log(data.authToken)
-        //localStorage.getItem("auth")
-        this.setState ({ isLoggedIn: true })
+        localStorage.setItem("auth", data.authToken)
+        this.setState ({ isLoggedIn: true }, () => this.props.history.push('/'))
       })
       .catch(function() {
         console.log("error");
     })
-  })
-};
+}
 
   handleLogOutClick (e) {
     localStorage.removeItem("auth")
@@ -218,6 +240,10 @@ changeDateHandler (e) {
 };
 
   render () {
+    console.log(this.props.history)
+    if(this.state.toForm === true) {
+      return <Redirect to='/' />
+    }
   return (
     <Router>
     <div>
@@ -228,8 +254,7 @@ changeDateHandler (e) {
         />}
        />
 
-      <Route path="/entries" render={() =>
-        <Form
+        {this.state.isLoggedIn && <Form
           handleFormClick={this.handleFormClick}
           handleEditEntry={this.handleEditEntry}
           handleDeleteEntry={this.handleDeleteEntry}
@@ -240,7 +265,6 @@ changeDateHandler (e) {
           changeMoodHandler={this.changeMoodHandler} 
           changeEmotionsHandler={this.changeEmotionsHandler}
         />}
-      />
 
       <Route path="/logIn" render={() =>
         <LogIn 
@@ -264,4 +288,4 @@ changeDateHandler (e) {
   }
 }
 
-export default App;
+export default App
