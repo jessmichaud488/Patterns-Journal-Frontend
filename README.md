@@ -1,68 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>P A T T E R N S  J O U R N A L</h1>
 
-## Available Scripts
+![HomePage](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/HomePage.png)
 
-In the project directory, you can run:
+![LogIn Page](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/LogIn.png)
 
-### `npm start`
+![New Entry]https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/NewEntry.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![EditEntry](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/EditEntry.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h2>USE CASE</h2>
+<p>Inspired by a friend who was working through a difficult time with their mental health, I wanted to create an app that would allow you to be able to keep track of your emotions and sleep so that these patterns and any changes can be communicated more clearly to a mental health professional.</p>
 
-### `npm test`
+<h2>HOW IT WORKS</h2>
+<p>Easily record thoughts, mood, emotional intensity and sleep on the go.Simply sign up and start jotting or browse through older entries to investigate mood and sleep pattern changes.</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>FUNCTIONALITY</h2>
+<p>This app's functionality includes:</p>
+<ul>
+	<li>Securely sign up for an account</li>
+<li>Securely log into an account</li>
+<li>Create a new journal entry</li>
+<li>Update a journal entry</li>
+<li>Delete a journal entry</li>
+<li>Record sleep, emotional intensity, and mood within entry</li>
+<li>Save all entries and have the ability to browse through past entries</li>
+</ul>
 
-### `npm run build`
+<h2>SECURITY</h2>
+<p>User passwords are encrypted using bcrypt.js</p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>TECHNOLOGY</h2>
+<h3>Front End</h3>
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+	<li>React</li>
+</ul>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<h3>Back End</h3>
+<ul>
+	<li>Node.js</li>
+	<li>Express</li>
+	<li>MongoDB</li>
+	<li>Mongoose</li>
+	<li>bcryptjs</li>
+	<li>Passport</li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h2>API Documentation</h2>
+<p>API endpoints for the back end include:</p>
+<ul>USER</ul>
+<li>GET to '/:id' to retrieve user profile<</li>
+<li>POST to ‘/signUp’ to create a new user account</li>
+<li>PUT to ‘/:id’ to update a specific user account</li>
+<li>DELETE to ‘/:id’ to delete a specific user account </li>
 
-### `npm run eject`
+<ul>ENTRY</ul>
+<li>GET to ‘/:id’ to view a specific entry</li>
+<li>POST to ‘/’ to create a new entry</li>
+<li>PUT to ‘/:id’ to edit a specific entry</li>
+<li>DELETE to ‘/:id’ to delete a specific entry</li>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h2>DEVELOPMENT</h2>
+<p>Future updates for V2 are expected to include:</p>
+<ul>
+	<li>An average or summary of mood, sleep, and emotions entries to better track patterns of behavior</li> 
+</ul>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
