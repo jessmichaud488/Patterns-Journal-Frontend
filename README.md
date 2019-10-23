@@ -27,7 +27,7 @@
 </ul>
 
 <H2>APPLICATION WEBSITE</h2>
-<p>A working prototype of this app can be viewed at <a href="https://votes-on-wheels.glitch.me">https://stark-lowlands-96685.herokuapp.com/</a></p>
+<p>A working prototype of this app can be viewed at <a href="https://stark-lowlands-96685.herokuapp.com/">https://stark-lowlands-96685.herokuapp.com/</a></p>
 
 <h2>SECURITY</h2>
 <p>User passwords are encrypted using bcrypt.js</p>
