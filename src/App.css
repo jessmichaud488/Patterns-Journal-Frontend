@@ -51,7 +51,7 @@ body {
   top: 15vw;
   left: 25vw;
   width: 50vw;
-  height: 100vh;
+  height: 75vh;
   /*margin: auto;*/
   background-color: rgb(255,255,255, 0.3);
   border: rgb(255,255,255, 0.2) 1px solid;
@@ -70,7 +70,7 @@ body {
 #editForm {
   margin-top: 125px;
   width: 50vw;
-  height: 100vh;
+  height: 75vh;
   background-color: rgb(255,255,255, 0.3);
   border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
