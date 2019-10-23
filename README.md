@@ -4,7 +4,7 @@
 
 ![LogIn Page](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/LogIn.png)
 
-![New Entry]https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/NewEntry.png)
+![New Entry](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/NewEntry.png)
 
 ![EditEntry](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/EditEntry.png)
 
