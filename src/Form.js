@@ -21,13 +21,6 @@ class Form extends React.Component {
 
             <input 
                 type="text" 
-                placeholder="How was your day?" 
-                value={this.props.entry} 
-                onChange={this.props.changeEntryHandler}
-            />
-
-            <input 
-                type="text" 
                 placeholder="How many hours did you sleep?" 
                 value={this.props.sleep} 
                 onChange={this.props.changeSleepHandler}
@@ -46,6 +39,14 @@ class Form extends React.Component {
                 value={this.props.emotions} 
                 onChange={this.props.changeEmotionsHandler}
             />
+
+            <input id="entryInput"
+                type="text" 
+                placeholder="How was your day?" 
+                value={this.props.entry} 
+                onChange={this.props.changeEntryHandler}
+            />
+            <br></br>
             <button type="submit" onClick={this.props.handleDeleteEntry}>Delete</button>
             <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
 
@@ -101,6 +102,7 @@ class Form extends React.Component {
                 value={this.props.eidtemotions} 
                 onChange={this.props.changeEditEmotionsHandler}
             />
+            <br></br>
             <button type="submit" onClick={this.props.handleEditEntry}>Submit Edit</button>
         </div>
 
