@@ -1,12 +1,11 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 class Form extends React.Component {
-    
+
     render () {
     return (
-        <div className="signup">
-            <h1>New Entry</h1>
+        <div id="form">
+            <h1 className="gradient">New Entry</h1>
             <input 
                 type="text" 
                 placeholder="Give your entry a title" 
@@ -48,12 +47,67 @@ class Form extends React.Component {
                 onChange={this.props.changeEmotionsHandler}
             />
             <button type="submit" onClick={this.props.handleDeleteEntry}>Delete</button>
-            <button type="submit" onClick={this.props.handleEditEntry}>Edit</button>
             <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
-            <button type="submit" onClick={this.props.handleLogOutClick}>Log Out</button>
+
+        <ul>
+            <div id="pastEntries">
+            <h1 className="gradient">Past Entries</h1>
+            {this.props.entryArray.map((item, i) => (
+            <li onClick={this.props.handleLiClick} data-id={i} value={item.id} key={item.id}>{item.title}</li>
+          ))}
+          </div>
+        </ul>
+        
+
+        <div id="editForm">
+            <h1 className="gradient">Edit Entry</h1>
+            <input 
+                type="text" 
+                placeholder="Give your entry a title" 
+                value={this.props.editTitle} 
+                onChange={this.props.changeEditTitleHandler}
+            />
+            <input 
+                type="text" 
+                placeholder="today's date (MM/DD/YYYY)" 
+                value={this.props.editDate} 
+                onChange={this.props.changeEditDateHandler}
+            />
+
+            <input 
+                type="text" 
+                placeholder="How was your day?" 
+                value={this.props.editEntry} 
+                onChange={this.props.changeEditEntryHandler}
+            />
+
+            <input 
+                type="text" 
+                placeholder="How many hours did you sleep?" 
+                value={this.props.editSleep} 
+                onChange={this.props.changeEditSleepHandler}
+            />
+
+            <input 
+                type="text" 
+                placeholder="What is your mood?" 
+                value={this.props.editMood} 
+                onChange={this.props.changeEditMoodHandler}
+            />
+
+            <input 
+                type="text" 
+                placeholder="How intense are your emotions (scale of 1 to 5)?" 
+                value={this.props.eidtemotions} 
+                onChange={this.props.changeEditEmotionsHandler}
+            />
+            <button type="submit" onClick={this.props.handleEditEntry}>Submit Edit</button>
+        </div>
+
+        <button type="submit" onClick={this.props.handleLogOutClick}>Log Out</button>
         </div>
         );
     }
 }
 
-export default withRouter(Form)
+export default Form

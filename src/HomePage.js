@@ -50,8 +50,8 @@ render () {
             </div>
         </div>
             <div>
-                <button className="homePageButton"><span><Link to="/logIn">Log In</Link></span></button>
-                <button className="homePageButton"><span><Link to="/signUp">Sign Up</Link></span></button>
+                <button><span><Link to="/logIn">Log In</Link></span></button>
+                <button><span><Link to="/signUp">Sign Up</Link></span></button>
             </div>
     </div>
     );
