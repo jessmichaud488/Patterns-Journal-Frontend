@@ -4,7 +4,7 @@ import LogIn from './LogIn';
 import SignUp from './SignUp';
 import Form from './Form';
 import HomePage from './HomePage';
-import { Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 class App extends React.Component {
   constructor (props) {
@@ -91,7 +91,7 @@ class App extends React.Component {
     console.log('made it to sign up e handler!');
     console.log('e')
     
-    fetch('http://localhost:8080/userRouter/signUp', {
+    fetch(`${process.env.API_ENDPOINT_URL}/userRouter/signUp`, {
       method: 'POST',
       body: JSON.stringify({username: this.state.username, 
                             password: this.state.password}),
