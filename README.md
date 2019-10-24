@@ -1,4 +1,4 @@
-<h1>P A T T E R N S     J O U R N A L</h1>
+<h1>P A T T E R N S  J O U R N A L</h1>
 
 ![HomePage](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/HomePage.png)
 
@@ -17,7 +17,7 @@
 <h2>FUNCTIONALITY</h2>
 <p>This app's functionality includes:</p>
 <ul>
-<li>Securely sign up for an account</li>
+	<li>Securely sign up for an account</li>
 <li>Securely log into an account</li>
 <li>Create a new journal entry</li>
 <li>Update a journal entry</li>
@@ -25,9 +25,6 @@
 <li>Record sleep, emotional intensity, and mood within entry</li>
 <li>Save all entries and have the ability to browse through past entries</li>
 </ul>
-
-<H2>APPLICATION WEBSITE</h2>
-<p>A working prototype of this app can be viewed at <a href="https://stark-lowlands-96685.herokuapp.com/">https://stark-lowlands-96685.herokuapp.com/</a></p>
 
 <h2>SECURITY</h2>
 <p>User passwords are encrypted using bcrypt.js</p>
