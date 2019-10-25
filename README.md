@@ -53,6 +53,7 @@
 
 <h2>API Documentation</h2>
 <p>API endpoints for the back end include:</p>
+
 <ul>USER</ul>
 <li>GET to '/:id' to retrieve user profile<</li>
 <li>POST to ‘/signUp’ to create a new user account</li>
