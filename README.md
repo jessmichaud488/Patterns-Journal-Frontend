@@ -1,8 +1,5 @@
 <h1>P A T T E R N S  J O U R N A L</h1>
 
-<H2>APPLICATION WEBSITE</h2>
-<p>A working prototype of this app can be viewed at <a href="https://stark-lowlands-96685.herokuapp.com/">https://stark-lowlands-96685.herokuapp.com/</a></p>
-
 ![HomePage](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/HomePage.png)
 
 ![LogIn Page](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/LogIn.png)
@@ -10,6 +7,9 @@
 ![New Entry](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/NewEntry.png)
 
 ![EditEntry](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/EditEntry.png)
+
+<H2>APPLICATION WEBSITE</h2>
+<p>A working prototype of this app can be viewed at <a href="https://stark-lowlands-96685.herokuapp.com/">https://stark-lowlands-96685.herokuapp.com/</a></p>
 
 <h2>USE CASE</h2>
 <p>Inspired by a friend who was working through a difficult time with their mental health, I wanted to create an app that would allow you to be able to keep track of your emotions and sleep so that these patterns and any changes can be communicated more clearly to a mental health professional.</p>
