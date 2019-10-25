@@ -8,6 +8,9 @@
 
 ![EditEntry](https://github.com/jessmichaud488/React-Capstone/blob/master/src/images/EditEntry.png)
 
+<H2>APPLICATION WEBSITE</h2>
+<p>A working prototype of this app can be viewed at <a href="https://stark-lowlands-96685.herokuapp.com/">https://stark-lowlands-96685.herokuapp.com/</a></p>
+
 <h2>USE CASE</h2>
 <p>Inspired by a friend who was working through a difficult time with their mental health, I wanted to create an app that would allow you to be able to keep track of your emotions and sleep so that these patterns and any changes can be communicated more clearly to a mental health professional.</p>
 
@@ -25,9 +28,6 @@
 <li>Record sleep, emotional intensity, and mood within entry</li>
 <li>Save all entries and have the ability to browse through past entries</li>
 </ul>
-
-<H2>APPLICATION WEBSITE</h2>
-<p>A working prototype of this app can be viewed at <a href="https://stark-lowlands-96685.herokuapp.com/">https://stark-lowlands-96685.herokuapp.com/</a></p>
 
 <h2>SECURITY</h2>
 <p>User passwords are encrypted using bcrypt.js</p>
@@ -53,6 +53,7 @@
 
 <h2>API Documentation</h2>
 <p>API endpoints for the back end include:</p>
+
 <ul>USER</ul>
 <li>GET to '/:id' to retrieve user profile<</li>
 <li>POST to ‘/signUp’ to create a new user account</li>
