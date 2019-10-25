@@ -91,7 +91,7 @@ class App extends React.Component {
     console.log('made it to sign up e handler!');
     console.log('e')
     
-    fetch(`${process.env.API_ENDPOINT_URL}/userRouter/signUp`, {
+    fetch(`https://evening-thicket-00015.herokuapp.com/userRouter/signUp`, {
       method: 'POST',
       body: JSON.stringify({username: this.state.username, 
                             password: this.state.password}),
@@ -103,7 +103,7 @@ class App extends React.Component {
         return res.json();
       })
   .then(data => {
-        fetch(`${process.env.API_ENDPOINT_URL}/auth/logIn`, {
+        fetch(`https://evening-thicket-00015.herokuapp.com/auth/logIn`, {
           method: 'POST',
           body: JSON.stringify({username: this.state.username, 
                                 password: this.state.password}),
@@ -132,7 +132,7 @@ class App extends React.Component {
     console.log('e')
     console.log(this.state.username, this.state.password, this.state.isLoggedIn)
 
-    fetch(`${process.env.API_ENDPOINT_URL}/auth/logIn`, {
+    fetch(`https://evening-thicket-00015.herokuapp.com/auth/logIn`, {
       method: 'POST',
       body: JSON.stringify({username: this.state.username, 
                             password: this.state.password}),
@@ -168,7 +168,7 @@ class App extends React.Component {
       mood: this.state.mood,
       emotions: this.state.emotions
     }))
-  fetch(`${process.env.API_ENDPOINT_URL}/entryRouter`, {
+  fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'POST',
     body: JSON.stringify({title: this.state.title, 
                           date: this.state.date, 
@@ -197,7 +197,7 @@ handleEditEntry (e) {
   e.preventDefault();
   console.log(this.state.entryArray)
   const item = this.state.entryArray[this.state.editEntryid]
-  fetch(`${process.env.API_ENDPOINT_URL}/entryRouter/${item._id}`, {
+  fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${item._id}`, {
     method: 'PUT',
     body: JSON.stringify({title: this.state.title, 
                           date: this.state.date, 
@@ -228,7 +228,7 @@ handleEditEntry (e) {
   handleDeleteEntry (e) {
     e.PreventDefault();
 
-    fetch(`${process.env.API_ENDPOINT_URL}/entryRouter/:id`, {
+    fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/:id`, {
       method: 'DELETE',
       body: JSON.stringify({title: this.state.title, 
                             date: this.state.date, 
@@ -304,7 +304,7 @@ changeEditDateHandler (e) {
 };
 
 componentDidMount() {
-  fetch(`${process.env.API_ENDPOINT_URL}/entryRouter`)
+  fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`)
   .then((res) => res.json())
   .then(data => {
       this.setState({entryArray: data})
