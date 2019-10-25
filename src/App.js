@@ -178,7 +178,8 @@ class App extends React.Component {
                           emotions: this.state.emotions
                         }),
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer '+localStorage.getItem(authToken)
     }
   })
   .then((res) => res.json())
@@ -208,7 +209,8 @@ handleEditEntry (e) {
                           id: item._id
                         }),
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer '+localStorage.getItem(authToken)
     }
   })
   .then((res) => res.json())
@@ -238,7 +240,8 @@ handleEditEntry (e) {
                             emotions: this.state.emotions
                           }),
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer '+localStorage.getItem(authToken)
       }
     })
     .then((res) => res.json().end())
@@ -304,7 +307,13 @@ changeEditDateHandler (e) {
 };
 
 componentDidMount() {
-  fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`)
+  fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer '+localStorage.getItem(authToken)
+    }
+  })
   .then((res) => res.json())
   .then(data => {
       this.setState({entryArray: data})
