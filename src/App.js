@@ -103,7 +103,7 @@ class App extends React.Component {
         return res.json();
       })
   .then(data => {
-        fetch('http://localhost:8080/auth/logIn', {
+        fetch(`${process.env.API_ENDPOINT_URL}/auth/logIn`, {
           method: 'POST',
           body: JSON.stringify({username: this.state.username, 
                                 password: this.state.password}),
@@ -132,7 +132,7 @@ class App extends React.Component {
     console.log('e')
     console.log(this.state.username, this.state.password, this.state.isLoggedIn)
 
-    fetch('http://localhost:8080/auth/logIn', {
+    fetch(`${process.env.API_ENDPOINT_URL}/auth/logIn`, {
       method: 'POST',
       body: JSON.stringify({username: this.state.username, 
                             password: this.state.password}),
@@ -168,7 +168,7 @@ class App extends React.Component {
       mood: this.state.mood,
       emotions: this.state.emotions
     }))
-  fetch('http://localhost:8080/entryRouter', {
+  fetch(`${process.env.API_ENDPOINT_URL}/entryRouter`, {
     method: 'POST',
     body: JSON.stringify({title: this.state.title, 
                           date: this.state.date, 
@@ -197,7 +197,7 @@ handleEditEntry (e) {
   e.preventDefault();
   console.log(this.state.entryArray)
   const item = this.state.entryArray[this.state.editEntryid]
-  fetch(`http://localhost:8080/entryRouter/${item._id}`, {
+  fetch(`${process.env.API_ENDPOINT_URL}/entryRouter/${item._id}`, {
     method: 'PUT',
     body: JSON.stringify({title: this.state.title, 
                           date: this.state.date, 
@@ -228,7 +228,7 @@ handleEditEntry (e) {
   handleDeleteEntry (e) {
     e.PreventDefault();
 
-    fetch('http://localhost:8080/entryRouter/:id', {
+    fetch(`${process.env.API_ENDPOINT_URL}/entryRouter/:id`, {
       method: 'DELETE',
       body: JSON.stringify({title: this.state.title, 
                             date: this.state.date, 
@@ -304,7 +304,7 @@ changeEditDateHandler (e) {
 };
 
 componentDidMount() {
-  fetch('http://localhost:8080/entryRouter')
+  fetch(`${process.env.API_ENDPOINT_URL}/entryRouter`)
   .then((res) => res.json())
   .then(data => {
       this.setState({entryArray: data})
