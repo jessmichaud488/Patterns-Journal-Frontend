@@ -161,13 +161,13 @@ class App extends React.Component {
     e.preventDefault();
     console.log('made it to form e handler!');
     console.log('state', this.state)
-    console.log(JSON.stringify({title: this.state.title, 
+    /*console.log(JSON.stringify({title: this.state.title, 
       date: this.state.date, 
       entry: this.state.entry, 
       sleep: this.state.sleep,
       mood: this.state.mood,
       emotions: this.state.emotions
-    }))
+    }))*/
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'POST',
     body: JSON.stringify({title: this.state.title, 
@@ -179,7 +179,7 @@ class App extends React.Component {
                         }),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem(auth)
+      'Authorization': 'Bearer '+localStorage.getItem("auth", data.authToken)
     }
   })
   .then((res) => res.json())
