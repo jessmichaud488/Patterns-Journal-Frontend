@@ -211,7 +211,7 @@ handleEditEntry (e) {
                         }),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem(auth)
+      'Authorization': 'Bearer '+localStorage.getItem("auth")
     }
   })
   .then((res) => res.json())
@@ -242,7 +242,7 @@ handleEditEntry (e) {
                           }),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer '+localStorage.getItem(auth)
+        'Authorization': 'Bearer '+localStorage.getItem("auth")
       }
     })
     .then((res) => res.json().end())
@@ -312,7 +312,7 @@ componentDidMount() {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem(auth)
+      'Authorization': 'Bearer '+localStorage.getItem("auth")
     }
   })
   .then((res) => res.json())
