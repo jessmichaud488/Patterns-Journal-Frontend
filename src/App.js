@@ -179,7 +179,7 @@ class App extends React.Component {
                         }),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem(authToken)
+      'Authorization': 'Bearer '+localStorage.getItem(auth)
     }
   })
   .then((res) => res.json())
@@ -210,7 +210,7 @@ handleEditEntry (e) {
                         }),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem(authToken)
+      'Authorization': 'Bearer '+localStorage.getItem(auth)
     }
   })
   .then((res) => res.json())
@@ -241,7 +241,7 @@ handleEditEntry (e) {
                           }),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer '+localStorage.getItem(authToken)
+        'Authorization': 'Bearer '+localStorage.getItem(auth)
       }
     })
     .then((res) => res.json().end())
@@ -311,7 +311,7 @@ componentDidMount() {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem(authToken)
+      'Authorization': 'Bearer '+localStorage.getItem(auth)
     }
   })
   .then((res) => res.json())
