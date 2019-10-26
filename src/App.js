@@ -179,12 +179,13 @@ class App extends React.Component {
                         }),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem("auth", data.authToken)
+      'Authorization': 'Bearer '
     }
   })
   .then((res) => res.json())
   .then(data => {
     console.log('POST entry', data);
+    localStorage.getItem("auth")
     this.setState ({
       entryArray: this.state.entryArray.concat(data)
     })
