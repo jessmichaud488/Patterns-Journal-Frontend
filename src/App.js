@@ -228,7 +228,7 @@ handleEditEntry (e) {
 };
   
   handleDeleteEntry (e) {
-    e.PreventDefault();
+    e.preventDefault();
 
     fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/:id`, {
       method: 'DELETE',
