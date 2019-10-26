@@ -12,6 +12,7 @@ class Form extends React.Component {
                 value={this.props.title} 
                 onChange={this.props.changeTitleHandler}
             />
+            
             <input 
                 type="text" 
                 placeholder="today's date (MM/DD/YYYY)" 

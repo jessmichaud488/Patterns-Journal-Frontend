@@ -245,6 +245,9 @@ handleEditEntry (e) {
       }
     })
     .then((res) => res.json().end())
+    .catch(err =>
+      console.log(err)
+    )
   };
 
 changeUsernameHandler (e) {
