@@ -200,7 +200,8 @@ handleEditEntry (e) {
   const item = this.state.entryArray[this.state.editEntryid]
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${item._id}`, {
     method: 'PUT',
-    body: JSON.stringify({title: this.state.title, 
+    body: JSON.stringify({
+                          title: this.state.title, 
                           date: this.state.date, 
                           entry: this.state.entry, 
                           sleep: this.state.sleep,
@@ -244,10 +245,8 @@ handleEditEntry (e) {
         'Authorization': 'Bearer '+localStorage.getItem("auth")
       }
     })
-    .then((res) => res.json().end())
-    .catch(err =>
-      console.log(err)
-    )
+    .then((res) => res.json())
+    .then((data) => res.status(204).end())
   };
 
 changeUsernameHandler (e) {
