@@ -53,7 +53,6 @@ class Form extends React.Component {
         <ul>
             <div id="pastEntries">
             <h1 className="gradient">Past Entries</h1>
-            <h2>Click the entry's title to view and edit!</h2>
             {this.props.entryArray.map((item, i) => (
             <li onClick={this.props.handleLiClick} data-id={i} value={item.id} key={i}>{item.title}
             <button id="deleteButton" type="submit" onClick={this.props.handleDeleteEntry}>Delete</button></li>

@@ -139,7 +139,7 @@ button {
   font-family: 'Vollkorn', serif;
 } 
 
-deleteButton {
+#deleteButton {
   display: inline-block;
   text-decoration: none !important;
   margin: 30px;
