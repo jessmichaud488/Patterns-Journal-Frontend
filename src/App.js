@@ -230,8 +230,8 @@ handleEditEntry (e) {
   
   handleDeleteEntry (e) {
     e.preventDefault();
-    console.log(e.target.value)
-    fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${e.target.value}`, {
+    const item = this.state.entryArray[e.target.value]
+    fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${item._id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
