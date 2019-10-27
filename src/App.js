@@ -230,15 +230,9 @@ handleEditEntry (e) {
   
   handleDeleteEntry (e) {
     e.preventDefault();
-    fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/:id`, {
+    console.log(e.target.value)
+    fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${e.target.value}`, {
       method: 'DELETE',
-      body: JSON.stringify({title: this.state.title, 
-                            date: this.state.date, 
-                            entry: this.state.entry, 
-                            sleep: this.state.sleep,
-                            mood: this.state.mood,
-                            emotions: this.state.emotions
-                          }),
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer '+localStorage.getItem("auth")
