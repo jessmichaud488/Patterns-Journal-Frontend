@@ -141,13 +141,13 @@ button {
 
 #deleteButton {
   display: inline-block;
-  text-decoration: none !important;
+  text-decoration: none;
   margin: 30px;
   padding: 10px;
-  width: 12vh;
-  height: 4vh;
+  width: 8vh;
+  height: 2vh;
   color: rgba(9,9,121,1);
-  font-size: 18px;
+  font-size: 8px;
   background-color: rgb(255,255,255, 0.3);
   box-shadow: 5px 10px 18px #a1a1a1;
   border: rgb(255,255,255, 0.2) 1px solid;
