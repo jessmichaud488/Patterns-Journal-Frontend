@@ -230,7 +230,6 @@ handleEditEntry (e) {
   
   handleDeleteEntry (e) {
     e.preventDefault();
-
     fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/:id`, {
       method: 'DELETE',
       body: JSON.stringify({title: this.state.title, 
@@ -245,8 +244,10 @@ handleEditEntry (e) {
         'Authorization': 'Bearer '+localStorage.getItem("auth")
       }
     })
-    .then((res) => res.json())
-    .then((data) => res.status(204).end())
+    .then((res) => {
+      if (res.status==204)
+        console.log("deleted")
+    })
   };
 
 changeUsernameHandler (e) {
