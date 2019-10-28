@@ -230,6 +230,7 @@ handleEditEntry (e) {
   
   handleDeleteEntry (e) {
     e.preventDefault();
+    console.log('e.target', e.target.value)
     const item = this.state.entryArray[e.target.value]
     console.log('item', item)
     console.log('entry array', this.state.entryArray)
