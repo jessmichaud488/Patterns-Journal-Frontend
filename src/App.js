@@ -60,7 +60,6 @@ class App extends React.Component {
 
   handleLiClick (e) {
     e.preventDefault();
-    console.log(e.currentTarget.dataset.id);
     const item=this.state.entryArray[e.currentTarget.dataset.id]
     this.setState ({
       editEntryForm: true,
