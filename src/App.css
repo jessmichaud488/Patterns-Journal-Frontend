@@ -139,7 +139,7 @@ button {
   font-family: 'Vollkorn', serif;
 } 
 
-#deleteButton {
+/*#deleteButton {
   display: inline-block;
   text-decoration: none;
   margin: 5px;
@@ -152,7 +152,7 @@ button {
   box-shadow: 5px 10px 18px #a1a1a1;
   border: rgb(255,255,255, 0.2) 1px solid;
   font-family: 'Vollkorn', serif;
-} 
+}*/
 
 #intro h1 {
   font-size: 72px;
@@ -172,24 +172,52 @@ button {
   font-size: 18px;
 }
 
-/*@media screen and (max-width: 321px) {
+@media screen and (min-width: 320px) {
+  #main-div {
+    margin: 0 auto;
+  }
+
+  #intro {
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .card {
-    margin-right: 30px;
-    height: 62vh;
-    width: 43vh;
+    margin-left: 5px;
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .login {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .login input {
+    width: 200px;
+    height: 5vh;
+  }
+
+  .signup {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .signup input {
+    width: 200px;
+    height: 5vh;
   }
 }
 
 @media screen and (min-width: 360px) {
    #main-div {
     margin: auto; /* The width is 100%, when the viewport is 800px or smaller */
-  /*}
+  }
 
   .card {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    height: 65vh;
+    margin: 0 auto;
+    padding: 12px;
+    height: 63vh;
     width: 35vh;
   }
 
@@ -199,12 +227,19 @@ button {
     width: 35vh;
   }
 
+  .signup {
+    margin: 0 auto;
+    padding: 2px;
+    height: 45vh;
+    width: 35vh;
+  }
+
   .signup input {
     margin-left: auto;
     margin-right: auto;
-    padding: 2px;
-    width: 85px;
-    height: 15px;
+    padding: 8px;
+    width: 150px;
+    height: 5px;
   }
 
   .signup button {
@@ -214,17 +249,18 @@ button {
   }
 
   .login {
+    margin: 0 auto;
     padding: 2px;
-    height: 65vh;
+    height: 45vh;
     width: 35vh;
   }
 
   .login input {
     margin-left: auto;
     margin-right: auto;
-    padding: 2px;
-    width: 85px;
-    height: 15px;
+    padding: 8px;
+    width: 150px;
+    height: 5px;
   }
 
   .login button {
@@ -238,29 +274,35 @@ button {
   }
 }
 
-@media screen and (min-width: 620px) {
-  .card {
-    margin-right: 10px;
-    height: 50vh;
-    width: 39vh;
+@media screen and (min-width: 411px) {
+  .login {
+    margin: 0 auto;
+    height: 40vh;
   }
 
-  .homePageButton {
-    margin-right: 15px;
+  .login input {
+    padding: 10px;
+    height: 5px;
+    width: 150px;
   }
 
   .signup {
-    height: 200px;
-    margin-right: 40px;
+    margin: 0 auto;
+    height: 40vh;
+  }
+
+  .signup input {
+    padding: 10px;
+    height: 5px;
+    width: 150px;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .card{
     margin-right: 215px;
     display: block;
-    padding-top: 10px;
+    padding: 10px;
     height: 50vh;
     width: 30vh;
   }
@@ -276,14 +318,27 @@ button {
   }
 
   .signup {
-    margin-top: 200px;
+    margin: 0 auto;
     height: 200px;
     padding: 15px;
   }
 
+  .signup input {
+    padding: 2px;
+    height: 3vh;
+    width: 35vw;
+  } 
+
   .login {
-    margin-top: 200px;
-    height: 200px;
+    margin: 0 auto;
+    height: 30vh;
+    padding: 2px;
+  } 
+
+  .login input {
+    padding: 2px;
+    height: 3vh;
+    width: 35vw;
   } 
 
   #ulDiv {
@@ -291,4 +346,38 @@ button {
     margin-right: 150px;
     height: 200px;
   }
-}*/
+}
+
+@media screen and (min-width: 1024px) {
+  .card{
+    margin-left: auto;
+    margin-right: auto;
+    height: 35vh;
+  }
+
+  .signup {
+    margin: 0 auto;
+    height: 25vh;
+    width: 325px;
+    padding: 2px;
+  } 
+
+  .signup input {
+    padding: 2px;
+    height: 3vh;
+    width: 20vw;
+  } 
+
+  .login {
+    margin-top: 200px;
+    height: 25vh;
+    width: 325px;
+    padding: 2px;
+  } 
+
+  .login input {
+    padding: 2px;
+    height: 3vh;
+    width: 20vw;
+  } 
+}

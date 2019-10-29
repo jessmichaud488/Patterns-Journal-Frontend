@@ -11,14 +11,11 @@ render () {
             <p> Patterns Journaling app is a new kind of diary experience that
         assists users<br></br> in becoming aware of their moods and sleep
         schedules and<br></br> the affects they have on their mental health.</p>
+        <h3 className="gradient">An easier way to manage mental health</h3>
+         <p>See the patterns, identify needs, and communicate more clearly what you need most</p>
         </section>
 
         <div>
-            <div id="description">
-                <h3 className="gradient">An easier way to manage mental health</h3>
-                <p>See the patterns, identify needs, and communicate more clearly what you need most</p>
-            </div>
-
             <div className="card">
                 <img 
                 src={require('../src/images/check.png')}
