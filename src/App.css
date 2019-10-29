@@ -282,6 +282,24 @@ button {
       height: 10vh;
       width: 55vw;
     }
+
+    #form {
+      margin-right: 130px;
+      width: 87vw;
+      height: 95vh;
+    }
+    #pastEntries {
+      margin-top: 150px;
+      margin-left: -50px;
+      width: 87vw;
+      height: 50vh;
+    }
+  
+    #editForm {
+      margin-left: -10px;
+      width: 87vw;
+      height: 95vh;
+    }
   }
 
   @media screen and (min-width: 375px) {
@@ -313,6 +331,21 @@ button {
       height: 10vh;
       width: 45vw;
     }
+
+    #form {
+      width: 87vw;
+      height: 85vh;
+    }
+
+    #pastEntries {
+      width: 87vw;
+      height: 50vh;
+    }
+  
+    #editForm {
+      width: 87vw;
+      height: 85vh;
+    }
   }
 
   @media screen and (min-width: 411px) {
@@ -338,6 +371,22 @@ button {
     .signup button {
       height: 10vh;
       width: 45vw;
+    }
+
+    #form {
+      margin-left: 5px;
+      width: 87vw;
+      height: 85vh;
+    }
+
+    #pastEntries {
+      width: 87vw;
+      height: 50vh;
+    }
+  
+    #editForm {
+      width: 87vw;
+      height: 85vh;
     }
   }
 
@@ -387,6 +436,22 @@ button {
       height: 10vh;
       width: 45vw;
     }
+
+    #form {
+      margin-left: 25px;
+      width: 87vw;
+      height: 75vh;
+    }
+
+    #pastEntries {
+      width: 87vw;
+      height: 50vh;
+    }
+  
+    #editForm {
+      width: 87vw;
+      height: 75vh;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -425,6 +490,22 @@ button {
     .signup button {
       height: 8vh;
       width: 45vw;
+    }
+
+    #form {
+      margin-left: 35px;
+      width: 87vw;
+      height: 65vh;
+    }
+
+    #pastEntries {
+      width: 87vw;
+      height: 30vh;
+    }
+  
+    #editForm {
+      width: 87vw;
+      height: 65vh;
     }
   }
 }
