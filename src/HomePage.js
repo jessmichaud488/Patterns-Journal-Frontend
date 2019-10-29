@@ -22,7 +22,7 @@ render () {
                 alt="Convenience"
                 />
                 <h3 className="gradient">Convenience</h3>
-                <p>Open the app and easily record thoughts, events, moods, and sleep duration anywhere, anytime.</p>
+                <p>Open the app and easily record thoughts, events,<br></br>moods, and sleep duration anywhere, anytime.</p>
             </div>
 
             <div className="card">
@@ -32,7 +32,7 @@ render () {
                 />
     
                 <h3 className="gradient">Understand Patterns</h3>
-                <p>Keep track of how long certain mood and sleep last to better understand your personal patterns.</p>
+                <p>Keep track of how long certain moods and sleep cycles<br></br>last to better understand your personal patterns.</p>
             </div>
 
             <div className="card">
@@ -42,7 +42,7 @@ render () {
                 />
 
                 <h3 className="gradient">Better Communication</h3>
-                <p>If inclined, share these patterns with your mental health professional to help better communicate your needs.</p>
+                <p>If inclined, share these patterns with your<br></br>mental health professional to help better communicate your needs.</p>
             </div>
             </div>
         </div>
