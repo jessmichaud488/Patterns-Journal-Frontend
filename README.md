@@ -24,7 +24,6 @@
 <li>Securely log into an account</li>
 <li>Create a new journal entry</li>
 <li>Update a journal entry</li>
-<li>Delete a journal entry</li>
 <li>Record sleep, emotional intensity, and mood within entry</li>
 <li>Save all entries and have the ability to browse through past entries</li>
 </ul>
@@ -58,18 +57,17 @@
 <li>GET to '/:id' to retrieve user profile<</li>
 <li>POST to ‘/signUp’ to create a new user account</li>
 <li>PUT to ‘/:id’ to update a specific user account</li>
-<li>DELETE to ‘/:id’ to delete a specific user account </li>
 
 <ul>ENTRY</ul>
 <li>GET to ‘/:id’ to view a specific entry</li>
 <li>POST to ‘/’ to create a new entry</li>
 <li>PUT to ‘/:id’ to edit a specific entry</li>
-<li>DELETE to ‘/:id’ to delete a specific entry</li>
 
 <h2>DEVELOPMENT</h2>
 <p>Future updates for V2 are expected to include:</p>
 <ul>
 	<li>An average or summary of mood, sleep, and emotions entries to better track patterns of behavior</li> 
+	<li>DELETE  to '/:id' in USER and ENTRY to delete specific users and entries</li>
 </ul>
 
 

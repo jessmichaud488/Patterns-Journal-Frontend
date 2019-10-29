@@ -56,7 +56,6 @@ class Form extends React.Component {
             {this.props.entryArray.map((item, i) => (
             <section>
             <li onClick={this.props.handleLiClick} data-id={i} value={item.id} key={i}>{item.title}</li>
-            <button id="deleteButton" value={item.id} onClick={this.props.handleDeleteEntry}>Delete</button>
             </section>
           ))}
           </div>

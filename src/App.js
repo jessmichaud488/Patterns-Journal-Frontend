@@ -36,7 +36,7 @@ class App extends React.Component {
     this.handleLogOutClick=this.handleLogOutClick.bind(this);
     this.handleFormClick=this.handleFormClick.bind(this);
     this.handleEditEntry=this.handleEditEntry.bind(this);
-    this.handleDeleteEntry=this.handleDeleteEntry.bind(this);
+    //this.handleDeleteEntry=this.handleDeleteEntry.bind(this);
     this.showSignUp=this.showSignUp.bind(this);
     this.showLogIn=this.showLogIn.bind(this)
     this.handleLiClick=this.handleLiClick.bind(this);
@@ -45,7 +45,7 @@ class App extends React.Component {
     this.changePasswordHandler = this.changePasswordHandler.bind(this);
 
     this.changeEntryHandler = this.changeEntryHandler.bind(this);
-    this.changeDateHandler = this.changeDateHandler.bind(this)
+    //this.changeDateHandler = this.changeDateHandler.bind(this)
     this.changeTitleHandler = this.changeTitleHandler.bind(this);
     this.changeSleepHandler = this.changeSleepHandler.bind(this);
     this.changeMoodHandler = this.changeMoodHandler.bind(this);
@@ -227,7 +227,7 @@ handleEditEntry (e) {
   )
 };
   
-  handleDeleteEntry (e) {
+  /*handleDeleteEntry (e) {
     e.preventDefault();
     console.log('e.target', e.target.value)
     let index = e.target.value
@@ -246,7 +246,7 @@ handleEditEntry (e) {
       if (res.status===204)
         console.log("deleted")
     })
-  };
+  };*/
 
 changeUsernameHandler (e) {
   this.setState({ username: e.target.value });
@@ -299,9 +299,9 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-changeDateHandler (e) {
+/*changeDateHandler (e) {
   this.setState({ date: e.target.value });
-};
+};*/
 
 changeEditDateHandler (e) {
   this.setState({ editDate: e.target.value });
@@ -340,7 +340,7 @@ componentDidMount() {
           handleFormClick={this.handleFormClick}
           handleLiClick={this.handleLiClick}
           handleEditEntry={this.handleEditEntry}
-          handleDeleteEntry={this.handleDeleteEntry}
+          //handleDeleteEntry={this.handleDeleteEntry}
           changeTitleHandler={this.changeTitleHandler} 
           changeEntryHandler={this.changeEntryHandler} 
           changeDateHandler={this.changeDateHandler}
