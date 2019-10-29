@@ -45,7 +45,7 @@ body {
   margin-top: 100px;
   margin-left: 400px;
   width: 50vw;
-  height: 75vh;
+  height: 125vh;
   background-color: rgb(255,255,255, 0.3);
   border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
@@ -63,7 +63,7 @@ body {
 #editForm {
   margin-top: 125px;
   width: 50vw;
-  height: 75vh;
+  height: 125vh;
   background-color: rgb(255,255,255, 0.3);
   border: rgb(255,255,255, 0.2) 1px solid;
   padding: 10px;
@@ -220,7 +220,6 @@ button {
   }
 
   #form {
-    margin-right: 130px;
     width: 87vw;
     height: 105vh;
   }
@@ -232,14 +231,11 @@ button {
   }
 
   #pastEntries {
-    margin-top: 150px;
-    margin-left: -50px;
     width: 87vw;
     height: 50vh;
   }
 
   #editForm {
-    margin-left: -10px;
     width: 87vw;
     height: 105vh;
   }
@@ -331,8 +327,14 @@ button {
     }
 
     #form {
+      margin-right: 35px;
       width: 87vw;
       height: 90vh;
+    }
+
+    #form input {
+      height: 8px;
+      width: 250px;
     }
 
     #pastEntries {
@@ -374,17 +376,23 @@ button {
     #form {
       margin-left: 5px;
       width: 87vw;
-      height: 85vh;
+      height: 65vh;
+    }
+
+    #form input {
+      height: 8px;
+      width: 250px;
     }
 
     #pastEntries {
+      margin-top: 250px;
       width: 87vw;
-      height: 50vh;
+      height: 30vh;
     }
   
     #editForm {
       width: 87vw;
-      height: 85vh;
+      height: 65vh;
     }
   }
 
@@ -392,6 +400,27 @@ button {
     .card {
       height: 45vh;
       width: 75vw;
+    }
+
+    #form {
+      margin-left: 80px;
+    }
+
+    #form button {
+      margin-right: 20px;
+    }
+
+    #form input {
+      height: 8px;
+      width: 150px;
+    }
+
+    #pastEntries {
+      margin-left: -50px;
+    }
+
+    #editForm {
+      margin-left: -10px;
     }
   }
 
