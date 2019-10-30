@@ -110,7 +110,7 @@ class Form extends React.Component {
             <button type="submit" onClick={this.props.handleEditEntry}>Submit Edit</button>
         </div>
 
-        <button type="submit" onClick={this.props.handleLogOutClick}>Log Out</button>
+        <button type="submit" id="formLogOut" onClick={this.props.handleLogOutClick}>Log Out</button>
         </div>
         );
     }
