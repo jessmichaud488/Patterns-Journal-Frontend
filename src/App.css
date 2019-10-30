@@ -220,6 +220,7 @@ button {
   }
 
   #form {
+    margin-left: 3px;
     width: 87vw;
     height: 105vh;
   }
@@ -231,6 +232,7 @@ button {
   }
 
   #pastEntries {
+    margin-left: 2px;
     width: 87vw;
     height: 50vh;
   }
@@ -288,21 +290,30 @@ button {
     }
 
     #form {
-      margin-right: 130px;
+      margin-left: 5px;
       width: 87vw;
-      height: 95vh;
+      height: 75vh;
     }
+
+    #form input {
+      height: 2vh;
+      width: 55vw;
+    }
+
     #pastEntries {
-      margin-top: 150px;
-      margin-left: -50px;
+      margin-left: 6px;
       width: 87vw;
       height: 50vh;
     }
   
     #editForm {
-      margin-left: -10px;
       width: 87vw;
-      height: 95vh;
+      height: 75vh;
+    }
+
+    #editForm input {
+      height: 2vh;
+      width: 55vw;
     }
   }
 
@@ -347,9 +358,9 @@ button {
     }
 
     #form {
-      margin-right: 35px;
+      margin-left: 5px;
       width: 87vw;
-      height: 90vh;
+      height: 70vh;
     }
 
     #form input {
@@ -358,13 +369,19 @@ button {
     }
 
     #pastEntries {
+      margin-left: 6px;
       width: 87vw;
       height: 50vh;
     }
   
     #editForm {
       width: 87vw;
-      height: 90vh;
+      height: 70vh;
+    }
+
+    #editForm input {
+      height: 8px;
+      width: 250px;
     }
   }
 
@@ -409,9 +426,9 @@ button {
     }
 
     #form {
-      margin-right: 35px;
+      margin-left: 5px;
       width: 87vw;
-      height: 90vh;
+      height: 60vh;
     }
 
     #form input {
@@ -420,13 +437,21 @@ button {
     }
 
     #pastEntries {
+      margin-top: 150px;
+      margin-left: 5px;
       width: 87vw;
       height: 50vh;
     }
   
     #editForm {
+      margin-left: 5px;
       width: 87vw;
-      height: 90vh;
+      height: 60vh;
+    }
+
+    #editForm input {
+      height: 8px;
+      width: 250px;
     }
   }
 
@@ -482,14 +507,15 @@ button {
     }
 
     #pastEntries {
-      margin-top: 250px;
+      margin-top: 100px;
+      margin-left: 5px;
       width: 87vw;
       height: 30vh;
     }
   
     #editForm {
       width: 87vw;
-      height: 65vh;
+      height: 85vh;
     }
   }
 
@@ -536,7 +562,7 @@ button {
     #form {
       margin-left: 5px;
       width: 87vw;
-      height: 65vh;
+      height: 60vh;
     }
 
     #form input {
@@ -545,14 +571,16 @@ button {
     }
 
     #pastEntries {
-      margin-top: 250px;
+      margin-top: 100px;
+      margin-left: 5px;
       width: 87vw;
       height: 30vh;
     }
   
     #editForm {
+      margin-right: 15px;
       width: 87vw;
-      height: 65vh;
+      height: 78vh;
     }
   }
 
@@ -598,10 +626,13 @@ button {
 
     #form {
       margin-left: 80px;
+      height: 65vh;
+      width: 55vw;
     }
 
     #form button {
-      margin-right: 20px;
+      height: 8vh;
+      width: 35vw;
     }
 
     #form input {
@@ -610,11 +641,26 @@ button {
     }
 
     #pastEntries {
-      margin-left: -50px;
+      margin-top: 150px;
+      margin-left: 80px;
+      height: 55vh;
+      width: 55vw;
     }
 
     #editForm {
-      margin-left: -10px;
+      margin-left: 80px;
+      height: 65vh;
+      width: 55vw;
+    }
+
+    #editForm input {
+      height: 8px;
+      width: 150px;
+    }
+
+    #editForm button {
+      height: 8vh;
+      width: 35vw;
     }
   }
 
@@ -661,17 +707,21 @@ button {
     #form {
       margin-left: 25px;
       width: 87vw;
-      height: 75vh;
+      height: 65vh;
     }
 
     #pastEntries {
+      margin-left: 30px;
+      margin-top: 150px;
       width: 87vw;
       height: 50vh;
     }
   
     #editForm {
+      margin-left: 25px;
       width: 87vw;
-      height: 75vh;
+      height: 65vh;
+      margin-bottom: 25px;
     }
   }
 
@@ -716,16 +766,19 @@ button {
     #form {
       margin-left: 35px;
       width: 87vw;
-      height: 65vh;
+      height: 50vh;
     }
 
     #pastEntries {
+      margin-top: 125px;
+      margin-left: 30px;
       width: 87vw;
       height: 30vh;
     }
   
     #editForm {
+      margin-left: 40px;
       width: 87vw;
-      height: 65vh;
+      height: 40vh;
     }
   }

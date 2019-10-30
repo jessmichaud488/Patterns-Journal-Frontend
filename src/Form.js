@@ -4,6 +4,7 @@ class Form extends React.Component {
 
     render () {
     return (
+        <div>
         <div id="form">
             <h1 className="gradient">New Entry</h1>
             <input 
@@ -49,17 +50,18 @@ class Form extends React.Component {
             />
             <br></br>
             <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
+        </div>
 
+        <div id="pastEntries">
         <ul>
-            <div id="pastEntries">
             <h1 className="gradient">Past Entries</h1>
             {this.props.entryArray.map((item, i) => (
             <section>
             <li onClick={this.props.handleLiClick} data-id={i} value={item.id} key={i}>{item.title}</li>
             </section>
           ))}
-          </div>
         </ul>
+        </div>
         
 
         <div id="editForm">
