@@ -139,6 +139,21 @@ button {
   font-family: 'Vollkorn', serif;
 } 
 
+.homepageButton {
+  display: inline-block;
+  text-decoration: none !important;
+  margin: 30px;
+  padding: 10px;
+  width: 25vh;
+  height: 8vh;
+  color: #e7fda3;
+  font-size: 18px;
+  background-color: rgb(255,255,255, 0.3);
+  box-shadow: 5px 10px 18px #a1a1a1;
+  border: rgb(255,255,255, 0.2) 1px solid;
+  font-family: 'Vollkorn', serif;
+}
+
 /*#deleteButton {
   display: inline-block;
   text-decoration: none;
