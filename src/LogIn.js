@@ -14,7 +14,7 @@ render () {
         onChange={this.props.changeUsernameHandler}
     />
     <input
-        type="text" 
+        type="password" 
         placeholder="your password" 
         value={this.props.password} 
         onChange={this.props.changePasswordHandler}
