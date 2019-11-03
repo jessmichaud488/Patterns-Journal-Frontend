@@ -18,6 +18,9 @@
   "devServer": {
     "disableHostCheck": true
   },
+"loaders": {
+  "loader": "raw-loader"
+},
   "engines": {
     "node": "10.13.0"
   },
