@@ -36,7 +36,6 @@ class App extends React.Component {
     this.handleLogOutClick=this.handleLogOutClick.bind(this);
     this.handleFormClick=this.handleFormClick.bind(this);
     this.handleEditEntry=this.handleEditEntry.bind(this);
-    this.handleDeleteEntry=this.handleDeleteEntry.bind(this);
     this.showSignUp=this.showSignUp.bind(this);
     this.showLogIn=this.showLogIn.bind(this)
     this.handleLiClick=this.handleLiClick.bind(this);
@@ -45,7 +44,6 @@ class App extends React.Component {
     this.changePasswordHandler = this.changePasswordHandler.bind(this);
 
     this.changeEntryHandler = this.changeEntryHandler.bind(this);
-    this.changeDateHandler = this.changeDateHandler.bind(this)
     this.changeTitleHandler = this.changeTitleHandler.bind(this);
     this.changeSleepHandler = this.changeSleepHandler.bind(this);
     this.changeMoodHandler = this.changeMoodHandler.bind(this);
@@ -75,13 +73,11 @@ class App extends React.Component {
 
   showLogIn (e) {
     e.preventDefault();
-    console.log('showLogIn')
     this.history.pushState(null, 'logIn');
   }
 
   showSignUp (e) {
     e.preventDefault();
-    console.log('showSignUp')
     this.history.pushState(null, 'signUp');
   }
 
@@ -219,27 +215,6 @@ handleEditEntry (e) {
     console.log(err)
   )
 };
-  
-  /*handleDeleteEntry (e) {
-    e.preventDefault();
-    console.log('e.target', e.target.value)
-    let index = e.target.value
-    console.log('index', index)
-    const item = this.state.entryArray[index]
-    console.log('item', item)
-    console.log('entry array', this.state.entryArray)
-    fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${item._id}`, {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer '+localStorage.getItem("auth")
-      }
-    })
-    .then((res) => {
-      if (res.status===204)
-        console.log("deleted")
-    })
-  };*/
 
 changeUsernameHandler (e) {
   this.setState({ username: e.target.value });
@@ -333,7 +308,6 @@ componentDidMount() {
           handleFormClick={this.handleFormClick}
           handleLiClick={this.handleLiClick}
           handleEditEntry={this.handleEditEntry}
-          //handleDeleteEntry={this.handleDeleteEntry}
           changeTitleHandler={this.changeTitleHandler} 
           changeEntryHandler={this.changeEntryHandler} 
           changeDateHandler={this.changeDateHandler}
