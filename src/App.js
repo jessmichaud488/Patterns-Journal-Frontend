@@ -47,6 +47,7 @@ class App extends React.Component {
 
     this.changeEntryHandler = this.changeEntryHandler.bind(this);
     this.changeTitleHandler = this.changeTitleHandler.bind(this);
+    this.changeDateHandler = this.changeDateHandler.bind(this);
     this.changeSleepHandler = this.changeSleepHandler.bind(this);
     this.changeMoodHandler = this.changeMoodHandler.bind(this);
     this.changeEmotionsHandler = this.changeEmotionsHandler.bind(this);
