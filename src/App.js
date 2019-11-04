@@ -270,6 +270,7 @@ changeEditEmotionsHandler (e) {
 };
 
 changeDateHandler (e) {
+  console.log(this.state.date)
   this.setState({ date: e.target.value });
 };
 
