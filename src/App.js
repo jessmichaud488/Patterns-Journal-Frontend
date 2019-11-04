@@ -36,7 +36,7 @@ class App extends React.Component {
     this.handleLogOutClick=this.handleLogOutClick.bind(this);
     this.handleFormClick=this.handleFormClick.bind(this);
     this.handleEditEntry=this.handleEditEntry.bind(this);
-    //this.handleDeleteEntry=this.handleDeleteEntry.bind(this);
+    this.handleDeleteEntry=this.handleDeleteEntry.bind(this);
     this.showSignUp=this.showSignUp.bind(this);
     this.showLogIn=this.showLogIn.bind(this)
     this.handleLiClick=this.handleLiClick.bind(this);
@@ -45,7 +45,7 @@ class App extends React.Component {
     this.changePasswordHandler = this.changePasswordHandler.bind(this);
 
     this.changeEntryHandler = this.changeEntryHandler.bind(this);
-    //this.changeDateHandler = this.changeDateHandler.bind(this)
+    this.changeDateHandler = this.changeDateHandler.bind(this)
     this.changeTitleHandler = this.changeTitleHandler.bind(this);
     this.changeSleepHandler = this.changeSleepHandler.bind(this);
     this.changeMoodHandler = this.changeMoodHandler.bind(this);
@@ -292,9 +292,9 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-/*changeDateHandler (e) {
+changeDateHandler (e) {
   this.setState({ date: e.target.value });
-};*/
+};
 
 changeEditDateHandler (e) {
   this.setState({ editDate: e.target.value });
