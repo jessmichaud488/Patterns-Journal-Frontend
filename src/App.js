@@ -193,12 +193,12 @@ handleEditEntry (e) {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${item._id}`, {
     method: 'PUT',
     body: JSON.stringify({
-                          title: this.state.title, 
-                          date: this.state.date, 
-                          entry: this.state.entry, 
-                          sleep: this.state.sleep,
-                          mood: this.state.mood,
-                          emotions: this.state.emotions,
+                          title: this.state.editTitle, 
+                          date: this.state.editDate, 
+                          entry: this.state.editEntry, 
+                          sleep: this.state.editSleep,
+                          mood: this.state.editMood,
+                          emotions: this.state.editEmotions,
                           id: item._id
                         }),
     headers: {
