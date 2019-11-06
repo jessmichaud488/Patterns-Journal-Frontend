@@ -3,7 +3,6 @@ import React from 'react';
 class LogIn extends React.Component {
 
 render () {
-    console.log('login component')
     return (
     <div className="login">
     <h1 className="gradient">Weclome back, its great to see you again!</h1>

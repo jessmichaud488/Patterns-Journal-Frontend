@@ -86,8 +86,6 @@ class App extends React.Component {
 
   handleSignUpClick (e) {
     e.preventDefault();
-    console.log('made it to sign up e handler!');
-    console.log('e')
     
     fetch(`https://evening-thicket-00015.herokuapp.com/userRouter/signUp`, {
       method: 'POST',
@@ -126,8 +124,6 @@ class App extends React.Component {
 
   handleLogInClick (e) {
     e.preventDefault();
-    console.log('made it to log in e handler!');
-    console.log('e')
     console.log(this.state.username, this.state.password, this.state.isLoggedIn)
 
     fetch(`https://evening-thicket-00015.herokuapp.com/auth/logIn`, {
@@ -140,7 +136,6 @@ class App extends React.Component {
     })
       .then((res) => res.json())
       .then(data => {
-        console.log(data.authToken)
         localStorage.setItem("auth", data.authToken)
         this.setState ({ isLoggedIn: true }, () => {this.props.history.push('/entries');window.location.reload()})
       })
@@ -150,15 +145,12 @@ class App extends React.Component {
 }
 
   handleLogOutClick (e) {
-    console.log('giggles and grins!')
     localStorage.removeItem("auth")
     this.setState ({ isLoggedIn: false }, () => {this.props.history.push('/');window.location.reload()})
   };
 
   handleFormClick (e) {
     e.preventDefault();
-    console.log('made it to form e handler!');
-    console.log('state', this.state)
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'POST',
     body: JSON.stringify({title: this.state.title, 
@@ -175,7 +167,6 @@ class App extends React.Component {
   })
   .then((res) => res.json())
   .then(data => {
-    console.log('POST entry', data);
     this.setState ({
       entryArray: this.state.entryArray.concat(data)
     })
@@ -187,7 +178,6 @@ class App extends React.Component {
 
 handleEditEntry (e) {
   e.preventDefault();
-  console.log(this.state.entryArray)
   const item = this.state.entryArray[this.state.editEntryid]
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter/${item._id}`, {
     method: 'PUT',
@@ -207,7 +197,6 @@ handleEditEntry (e) {
   })
   .then((res) => res.json())
   .then(data => {
-    console.log('PUT entry', data);
     const array = this.state.entryArray
     array[this.state.editEntryid] = data
     this.setState ({
@@ -228,13 +217,10 @@ changePasswordHandler (e) {
 };
 
 changeTitleHandler (e) {
-  console.log('titleHandler', e.target.value)
   this.setState({ title: e.target.value });
 };
 
 changeEditTitleHandler (e) {
-  console.log(this.state)
-  console.log('titleHandler', e.target.value)
   this.setState({ editTitle: e.target.value });
 };
 
@@ -271,7 +257,6 @@ changeEditEmotionsHandler (e) {
 };
 
 changeDateHandler (e) {
-  console.log(this.state.date)
   this.setState({ date: e.target.value });
 };
 
