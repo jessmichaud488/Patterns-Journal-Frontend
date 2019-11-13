@@ -15,14 +15,14 @@ class Form extends React.Component {
             />
             
             <input 
-                type="date" 
+                type="text" 
                 placeholder="today's date (MM/DD/YYYY)" 
                 value={this.props.date} 
                 onChange={this.props.changeDateHandler}
             />
 
             <input 
-                type="number" 
+                type="text" 
                 placeholder="How many hours did you sleep?" 
                 value={this.props.sleep} 
                 onChange={this.props.changeSleepHandler}
@@ -36,7 +36,7 @@ class Form extends React.Component {
             />
 
             <input 
-                type="number" 
+                type="text" 
                 placeholder="How intense are your emotions (scale of 1 to 5)?" 
                 value={this.props.emotions} 
                 onChange={this.props.changeEmotionsHandler}
@@ -74,7 +74,7 @@ class Form extends React.Component {
                 onChange={this.props.changeEditTitleHandler}
             />
             <input 
-                type="date" 
+                type="text" 
                 placeholder="today's date (MM/DD/YYYY)" 
                 value={this.props.editDate} 
                 onChange={this.props.changeEditDateHandler}
@@ -88,7 +88,7 @@ class Form extends React.Component {
             />
 
             <input 
-                type="number" 
+                type="text" 
                 placeholder="How many hours did you sleep?" 
                 value={this.props.editSleep} 
                 onChange={this.props.changeEditSleepHandler}
@@ -102,7 +102,7 @@ class Form extends React.Component {
             />
 
             <input 
-                type="number" 
+                type="text" 
                 placeholder="How intense are your emotions (scale of 1 to 5)?" 
                 value={this.props.eidtemotions} 
                 onChange={this.props.changeEditEmotionsHandler}
