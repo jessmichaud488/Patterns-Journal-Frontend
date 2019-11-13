@@ -207,6 +207,7 @@ button {
   }
 
   .login input {
+    font-size: 14px;
     height: 2vh;
     width: 60vw;
   }
@@ -224,6 +225,7 @@ button {
   }
 
   .signup input {
+    font-size: 14px;
     height: 2vh;
     width: 60vw;
   }
@@ -283,6 +285,7 @@ button {
     }
 
     .signup input {
+      font-size: 14px;
       height: 2vh;
       width: 55vw;
     }
@@ -300,6 +303,7 @@ button {
     }
 
     .login input {
+      font-size: 14px;
       height: 2vh;
       width: 55vw;
     }
@@ -389,6 +393,7 @@ button {
     }
 
     #form input {
+      font-size: 14px;
       height: 8px;
       width: 250px;
     }
@@ -406,6 +411,7 @@ button {
     }
 
     #editForm input {
+      font-size: 14px;
       height: 8px;
       width: 250px;
     }
@@ -462,7 +468,7 @@ button {
     }
 
     #form input {
-      font-size: 8px;
+      font-size: 14px;
       height: 8px;
       width: 250px;
     }
@@ -481,6 +487,7 @@ button {
     }
 
     #editForm input {
+      font-size: 14px;
       height: 8px;
       width: 250px;
     }
@@ -504,6 +511,7 @@ button {
     }
 
     .login input {
+      font-size: 14px;
       height: 2vh;
       width: 55vw;
     }
@@ -521,6 +529,7 @@ button {
     }
 
     .signup input {
+      font-size: 14px;
       height: 2vh;
       width: 55vw;
     }
@@ -573,6 +582,7 @@ button {
     }
 
     .login input {
+      font-size: 14px;
       height: 2vh;
       width: 60vw;
     }
@@ -590,6 +600,7 @@ button {
     }
 
     .signup input {
+      font-size: 14px;
       height: 2vh;
       width: 60vw;
     }
@@ -642,6 +653,7 @@ button {
     }
 
     .login input {
+      font-size: 12px;
       height: 2vh;
       width: 60vw;
     }
@@ -659,6 +671,7 @@ button {
     }
 
     .signup input {
+      font-size: 12px;
       height: 2vh;
       width: 60vw;
     }
