@@ -66,6 +66,7 @@ class Form extends React.Component {
 
         <div id="editForm">
             <h1 className="gradient">Edit Entry</h1>
+            <p>Click on an entry title above to edit</p>
             <input 
                 type="text" 
                 placeholder="Give your entry a title" 
@@ -73,7 +74,7 @@ class Form extends React.Component {
                 onChange={this.props.changeEditTitleHandler}
             />
             <input 
-                type="text" 
+                type="date" 
                 placeholder="today's date (MM/DD/YYYY)" 
                 value={this.props.editDate} 
                 onChange={this.props.changeEditDateHandler}
@@ -87,7 +88,7 @@ class Form extends React.Component {
             />
 
             <input 
-                type="text" 
+                type="number" 
                 placeholder="How many hours did you sleep?" 
                 value={this.props.editSleep} 
                 onChange={this.props.changeEditSleepHandler}
@@ -101,7 +102,7 @@ class Form extends React.Component {
             />
 
             <input 
-                type="text" 
+                type="number" 
                 placeholder="How intense are your emotions (scale of 1 to 5)?" 
                 value={this.props.eidtemotions} 
                 onChange={this.props.changeEditEmotionsHandler}
