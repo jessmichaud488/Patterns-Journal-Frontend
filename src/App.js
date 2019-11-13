@@ -170,6 +170,7 @@ class App extends React.Component {
     this.setState ({
       entryArray: this.state.entryArray.concat(data)
     })
+    alert("You have successfully entered an entry!");
   })
   .catch(err =>
     console.log(err)
@@ -202,6 +203,7 @@ handleEditEntry (e) {
     this.setState ({
        entryArray: array
     })
+    alert("You have successfully edited your entry!");
   })
   .catch(err =>
     console.log(err)
