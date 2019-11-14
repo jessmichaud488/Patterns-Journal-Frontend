@@ -242,6 +242,7 @@ button {
   }
 
   #form input {
+    font-size: 14px;
     padding: 5px;
     height: 5vh;
     width: 75vw;
@@ -261,6 +262,7 @@ button {
   }
 
   #editForm input {
+    font-size: 14px;
     padding: 5px;
     height: 5vh;
     width: 75vw;
@@ -332,7 +334,7 @@ button {
     #editForm {
       margin-left: 5px;
       width: 87vw;
-      height: 75vh;
+      height: 80vh;
     }
 
     #editForm input {
@@ -393,8 +395,8 @@ button {
     }
 
     #form input {
-      font-size: 14px;
-      height: 8px;
+      font-size: 16px;
+      height: 12px;
       width: 250px;
     }
 
@@ -407,12 +409,12 @@ button {
     #editForm {
       margin-left: 5px;
       width: 87vw;
-      height: 70vh;
+      height: 75vh;
     }
 
     #editForm input {
-      font-size: 14px;
-      height: 8px;
+      font-size: 16px;
+      height: 12px;
       width: 250px;
     }
 
@@ -469,7 +471,7 @@ button {
 
     #form input {
       font-size: 14px;
-      height: 8px;
+      height: 16px;
       width: 250px;
     }
 
@@ -483,12 +485,12 @@ button {
     #editForm {
       margin-left: 5px;
       width: 87vw;
-      height: 60vh;
+      height: 65vh;
     }
 
     #editForm input {
-      font-size: 14px;
-      height: 8px;
+      font-size: 16px;
+      height: 14px;
       width: 250px;
     }
 
@@ -540,12 +542,12 @@ button {
     #form {
       margin-left: 5px;
       width: 87vw;
-      height: 65vh;
+      height: 70vh;
     }
 
     #form input {
-      font-size: 12px;
-      height: 10px;
+      font-size: 18px;
+      height: 14px;
       width: 250px;
     }
 
@@ -559,12 +561,12 @@ button {
     #editForm {
       margin-left: 5px;
       width: 87vw;
-      height: 85vh;
+      height: 75vh;
     }
 
     #editForm input {
-      font-size: 12px;
-      height: 10px;
+      font-size: 18px;
+      height: 14px;
       width: 250px;
     }
 
@@ -587,7 +589,6 @@ button {
     }
 
     .login input {
-      font-size: 14px;
       height: 2vh;
       width: 60vw;
     }
@@ -605,7 +606,6 @@ button {
     }
 
     .signup input {
-      font-size: 14px;
       height: 2vh;
       width: 60vw;
     }
@@ -622,7 +622,8 @@ button {
     }
 
     #form input {
-      height: 8px;
+      font-size: 18px;
+      height: 14px;
       width: 250px;
     }
 
@@ -636,8 +637,15 @@ button {
     #editForm {
       margin-left: 5px;
       width: 87vw;
-      height: 78vh;
+      height: 68vh;
     }
+
+    #editForm input {
+      font-size: 18px;
+      height: 14px;
+      width: 250px;
+    }
+
 
     #formLogOut {
       margin-left: 20px;
@@ -687,9 +695,9 @@ button {
     }
 
     #form {
-      margin-left: 80px;
+      margin-left: 45px;
       height: 65vh;
-      width: 55vw;
+      width: 70vw;
     }
 
     #form button {
@@ -698,26 +706,27 @@ button {
     }
 
     #form input {
-      height: 8px;
-      width: 150px;
+      font-size: 16px;
+      height: 14px;
+      width: 250px;
     }
 
     #pastEntries {
-      margin-top: 150px;
-      margin-left: 80px;
-      height: 35vh;
-      width: 55vw;
+      margin-left: 45px;
+      height: 65vh;
+      width: 70vw;
     }
 
     #editForm {
-      margin-left: 80px;
-      height: 65vh;
-      width: 55vw;
+      margin-left: 45px;
+      height: 70vh;
+      width: 70vw;
     }
 
     #editForm input {
-      height: 8px;
-      width: 150px;
+      font-size: 16px;
+      height: 14px;
+      width: 250px;
     }
 
     #editForm button {
@@ -726,7 +735,7 @@ button {
     }
 
     #formLogOut {
-      margin-right: -20px;
+      margin-right: 10px;
     }
   }
 
@@ -776,6 +785,12 @@ button {
       height: 65vh;
     }
 
+    #form input {
+      font-size: 24px;
+      height: 36px;
+      width: 500px;
+    }
+
     #pastEntries {
       margin-left: 30px;
       margin-top: 125px;
@@ -786,8 +801,14 @@ button {
     #editForm {
       margin-left: 25px;
       width: 87vw;
-      height: 65vh;
+      height: 70vh;
       margin-bottom: 25px;
+    }
+
+    #editForm input {
+      font-size: 24px;
+      height: 36px;
+      width: 500px;
     }
 
     #formLogOut {
@@ -836,7 +857,13 @@ button {
     #form {
       margin-left: 35px;
       width: 87vw;
-      height: 50vh;
+      height: 55vh;
+    }
+
+    #form input {
+      font-size: 36px;
+      height: 40px;
+      width: 800px;
     }
 
     #pastEntries {
@@ -849,7 +876,13 @@ button {
     #editForm {
       margin-left: 40px;
       width: 87vw;
-      height: 35vh;
+      height: 55vh;
+    }
+
+    #editForm input {
+      font-size: 36px;
+      height: 40px;
+      width: 800px;
     }
 
     #formLogOut {
