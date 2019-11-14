@@ -511,7 +511,6 @@ button {
     }
 
     .login input {
-      font-size: 14px;
       height: 2vh;
       width: 55vw;
     }
@@ -529,7 +528,6 @@ button {
     }
 
     .signup input {
-      font-size: 14px;
       height: 2vh;
       width: 55vw;
     }
@@ -546,7 +544,8 @@ button {
     }
 
     #form input {
-      height: 8px;
+      font-size: 12px;
+      height: 10px;
       width: 250px;
     }
 
@@ -561,6 +560,12 @@ button {
       margin-left: 5px;
       width: 87vw;
       height: 85vh;
+    }
+
+    #form input {
+      font-size: 12px;
+      height: 10px;
+      width: 250px;
     }
 
     #formLogOut {
