@@ -285,9 +285,8 @@ button {
     }
 
     .signup input {
-      font-size: 12px;
       height: 2vh;
-      width: 75vw;
+      width: 55vw;
     }
 
     .signup button {
@@ -303,9 +302,8 @@ button {
     }
 
     .login input {
-      font-size: 12px;
       height: 2vh;
-      width: 75vw;
+      width: 55vw;
     }
 
     .login button {
@@ -320,8 +318,9 @@ button {
     }
 
     #form input {
+      font-size: 14px;
       height: 2vh;
-      width: 55vw;
+      width: 75vw;
     }
 
     #pastEntries {
@@ -337,8 +336,9 @@ button {
     }
 
     #editForm input {
+      font-size: 14px;
       height: 2vh;
-      width: 55vw;
+      width: 75vw;
     }
 
     #formLogOut {
