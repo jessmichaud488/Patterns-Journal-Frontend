@@ -49,7 +49,7 @@ class Form extends React.Component {
                 onChange={this.props.changeEntryHandler}
             />
             <br></br>
-            <button type="submit" onClick={this.props.handleFormClick, this.props.handleValidation}>Submit</button>
+            <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
         </div>
 
         <div id="pastEntries">

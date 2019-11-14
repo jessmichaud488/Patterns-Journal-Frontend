@@ -22,8 +22,6 @@ class App extends React.Component {
       sleep: '',
       mood: '',
       emotions: '',
-      errors: '',
-      formIsValid: true,
       //these are for edit form
       editTitle: '',
       editDate: '',
@@ -59,56 +57,7 @@ class App extends React.Component {
     this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this);
     this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this);
     this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this);
-    this.handleValidation = this.handleValidation.bind(this);
   }
-
-  handleValidation(){
-    //Title
-    if(!this.state.title){
-       errors.this.state.title = "Cannot be empty";
-    }   
-    
-    //Date
-    if(!this.state.date){
-      errors.this.state.date = "Cannot be empty";
-   }
-
-   //Sleep
-   if(!this.state.sleep){
-    errors.this.state.sleep = "Cannot be empty";
- }
-
- if(this.state.sleep !== "undefined"){
-    if(!this.state.sleep.match(/[^a-zA-Z]+$/)){
-       errors.this.state.sleep = "Only numbers";
-    }        
- }
-
-//Mood
-if(this.state.mood){
-  errors.this.state.mood = "Cannot be empty";
-}
-
-//Emotions
-if(!this.state.emotions){
-  errors.this.state.emotions = "Cannot be empty";
-}
-
-if(this.state.emotions !== "undefined"){
-  if(!this.state.emotions.match(/[^a-zA-Z]+$/)){
-     errors.this.state.emotions = "Only numbers";
-  }        
-}
-
-//Entry
-if(this.state.entry){
-  errors.this.state.entry = "Cannot be empty";
-}
-    this.setState({
-      errors: errors, 
-      formIsValid = false
-    });
-}
 
   handleLiClick (e) {
     e.preventDefault();
@@ -224,7 +173,7 @@ if(this.state.entry){
     alert("You have successfully entered an entry!");
   })
   .catch(err =>
-    alert("All fields are required.");
+    console.log(err)
   )
 };
 
@@ -378,7 +327,6 @@ componentDidMount() {
           editEmotions={this.state.editEmotions}
           editEntryid={this.state.editEntryid}
           handleLogOutClick={this.handleLogOutClick}
-          handleValidation={this.handleValidation}
         />}
         />
 

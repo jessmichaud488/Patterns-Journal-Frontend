@@ -285,9 +285,9 @@ button {
     }
 
     .signup input {
-      font-size: 14px;
+      font-size: 12px;
       height: 2vh;
-      width: 55vw;
+      width: 75vw;
     }
 
     .signup button {
@@ -303,9 +303,9 @@ button {
     }
 
     .login input {
-      font-size: 14px;
+      font-size: 12px;
       height: 2vh;
-      width: 55vw;
+      width: 75vw;
     }
 
     .login button {
