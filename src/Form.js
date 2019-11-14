@@ -12,7 +12,6 @@ class Form extends React.Component {
                 placeholder="Give your entry a title" 
                 value={this.props.title} 
                 onChange={this.props.changeTitleHandler}
-                required
             />
             
             <input 
@@ -20,7 +19,6 @@ class Form extends React.Component {
                 placeholder="today's date (MM/DD/YYYY)" 
                 value={this.props.date} 
                 onChange={this.props.changeDateHandler}
-                required
             />
 
             <input 
@@ -28,7 +26,6 @@ class Form extends React.Component {
                 placeholder="How many hours did you sleep?" 
                 value={this.props.sleep} 
                 onChange={this.props.changeSleepHandler}
-                required
             />
 
             <input 
@@ -36,7 +33,6 @@ class Form extends React.Component {
                 placeholder="What is your mood?" 
                 value={this.props.mood} 
                 onChange={this.props.changeMoodHandler}
-                required
             />
 
             <input 
@@ -44,7 +40,6 @@ class Form extends React.Component {
                 placeholder="How intense are your emotions (scale of 1 to 5)?" 
                 value={this.props.emotions} 
                 onChange={this.props.changeEmotionsHandler}
-                required
             />
 
             <input id="entryInput"
@@ -52,10 +47,9 @@ class Form extends React.Component {
                 placeholder="How was your day?" 
                 value={this.props.entry} 
                 onChange={this.props.changeEntryHandler}
-                required
             />
             <br></br>
-            <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
+            <button type="submit" onClick={this.props.handleFormClick, this.props.handleValidation}>Submit</button>
         </div>
 
         <div id="pastEntries">
