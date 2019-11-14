@@ -103,7 +103,7 @@ class Form extends React.Component {
 
             <input 
                 type="text" 
-                placeholder="How intense are your emotions (scale of 1 to 5)?" 
+                placeholder="Intensity of emotions (scale of 1 to 5)?" 
                 value={this.props.editEmotions} 
                 onChange={this.props.changeEditEmotionsHandler}
             />
