@@ -17,14 +17,14 @@ class App extends React.Component {
       username: '',
       password: '',
       title: '',
-      date: '',
+      //date: '',
       entry: '',
       sleep: '',
       mood: '',
       emotions: '',
       //these are for edit form
       editTitle: '',
-      editDate: '',
+      //editDate: '',
       editEntry: '',
       editSleep: '',
       editMood: '',
@@ -47,12 +47,12 @@ class App extends React.Component {
 
     this.changeEntryHandler = this.changeEntryHandler.bind(this);
     this.changeTitleHandler = this.changeTitleHandler.bind(this);
-    this.changeDateHandler = this.changeDateHandler.bind(this);
+    //this.changeDateHandler = this.changeDateHandler.bind(this);
     this.changeSleepHandler = this.changeSleepHandler.bind(this);
     this.changeMoodHandler = this.changeMoodHandler.bind(this);
     this.changeEmotionsHandler = this.changeEmotionsHandler.bind(this);
     this.changeEditEntryHandler = this.changeEditEntryHandler.bind(this);
-    this.changeEditDateHandler = this.changeEditDateHandler.bind(this)
+    //this.changeEditDateHandler = this.changeEditDateHandler.bind(this)
     this.changeEditTitleHandler = this.changeEditTitleHandler.bind(this);
     this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this);
     this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this);
@@ -65,7 +65,7 @@ class App extends React.Component {
     this.setState ({
       editEntryForm: true,
       editEntry: item.entry,
-      editDate: item.date,
+      //editDate: item.date,
       editTitle: item.title,
       editSleep: item.sleep,
       editMood: item.mood,
@@ -154,7 +154,7 @@ class App extends React.Component {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'POST',
     body: JSON.stringify({title: this.state.title, 
-                          date: this.state.date, 
+                          //date: this.state.date, 
                           entry: this.state.entry, 
                           sleep: this.state.sleep,
                           mood: this.state.mood,
@@ -184,7 +184,7 @@ handleEditEntry (e) {
     method: 'PUT',
     body: JSON.stringify({
                           title: this.state.editTitle, 
-                          date: this.state.editDate, 
+                          //date: this.state.editDate, 
                           entry: this.state.editEntry, 
                           sleep: this.state.editSleep,
                           mood: this.state.editMood,
@@ -258,13 +258,13 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-changeDateHandler (e) {
+/*changeDateHandler (e) {
   this.setState({ date: e.target.value });
 };
 
 changeEditDateHandler (e) {
   this.setState({ editDate: e.target.value });
-};
+};*/
 
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
@@ -301,18 +301,18 @@ componentDidMount() {
           handleEditEntry={this.handleEditEntry}
           changeTitleHandler={this.changeTitleHandler} 
           changeEntryHandler={this.changeEntryHandler} 
-          changeDateHandler={this.changeDateHandler}
+          //changeDateHandler={this.changeDateHandler}
           changeSleepHandler={this.changeSleepHandler} 
           changeMoodHandler={this.changeMoodHandler} 
           changeEmotionsHandler={this.changeEmotionsHandler}
           changeEditTitleHandler={this.changeEditTitleHandler} 
           changeEditEntryHandler={this.changeEditEntryHandler} 
-          changeEditDateHandler={this.changeEditDateHandler}
+          //changeEditDateHandler={this.changeEditDateHandler}
           changeEditSleepHandler={this.changeEditSleepHandler} 
           changeEditMoodHandler={this.changeEditMoodHandler} 
           changeEditEmotionsHandler={this.changeEditEmotionsHandler}
           title={this.state.title}
-          date={this.state.date}
+          //date={this.state.date}
           entry={this.state.entry}
           sleep={this.state.sleep}
           mood={this.state.mood}
@@ -320,7 +320,7 @@ componentDidMount() {
           entryArray={this.state.entryArray}
           editEntryForm={this.state.editEntryForm}
           editTitle={this.state.editTitle}
-          editDate={this.state.editDate}
+          //editDate={this.state.editDate}
           editEntry={this.state.editEntry}
           editSleep={this.state.editSleep}
           editMood={this.state.editMood}
