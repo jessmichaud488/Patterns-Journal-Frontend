@@ -1,7 +1,7 @@
 body {
   text-align: center;
   color: rgb(245,245,245);
-  background: radial-gradient(ellipse at bottom, #100E5A 0%, #000f16 100%);
+  background: radial-gradient(bottom, #100E5A 0%, #000f16 100%);
   height: 100vh;
   font-family: 'Vollkorn', serif;
 }
@@ -119,7 +119,7 @@ body {
 }
 
 .gradient {
-  background: -webkit-linear-gradient(linear, left top, right bottom, #e7fda3 2%,  #53D1FE 98%);
+  background: -webkit-linear-gradient(left top, right bottom, #e7fda3 2%,  #53D1FE 98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
