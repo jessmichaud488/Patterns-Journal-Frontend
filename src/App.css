@@ -1,7 +1,7 @@
 body {
   text-align: center;
   color: rgb(245,245,245);
-  background-image: radial-gradient(farthest-side at 98% 2%, #000f16, #100E5A);
+  background-image: radial-gradient(farthest-side at 60% 55%, #000f16, #100E5A);
   /*background-image: radial-gradient(farthest-side at 60% 55%,blue,green,yellow,black);*/
   height: 100vh;
   font-family: 'Vollkorn', serif;
