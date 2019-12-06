@@ -2,7 +2,6 @@ body {
   text-align: center;
   color: rgb(245,245,245);
   background-image: radial-gradient(farthest-side at 60% 55%, #000f16, #100E5A);
-  /*background-image: radial-gradient(farthest-side at 60% 55%,blue,green,yellow,black);*/
   height: 100vh;
   font-family: 'Vollkorn', serif;
 }
@@ -97,14 +96,17 @@ body {
   margin-left: 25px;
 }
 
-.card {
-  height: 40vh;
-  width: 25vw;
-  display: inline-block;
+#card-main {
   margin-top: 75px;
   margin-bottom: 75px;
   margin-left: 15px;
   margin-right: 10px;
+}
+
+.card {
+  height: 40vh;
+  width: 25vw;
+  display: inline-block;
   padding: 30px 15px;
   border: rgb(255,255,255, 0.2) 1px solid;
   background-color: rgb(255,255,255, 0.3);

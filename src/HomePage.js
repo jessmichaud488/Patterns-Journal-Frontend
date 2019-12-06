@@ -15,7 +15,7 @@ render () {
          <p>See the patterns, identify needs, and communicate more clearly what you need most</p>
         </section>
 
-        <div>
+        <div id="card-main">
             <div className="card">
                 <img 
                 src={require('../src/images/check.png')}
