@@ -121,6 +121,7 @@ body {
 
 .gradient {
   background: radial-gradient(farthest-side at 98% 2%, #53D1FE, #9cc61f);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
