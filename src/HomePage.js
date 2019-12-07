@@ -15,8 +15,8 @@ render () {
          <p>See the patterns, identify needs, and communicate more clearly what you need most</p>
         </section>
 
-        <div id="card-main">
             <div className="card">
+            <div id="card1">
                 <img 
                 src={require('../src/images/check.png')}
                 alt="Convenience"
@@ -25,7 +25,7 @@ render () {
                 <p>Open the app and easily record thoughts, events,<br></br>moods, and sleep duration anywhere, anytime.</p>
             </div>
 
-            <div className="card">
+            <div id="card2">
                 <img
                 src={require('../src/images/patterns.png')}
                 alt="Understand Patterns"
@@ -35,7 +35,7 @@ render () {
                 <p>Keep track of how long certain moods and sleep cycles<br></br>last to better understand your personal patterns.</p>
             </div>
 
-            <div className="card">
+            <div id="card3">
                 <img
                 src={require('../src/images/communication.png')}
                 alt="Better Communication"
@@ -46,6 +46,7 @@ render () {
             </div>
             </div>
         </div>
+        
             <div>
                 <button><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
                 <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
