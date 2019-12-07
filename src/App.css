@@ -139,14 +139,6 @@ button {
   font-family: 'Vollkorn', serif;
 } 
 
-.homepageButton {
-  text-decoration: none !important;
-  color: #e7fda3;
-  font-size: 18px;
-  padding: 10px;
-  font-family: 'Vollkorn', serif;
-}
-
 #intro h1 {
   font-size: 72px;
   font-weight: bold;
