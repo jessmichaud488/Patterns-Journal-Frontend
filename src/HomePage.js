@@ -44,10 +44,10 @@ render () {
                 <p>If inclined, share these patterns with your<br></br>mental health professional to help better communicate your needs.</p>
             </div>
             </div>
-
+            
             <div>
-                <button><span><Link to="/logIn">Log In</Link></span></button>
-                <button><span><Link to="/signUp">Sign Up</Link></span></button>
+                <button><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
+                <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
             </div>
     </div>
     );
