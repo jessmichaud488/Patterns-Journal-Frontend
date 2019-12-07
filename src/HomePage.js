@@ -5,7 +5,6 @@ class HomePage extends React.Component {
 render () {
     return (
     <div id="main-div">
-        <div id="card-div">
         <section id="intro">
             <h1 className="gradient">Welcome to Patterns!</h1>
             <p> Patterns Journaling app is a new kind of diary experience that
@@ -45,7 +44,7 @@ render () {
                 <p>If inclined, share these patterns with your<br></br>mental health professional to help better communicate your needs.</p>
             </div>
             </div>
-        </div>
+
             <div>
                 <button><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
                 <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
