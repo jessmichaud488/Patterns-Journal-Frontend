@@ -130,25 +130,28 @@ button {
   background-color: rgb(255,255,255, 0.3);
   box-shadow: 5px 10px 18px #a1a1a1;
   border: rgb(255,255,255, 0.2) 1px solid;
+  margin-top: 30px;
 } 
 
 .homepageButton {
   text-decoration: none !important;
   color: #e7fda3;
   font-size: 18px;
-  margin-top: 30px;
   padding: 10px;
   font-family: 'Vollkorn', serif;
 }
 
+#intro{
+  margin-bottom: 75px;
+}
+
 #intro h1 {
-  font-size: 72px;
+  font-size: 84px;
   font-weight: bold;
 }
 
 #intro p {
   font-size: 24px;
-  margin-bottom: 75px;
 }
 
 #description h3 {
