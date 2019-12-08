@@ -99,10 +99,10 @@ body {
 .card {
   height: 50vh;
   width: 25vw;
-  margin-top: 75px;
+  /*margin-top: 75px;
   margin-bottom: 85px;
   margin-left: 15px;
-  margin-right: 10px;
+  margin-right: 10px;*/
   display: inline-block;
   padding: 30px 15px;
   border: rgb(255,255,255, 0.2) 1px solid;
