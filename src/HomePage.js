@@ -41,7 +41,7 @@ render () {
                 />
 
                 <h3 className="gradient">Better Communication</h3>
-                <p>If inclined, share these patterns with your<br></br>mental health professional to help better communicate your needs.</p>
+                <p>If inclined, share with your mental health<br></br>professional to help better communicate your needs.</p>
             </div>
             </div>
             
