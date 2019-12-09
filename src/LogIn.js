@@ -4,6 +4,7 @@ class LogIn extends React.Component {
 
 render () {
     return (
+    <form>
     <div className="login">
     <h1 className="gradient">Weclome back, its great to see you again!</h1>
     <input 
@@ -21,6 +22,7 @@ render () {
 
     <button type="submit" onClick={this.props.handleLogInClick}>Submit</button>
     </div>
+    </form>
     );
 }
 }
