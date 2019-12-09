@@ -132,11 +132,11 @@ button {
   margin: 30px;
   width: 25vh;
   height: 8vh;
-  background-color: rgb(255,255,255, 0.3);
-  box-shadow: 5px 10px 18px #a1a1a1;
-  border: rgb(255,255,255, 0.2) 1px solid;
+  background: rgb(144,135,208);
+  background: linear-gradient(180deg, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 50%, rgba(58,47,135,1) 100%);
+  border-radius: 5px;
   text-decoration: none !important;
-  color: #e7fda3;
+  color: white;
   font-size: 18px;
   padding: 10px;
   font-family: 'Philosopher', sans-serif;
@@ -145,7 +145,7 @@ button {
 
 .homepageButton {
   text-decoration: none !important;
-  color: #e7fda3;
+  color: white;
   font-size: 18px;
   padding: 10px;
   font-family: 'Philosopher', sans-serif;
