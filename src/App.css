@@ -15,8 +15,8 @@ body {
   padding: 10px;
   color: white;
   border-radius: 5px;
-  background: rgb(63,127,181);
-  background: linear-gradient(90deg, rgba(63,127,181,1) 33%, rgba(43,94,147,1) 57%, rgba(34,34,77,1) 92%);
+  background: rgb(52,122,178);
+  background: linear-gradient(90deg, rgba(52,122,178,1) 7%, rgba(47,108,165,1) 33%, rgba(33,68,132,1) 57%, rgba(25,21,96,1) 92%);
 }
 
 .login input {
