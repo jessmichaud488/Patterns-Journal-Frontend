@@ -121,39 +121,13 @@ body {
   font-size: 16px;
 }
 
-button {
-  width: 200px;
-  height: 20px;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 4px;
-  background: rgba(#000000, 0.2);
-  padding: 15px 20px;
-  transition: all .5s ease;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button a {
-  text-decoration: none;
-  color: #FFF;
-}
-
-.is-active {
-  box-shadow: 0 20px 5px -10px rgba(#000, 0.4);
-  transform: translateY(10px);
-}
-
 /*.gradient {
   background: radial-gradient(farthest-side at 98% 2%, #d4fa63, #53D1FE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }*/
 
-/*button {
+button {
   display: inline-block;
   margin: 30px;
   width: 25vh;
@@ -176,7 +150,7 @@ button a {
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 80px;
-}*/
+}
 
 #intro{
   margin-bottom: 75px;

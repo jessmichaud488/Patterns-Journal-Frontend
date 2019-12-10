@@ -42,7 +42,7 @@ class Form extends React.Component {
                 onChange={this.props.changeEntryHandler}
             />
             <br></br>
-            <button type="submit" onClick={this.props.handleFormClick} onClick={this.props.handleButtonClick}>Submit</button>
+            <button type="submit" onClick={this.props.handleFormClick}>Submit</button>
         </div>
 
         <div id="pastEntries">
@@ -95,10 +95,10 @@ class Form extends React.Component {
                 onChange={this.props.changeEditEmotionsHandler}
             />
             <br></br>
-            <button type="submit" onClick={this.props.handleEditEntry} onClick={this.props.handleButtonClick}>Submit Edit</button>
+            <button type="submit" onClick={this.props.handleEditEntry}>Submit Edit</button>
         </div>
 
-        <button type="submit" id="formLogOut" onClick={this.props.handleLogOutClick} onClick={this.props.handleButtonClick}>Log Out</button>
+        <button type="submit" id="formLogOut" onClick={this.props.handleLogOutClick}>Log Out</button>
         </div>
         );
     }

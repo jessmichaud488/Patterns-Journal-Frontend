@@ -46,8 +46,8 @@ render () {
             </div>
             
             <div>
-                <button onClick={this.props.handleButtonClick}><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
-                <button onClick={this.props.handleButtonClick}><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
+                <button><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
+                <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
             </div>
     </div>
     );
