@@ -4,7 +4,7 @@ class Form extends React.Component {
 
     render () {
     return (
-        <div>
+        <div className="wrapper" ref="wrapper">
         <div id="form">
             <h1 className="gradient">New Entry</h1>
             <input 

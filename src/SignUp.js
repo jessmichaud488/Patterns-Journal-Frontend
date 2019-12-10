@@ -4,6 +4,7 @@ class SignUp extends React.Component {
 
     render () {
         return (
+            <div className="wrapper" ref="wrapper">
             <div className="signup">
                 <h1 className="gradient">Weclome, sign up below!</h1>
                 <input 
@@ -21,6 +22,7 @@ class SignUp extends React.Component {
                 />
                 
                 <button type="submit" onClick={this.props.handleSignUpClick}>Submit</button>
+            </div>
             </div>
         );
     }

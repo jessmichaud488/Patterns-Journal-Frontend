@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 class HomePage extends React.Component {
 render () {
     return (
+    <div className="wrapper" ref="wrapper">
     <div id="main-div">
         <section id="intro">
             <h1 className="gradient">Welcome to Patterns!</h1>
@@ -49,6 +50,7 @@ render () {
                 <button><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
                 <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
             </div>
+    </div>
     </div>
     );
 }
