@@ -2,10 +2,6 @@ import React from 'react';
 
 class LogIn extends React.Component {
 
-componentDidMount() {
-    this.refs.wrapper.style.minHeight = window.innerHeight + 'px'
-    }
-
 render () {
     return (
     <form>

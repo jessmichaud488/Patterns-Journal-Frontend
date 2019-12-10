@@ -2,10 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 class HomePage extends React.Component {
-    componentDidMount() {
-        this.refs.wrapper.style.minHeight = window.innerHeight + 'px'
-        }
-
 render () {
     return (
     <div id="main-div">
