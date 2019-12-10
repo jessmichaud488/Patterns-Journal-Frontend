@@ -154,6 +154,8 @@ button {
   margin-top: 30px;
   padding: 15px 30px;
   color: #eee;
+  font-weight: bold;
+  font-size: 18px;
   letter-spacing: 4px;
   overflow: hidden;
   text-decoration: none;
