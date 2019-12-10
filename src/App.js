@@ -271,7 +271,15 @@ componentDidMount() {
   render () {
   return (
     <Router>
-    <div>
+    <div className="main-wrapper">
+      {/* Moving star background */}
+      <div id="stars1"></div>
+      <div id="stars1-2"></div> 
+      <div id="stars2"></div>
+      <div id="stars2-2"></div>
+      <div id="stars3"></div>
+      <div id="stars3-2"></div>
+
       <Route exact path="/" render={() =>
         <HomePage
           showSignUp={this.showSignUp}

@@ -2,6 +2,10 @@ import React from 'react';
 
 class Form extends React.Component {
 
+    componentDidMount() {
+        this.refs.wrapper.style.minHeight = window.innerHeight + 'px'
+        }
+
     render () {
     return (
         <div>
