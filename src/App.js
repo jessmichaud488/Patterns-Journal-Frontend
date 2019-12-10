@@ -60,7 +60,8 @@ class App extends React.Component {
   $("button").hover(function(){
     $(this).toggleClass("is-active");
   });
-
+  }
+  
   handleLiClick (e) {
     e.preventDefault();
     const item=this.state.entryArray[e.currentTarget.dataset.id]
