@@ -2,11 +2,6 @@ import React from 'react';
 
 class LogIn extends React.Component {
 
-    componentDidMount() {
-        // This fixes the bottom spacing issue that the moving stars background causes
-        this.refs.wrapper.minHeight = innerHeight + 'px'
-      }
-
 render () {
     return (
     <form>
