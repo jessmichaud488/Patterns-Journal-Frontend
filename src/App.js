@@ -39,6 +39,7 @@ class App extends React.Component {
     this.showSignUp=this.showSignUp.bind(this);
     this.showLogIn=this.showLogIn.bind(this)
     this.handleLiClick=this.handleLiClick.bind(this);
+    this.handleButtonClick=this.handleButtonClick.bind(this);
 
     this.changeUsernameHandler = this.changeUsernameHandler.bind(this);
     this.changePasswordHandler = this.changePasswordHandler.bind(this);
@@ -55,6 +56,11 @@ class App extends React.Component {
     this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this);
   }
 
+  handleButtonClick (e) {
+  $("button").hover(function(){
+    $(this).toggleClass("is-active");
+  });
+
   handleLiClick (e) {
     e.preventDefault();
     const item=this.state.entryArray[e.currentTarget.dataset.id]
@@ -67,7 +73,7 @@ class App extends React.Component {
       editEntryid: e.currentTarget.dataset.id,
       editEmotions: item.emotions
     })
-    }
+    };
 
   showLogIn (e) {
     e.preventDefault();
@@ -294,6 +300,8 @@ componentDidMount() {
           changeEditSleepHandler={this.changeEditSleepHandler} 
           changeEditMoodHandler={this.changeEditMoodHandler} 
           changeEditEmotionsHandler={this.changeEditEmotionsHandler}
+          handleButtonClick={this.handleButtonClick}
+
           title={this.state.title}
           entry={this.state.entry}
           sleep={this.state.sleep}
@@ -314,6 +322,7 @@ componentDidMount() {
       <Route exact path="/logIn" render={() =>
         <LogIn 
           handleLogInClick={this.handleLogInClick}
+          handleButtonClick={this.handleButtonClick}
           changeUsernameHandler={this.changeUsernameHandler} 
           changePasswordHandler={this.changePasswordHandler} 
         />}
@@ -322,6 +331,7 @@ componentDidMount() {
       <Route exact path="/signUp" render={() =>
         <SignUp 
           handleSignUpClick={this.handleSignUpClick}
+          handleButtonClick={this.handleButtonClick}
           changeUsernameHandler={this.changeUsernameHandler} 
           changePasswordHandler={this.changePasswordHandler} 
         />}
