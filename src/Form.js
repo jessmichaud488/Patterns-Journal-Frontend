@@ -6,7 +6,7 @@ class Form extends React.Component {
     return (
         <div className="wrapper" ref="wrapper">
         <div id="form">
-            <h1 className="gradient">New Entry</h1>
+            <h1>New Entry</h1>
             <input 
                 type="text" 
                 placeholder="Give your entry a title" 
@@ -47,7 +47,7 @@ class Form extends React.Component {
 
         <div id="pastEntries">
         <ul>
-            <h1 className="gradient">Past Entries</h1>
+            <h1>Past Entries</h1>
             {this.props.entryArray.map((item, i) => (
             <section>
             <li onClick={this.props.handleLiClick} data-id={i} value={item.id} key={i}>{item.title}</li>
@@ -58,7 +58,7 @@ class Form extends React.Component {
         
 
         <div id="editForm">
-            <h1 className="gradient">Edit Entry</h1>
+            <h1>Edit Entry</h1>
             <p>Click on an entry title above to edit</p>
             <input 
                 type="text" 

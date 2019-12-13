@@ -6,7 +6,7 @@ class SignUp extends React.Component {
         return (
             <div className="wrapper" ref="wrapper">
             <div className="signup">
-                <h1 className="gradient">Weclome, sign up below!</h1>
+                <h1>Weclome, sign up below!</h1>
                 <input 
                     type="text" 
                     placeholder="Your username" 

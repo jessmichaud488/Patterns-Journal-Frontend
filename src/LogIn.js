@@ -7,7 +7,7 @@ render () {
     <form>
     <div className="wrapper" ref="wrapper">
     <div className="login">
-    <h1 className="gradient">Weclome back, its great to see you again!</h1>
+    <h1>Weclome back, its great to see you again!</h1>
     <input 
         type="text" 
         placeholder="Your username" 
