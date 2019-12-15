@@ -47,8 +47,8 @@ render () {
             </div>
             
             <div>
-                <button><span><Link to="/logIn" className="homepageButton">Log In</Link></span></button>
-                <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
+                <span><button><Link to="/logIn" className="homepageButton">Log In</Link></button></span>
+                <span><button><Link to="/signUp" className="homepageButton">Sign Up</Link></button></span>
             </div>
     </div>
     </div>

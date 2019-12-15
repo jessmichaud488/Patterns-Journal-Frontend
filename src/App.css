@@ -138,68 +138,87 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-button{
-  position: absolute;
-  transform: translateX(-50%) ;
-  background:linear-gradient(160deg, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 50%, rgba(58,47,135,1) 100%);
-  color: white;
-  width: 200px;
-  height: 60px;
-  border: 0;
-  font-size: 18px;
-  border-radius: 4px;
+button {
+  border: 3px outset #888;
+  position: relative;
+  display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  transition: .6s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  color: #eee;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 4px;
   overflow: hidden;
+  text-decoration: none;
+  background:linear-gradient(160deg, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 50%, rgba(58,47,135,1) 100%);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  transition: 0.05s;
 }
 
-button:focus {
-  outline: 0;
+button:active {
+  border: 3px outset #ddd;
+  color: #fff;
+  background:linear-gradient(160deg, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 50%, rgba(58,47,135,1) 100%);
+  text-shadow: 0px 0px 4px #ccc;
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  transition-delay: 1s;
 }
 
-button:before {
- content: '';
- display: block;
- position: absolute;
- background:linear-gradient(160deg, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 50%, rgba(58,47,135,1) 100%);
- width: 60px;
- height: 100%;
- left: 0;
- top: 0;
- opacity: .5;
- filter: blur(30px);
- transform: translateX(-100px)  skewX(-15deg);
+button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #eee);
 }
 
-button:after {
- content: '';
- display: block;
- position: absolute;
- background: rgba(255,255,255,0.2);
- width: 30px;
- height: 100%;
- left: 30px;
- top: 0;
- opacity: 0;
- filter: blur(5px);
- transform: translateX(-100px) skewX(-15deg);
+button:active span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
 }
 
-button:hover {
- background: #338033;
- cursor: pointer;
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #eee);
 }
 
-button:before {
- transform: translateX(300px)  skewX(-15deg);  
- opacity: 0.6;
- transition: .7s;
+button:active span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
 }
 
-button:after {
- transform: translateX(300px) skewX(-15deg);  
- opacity: 1;
- transition: .7s;
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #eee);
+}
+
+button:active span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #eee);
+}
+
+button:active span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 #intro{
