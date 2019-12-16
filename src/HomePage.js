@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 class HomePage extends React.Component {
 render () {
@@ -51,6 +52,7 @@ render () {
                 <button><span><Link to="/signUp" className="homepageButton">Sign Up</Link></span></button>
             </div>
     </div>
+    <Footer />
     </div>
     );
 }

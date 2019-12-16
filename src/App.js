@@ -286,7 +286,6 @@ componentDidMount() {
           showSignUp={this.showSignUp}
           showLogIn={this.showLogIn}
         />
-        <Footer />
       }
        />
 
