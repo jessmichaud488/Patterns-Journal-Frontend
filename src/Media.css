@@ -1,0 +1,710 @@
+@media screen and (min-width: 320px) and (max-width: 359px) and (min-height: 567px) and (max-height: 568px) {
+    #intro {
+      text-align: center;
+      margin-left: 10px;
+    }
+  
+    #intro h1 {
+      font-size: 56px;
+    }
+  
+    #intro h3 {
+      font-size: 36px;
+    }
+  
+    .card {
+      height: 65vh;
+      width: 75vw;
+    }
+  
+    .login {
+      margin-top: 60px;
+      margin-left: 20px;
+      height: 70vh;
+      width: 75vw;
+    }
+  
+    .login input {
+      font-size: 14px;
+      height: 2vh;
+      width: 60vw;
+    }
+  
+    .login button {
+      height: 10vh;
+      width: 45vw;
+    }
+  
+    .signup {
+      margin-top: 60px;
+      margin-left: 20px;
+      height: 70vh;
+      width: 75vw;
+    }
+  
+    .signup input {
+      font-size: 14px;
+      height: 2vh;
+      width: 60vw;
+    }
+  
+    .signup button {
+      height: 10vh;
+      width: 45vw;
+    }
+  
+    #form {
+      margin-left: 5px;
+      width: 87vw;
+      height: 105vh;
+    }
+  
+    #form input {
+      font-size: 14px;
+      padding: 5px;
+      height: 5vh;
+      width: 75vw;
+    }
+  
+    #pastEntries {
+      margin-top: 125px;
+      margin-left: 5px;
+      width: 87vw;
+      height: 50vh;
+    }
+  
+    #editForm {
+      margin-left: 5px;
+      width: 87vw;
+      height: 105vh;
+    }
+  
+    #editForm input {
+      font-size: 14px;
+      padding: 5px;
+      height: 5vh;
+      width: 75vw;
+    }
+  
+    #formLogOut {
+      margin-left: 40px;
+    }
+  }
+  
+    @media screen and (min-width: 360px) and (max-width: 374px) and (min-height: 639px) and (max-height: 640px) {
+      .card {
+        height: 55vh;
+        width: 75vw;
+      }
+  
+      .signup {
+        margin-top: 60px;
+        margin-left: 25px;
+        height: 65vh;
+        width: 75vw;
+      }
+  
+      .signup input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .signup button {
+        height: 10vh;
+        width: 55vw;
+      }
+  
+      .login {
+        margin-top: 60px;
+        margin-left: 25px;
+        height: 65vh;
+        width: 75vw;
+      }
+  
+      .login input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .login button {
+        height: 10vh;
+        width: 55vw;
+      }
+  
+      #form {
+        margin-left: 5px;
+        width: 87vw;
+        height: 75vh;
+      }
+  
+      #form input {
+        font-size: 14px;
+        height: 2vh;
+        width: 75vw;
+      }
+  
+      #pastEntries {
+        margin-left: 5px;
+        width: 87vw;
+        height: 50vh;
+      }
+    
+      #editForm {
+        margin-left: 5px;
+        width: 87vw;
+        height: 80vh;
+      }
+  
+      #editForm input {
+        font-size: 14px;
+        height: 2vh;
+        width: 75vw;
+      }
+  
+      #formLogOut {
+        margin-left: 30px;
+      }
+    }
+  
+    @media screen and (min-width: 375px) and (max-width: 410px) and (min-height: 666px) and (max-height: 667px) {
+      .card {
+        height: 55vh;
+        width: 75vw;
+      }
+  
+      .login {
+        margin-top: 100px;
+        margin-left: 30px;
+        height: 60vh;
+        width: 75vw;
+      }
+  
+      .login input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .login button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      .signup {
+        margin-top: 100px;
+        margin-left: 30px;
+        height: 60vh;
+        width: 75vw;
+      }
+  
+      .signup input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .signup button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      #form {
+        margin-left: 5px;
+        width: 87vw;
+        height: 70vh;
+      }
+  
+      #form input {
+        font-size: 16px;
+        height: 12px;
+        width: 250px;
+      }
+  
+      #pastEntries {
+        margin-left: 5px;
+        width: 87vw;
+        height: 50vh;
+      }
+    
+      #editForm {
+        margin-left: 5px;
+        width: 87vw;
+        height: 75vh;
+      }
+  
+      #editForm input {
+        font-size: 16px;
+        height: 12px;
+        width: 250px;
+      }
+  
+      #formLogOut {
+        margin-right: -5px;
+      }
+    }
+  
+    @media screen and (min-width: 375px) and (max-width: 410px) and (min-height: 811px) and (max-height: 812px) {
+      .card {
+        height: 45vh;
+        width: 75vw;
+      }
+  
+      .login {
+        margin-top: 100px;
+        margin-left: 30px;
+        height: 55vh;
+        width: 75vw;
+      }
+  
+      .login input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .login button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      .signup {
+        margin-top: 100px;
+        margin-left: 30px;
+        height: 55vh;
+        width: 75vw;
+      }
+  
+      .signup input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .signup button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      #form {
+        margin-left: 5px;
+        width: 87vw;
+        height: 60vh;
+      }
+  
+      #form input {
+        font-size: 14px;
+        height: 16px;
+        width: 250px;
+      }
+  
+      #pastEntries {
+        margin-top: 150px;
+        margin-left: 5px;
+        width: 87vw;
+        height: 40vh;
+      }
+    
+      #editForm {
+        margin-left: 5px;
+        width: 87vw;
+        height: 65vh;
+      }
+  
+      #editForm input {
+        font-size: 16px;
+        height: 14px;
+        width: 250px;
+      }
+  
+      #formLogOut {
+        margin-right: 5px;
+      }
+    }
+  
+    @media screen and (min-width: 411px)  and (max-width: 412px) and (min-height: 730px) and (max-height: 731px) {
+      .card { 
+        height: 55vh;
+        width: 55vw;
+      }
+      
+      .login {
+        margin-top: 120px;
+        margin-left: 30px;
+        height: 60vh;
+        width: 75vw;
+      }
+  
+      .login input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .login button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      .signup {
+        margin-top: 120px;
+        margin-left: 30px;
+        height: 60vh;
+        width: 75vw;
+      }
+  
+      .signup input {
+        height: 2vh;
+        width: 55vw;
+      }
+  
+      .signup button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      #form {
+        margin-left: 5px;
+        width: 87vw;
+        height: 70vh;
+      }
+  
+      #form input {
+        font-size: 18px;
+        height: 14px;
+        width: 250px;
+      }
+  
+      #pastEntries {
+        margin-top: 110px;
+        margin-left: 5px;
+        width: 87vw;
+        height: 30vh;
+      }
+    
+      #editForm {
+        margin-left: 5px;
+        width: 87vw;
+        height: 75vh;
+      }
+  
+      #editForm input {
+        font-size: 18px;
+        height: 14px;
+        width: 250px;
+      }
+  
+      #formLogOut {
+        margin-left: 20px;
+      }
+    }
+  
+    @media screen and (min-width: 411px)  and (max-width: 412px) and (min-height: 822px) and (max-height: 823px) {
+      .card { 
+        height: 55vh;
+        width: 55vw;
+      }
+      
+      .login {
+        margin-top: 120px;
+        margin-left: 30px;
+        height: 55vh;
+        width: 75vw;
+      }
+  
+      .login input {
+        height: 2vh;
+        width: 60vw;
+      }
+  
+      .login button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      .signup {
+        margin-top: 120px;
+        margin-left: 30px;
+        height: 55vh;
+        width: 75vw;
+      }
+  
+      .signup input {
+        height: 2vh;
+        width: 60vw;
+      }
+  
+      .signup button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      #form {
+        margin-left: 5px;
+        width: 87vw;
+        height: 60vh;
+      }
+  
+      #form input {
+        font-size: 18px;
+        height: 14px;
+        width: 250px;
+      }
+  
+      #pastEntries {
+        margin-top: 100px;
+        margin-left: 5px;
+        width: 87vw;
+        height: 30vh;
+      }
+    
+      #editForm {
+        margin-left: 5px;
+        width: 87vw;
+        height: 68vh;
+      }
+  
+      #editForm input {
+        font-size: 18px;
+        height: 14px;
+        width: 250px;
+      }
+  
+  
+      #formLogOut {
+        margin-left: 20px;
+      }
+    }
+  
+    @media screen and (min-width: 414px) and (max-width: 767px) and (min-height: 735px) and (max-height: 736px) {
+      .card {
+        height: 50vh;
+        width: 75vw;
+      }
+  
+      .login {
+        margin-top: 120px;
+        margin-left: 30px;
+        height: 50vh;
+        width: 75vw;
+      }
+  
+      .login input {
+        font-size: 12px;
+        height: 2vh;
+        width: 60vw;
+      }
+  
+      .login button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      .signup {
+        margin-top: 120px;
+        margin-left: 30px;
+        height: 50vh;
+        width: 75vw;
+      }
+  
+      .signup input {
+        font-size: 12px;
+        height: 2vh;
+        width: 60vw;
+      }
+  
+      .signup button {
+        height: 10vh;
+        width: 45vw;
+      }
+  
+      #form {
+        margin-left: 45px;
+        height: 65vh;
+        width: 70vw;
+      }
+  
+      #form button {
+        height: 8vh;
+        width: 35vw;
+      }
+  
+      #form input {
+        font-size: 16px;
+        height: 14px;
+        width: 250px;
+      }
+  
+      #pastEntries {
+        margin-left: 45px;
+        height: 65vh;
+        width: 70vw;
+      }
+  
+      #editForm {
+        margin-left: 45px;
+        height: 70vh;
+        width: 70vw;
+      }
+  
+      #editForm input {
+        font-size: 16px;
+        height: 14px;
+        width: 250px;
+      }
+  
+      #editForm button {
+        height: 8vh;
+        width: 35vw;
+      }
+  
+      #formLogOut {
+        margin-right: 10px;
+      }
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1023px) and (min-height: 1023px) and (max-height: 1024px) {
+      .card {
+        height: 35vh;
+        width: 70vw;
+      }
+  
+      .login {
+        margin-top: 250px;
+        margin-left: 155px;
+        height: 40vh;
+        width: 55vw;
+      }
+  
+      .login input {
+        text-align: center;
+        font-size: 18px;
+      }
+  
+      .login button {
+        height: 5vh;
+        width: 40vw;
+      }
+  
+      .signup {
+        margin-top: 250px;
+        margin-left: 155px;
+        height: 40vh;
+        width: 55vw;
+      }
+  
+      .signup input {
+        text-align: center;
+        font-size: 18px;
+      }
+  
+      .signup button {
+        height: 5vh;
+        width: 40vw;
+      }
+  
+      #form {
+        margin-left: 25px;
+        width: 87vw;
+        height: 65vh;
+      }
+  
+      #form input {
+        font-size: 24px;
+        height: 36px;
+        width: 500px;
+      }
+  
+      #pastEntries {
+        margin-left: 30px;
+        margin-top: 125px;
+        width: 87vw;
+        height: 30vh;
+      }
+    
+      #editForm {
+        margin-left: 25px;
+        width: 87vw;
+        height: 70vh;
+        margin-bottom: 25px;
+      }
+  
+      #editForm input {
+        font-size: 24px;
+        height: 36px;
+        width: 500px;
+      }
+  
+      #formLogOut {
+        margin-right: 10px;
+      }
+    }
+  
+    @media screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1365px) and (max-height: 1366px) {
+      .card {
+        height: 25vh;
+        width: 70vw;
+      }
+  
+      .login h1 {
+        font-size: 48px;
+      }
+  
+      .login {
+        margin-top: 250px;
+        margin-left: 95px;
+        height: 35vh;
+        width: 75vw;
+      }
+  
+      .login button {
+        height: 8vh;
+        width: 45vw;
+      }
+  
+      .signup h1 {
+        font-size: 48px;
+      }
+  
+      .signup {
+        margin-top: 250px;
+        margin-left: 95px;
+        height: 35vh;
+        width: 75vw;
+      }
+  
+      .signup button {
+        height: 8vh;
+        width: 45vw;
+      }
+  
+      #form {
+        margin-left: 35px;
+        width: 87vw;
+        height: 55vh;
+      }
+  
+      #form input {
+        font-size: 36px;
+        height: 40px;
+        width: 800px;
+      }
+  
+      #pastEntries {
+        margin-top: 125px;
+        margin-left: 30px;
+        width: 87vw;
+        height: 30vh;
+      }
+    
+      #editForm {
+        margin-left: 40px;
+        width: 87vw;
+        height: 55vh;
+      }
+  
+      #editForm input {
+        font-size: 36px;
+        height: 40px;
+        width: 800px;
+      }
+  
+      #formLogOut {
+        margin-right: 10px;
+      }
+    }
+  

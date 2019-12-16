@@ -3,7 +3,7 @@ import React from 'react';
 class Footer extends React.Component {
 render () {
     return (
-  <div className="button">
+  <div className="button-footer">
   <div className="links">
     <img className="footer-image" src="images/linkedin-white.png" target="_blank" href="https://www.linkedin.com/in/jessicamichauddevlife/" />
     <img className="footer-image" src="images/angels-list-white.png" target="_blank" href="https://angel.co/jessica-l-michaud" />

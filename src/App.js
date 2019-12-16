@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import './Media.css';
+import './Stars.css';
 import LogIn from './LogIn';
 import SignUp from './SignUp';
 import Form from './Form';
