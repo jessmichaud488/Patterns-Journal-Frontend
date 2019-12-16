@@ -3,6 +3,7 @@ import './App.css';
 import LogIn from './LogIn';
 import SignUp from './SignUp';
 import Form from './Form';
+import Footer from './Footer';
 import HomePage from './HomePage';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
@@ -284,7 +285,9 @@ componentDidMount() {
         <HomePage
           showSignUp={this.showSignUp}
           showLogIn={this.showLogIn}
-        />}
+        />
+        <Footer />
+      }
        />
 
         <Route exact path="/entries" render={() =>
