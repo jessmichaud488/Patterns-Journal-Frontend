@@ -22,7 +22,7 @@ render () {
                 src={require('../src/images/check.png')}
                 alt="Convenience"
                 />
-                <h3 className="gradient">Convenience</h3>
+                <h3>Convenience</h3>
                 <p>Open the app and easily record thoughts, events,<br></br>moods, and sleep duration anywhere, anytime.</p>
             </div>
 
@@ -32,7 +32,7 @@ render () {
                 alt="Understand Patterns"
                 />
     
-                <h3 className="gradient">Understand Patterns</h3>
+                <h3>Understand Patterns</h3>
                 <p>Keep track of how long certain moods and sleep cycles<br></br>last to better understand your personal patterns.</p>
             </div>
 
@@ -42,7 +42,7 @@ render () {
                 alt="Better Communication"
                 />
 
-                <h3 className="gradient">Better Communication</h3>
+                <h3>Better Communication</h3>
                 <p>If inclined, share with your mental health<br></br>professional to help better communicate your needs.</p>
             </div>
             </div>
