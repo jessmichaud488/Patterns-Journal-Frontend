@@ -209,7 +209,7 @@ button {
   transform: scale(0);
 }
 
-.button-footer:hover 
+.button:hover 
   .links a {
   transform: scale(1);
   opacity: 1;
