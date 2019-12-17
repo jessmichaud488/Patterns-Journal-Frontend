@@ -209,13 +209,13 @@ button {
   transform: scale(0);
 }
 
-.button:hover 
+.button-footer:hover 
   .links a {
   transform: scale(1);
   opacity: 1;
 }
 
-.links:hover {
+.button-footer:hover {
   color: #D6A0D3;
   transition: 1s cubic-bezier(.89,.03,.06,1.50);
   transition-timing-function: ease-in-out!important;
