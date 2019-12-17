@@ -192,7 +192,7 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-evenly;
-  background: #FFCCBD;
+  background: blue;
   text-align: center;
   font-weight: bold;
   overflow: hidden;
@@ -216,7 +216,7 @@ button {
 }
 
 .links:hover {
-  color: blue;
+  color: #D6A0D3;
   transition: 1s cubic-bezier(.89,.03,.06,1.50);
   transition-timing-function: ease-in-out!important;
   transition-delay: 1ms!important;
@@ -226,7 +226,7 @@ button {
   position: absolute;
   top: 0em;
   left: 0em;
-  background: #F0ADA1;
+  background: red;
   display: flex;
   align-items: center;
   justify-content: center;
