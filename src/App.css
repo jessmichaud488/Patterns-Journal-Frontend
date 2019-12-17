@@ -216,7 +216,7 @@ button {
 }
 
 .links:hover {
-  color: #D6A0D3;
+  color: blue;
   transition: 1s cubic-bezier(.89,.03,.06,1.50);
   transition-timing-function: ease-in-out!important;
   transition-delay: 1ms!important;
