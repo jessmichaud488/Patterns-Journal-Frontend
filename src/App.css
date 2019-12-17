@@ -192,14 +192,14 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-evenly;
-  background: blue;
+  background: #FFCCBD;
   text-align: center;
   font-weight: bold;
   overflow: hidden;
   color: #ffffff;
 }
 
-.links a {
+.links img {
   padding: 15px;
   transition: 700ms cubic-bezier(.89,.03,.06,1.50);
   color: #ffffff;
@@ -209,32 +209,7 @@ button {
   transform: scale(0);
 }
 
-.button:hover 
-  .links a {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.button-footer:hover {
-  color: #D6A0D3;
-  transition: 1s cubic-bezier(.89,.03,.06,1.50);
-  transition-timing-function: ease-in-out!important;
-  transition-delay: 1ms!important;
-  transform: translateX(-500px);
-  width: 350px;
-  height: 80px;
-  position: absolute;
-  top: 0em;
-  left: 0em;
-  background: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.links a:hover {
+.links img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,4 +221,29 @@ button {
   margin: auto;
   color: #ffffff !important;
   font-size: 20px;
+}
+
+.button:hover 
+  .links img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.links:hover {
+  color: #D6A0D3;
+  transition: 1s cubic-bezier(.89,.03,.06,1.50);
+  transition-timing-function: ease-in-out!important;
+  transition-delay: 1ms!important;
+  transform: translateX(-500px);
+  width: 350px;
+  height: 80px;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  background: #F0ADA1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
