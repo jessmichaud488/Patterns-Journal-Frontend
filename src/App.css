@@ -192,11 +192,27 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-evenly;
-  background: blue;
+  background: #FFCCBD;
   text-align: center;
   font-weight: bold;
   overflow: hidden;
   color: #ffffff;
+}
+
+.links a {
+  padding: 15px;
+  transition: 700ms cubic-bezier(.89,.03,.06,1.50);
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  text-decoration: none;
+  transform: scale(0);
+}
+
+.button:hover 
+  .links a {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .links:hover {
@@ -210,7 +226,7 @@ button {
   position: absolute;
   top: 0em;
   left: 0em;
-  background: red;
+  background: #F0ADA1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,16 +234,7 @@ button {
   flex-wrap: wrap;
 }
 
-.links img {
-  padding: 15px;
-  transition: 700ms cubic-bezier(.89,.03,.06,1.50);
-  text-align: center;
-  opacity: 0;
-  text-decoration: none;
-  transform: scale(0);
-}
-
-/*.links img:hover {
+.links a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,9 +247,3 @@ button {
   color: #ffffff !important;
   font-size: 20px;
 }
-
-.button-footer:hover 
-  .links img {
-  transform: scale(1);
-  opacity: 1;
-}*/
