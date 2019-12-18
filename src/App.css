@@ -178,7 +178,7 @@ button {
 #description p {
   font-size: 18px;
 }
-
+  
 .button-footer {
   width: 350px;
   height: 80px;
@@ -201,7 +201,7 @@ button {
 
 .links a {
   padding: 15px;
-  transition: 700ms cubic-bezier(.89,.03,.06,1.50);
+  transition:  700ms cubic-bezier(.89,.03,.06,1.50);
   color: #ffffff;
   text-align: center;
   opacity: 0;
@@ -209,41 +209,52 @@ button {
   transform: scale(0);
 }
 
-.button:hover 
-  .links a {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.links:hover {
+.button-footer:hover {
   color: #D6A0D3;
-  transition: 1s cubic-bezier(.89,.03,.06,1.50);
   transition-timing-function: ease-in-out!important;
   transition-delay: 1ms!important;
-  transform: translateX(-500px);
+    /*@while $num > 0
+        &:nth-child(#{$num})
+            transition-delay:  (#{$delay})
+        $delay: $delay + $multiplier 
+        $num: $num - 1*/
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 350px;
   height: 80px;
   position: absolute;
   top: 0em;
   left: 0em;
   background: #F0ADA1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  transition: 1s cubic-bezier(.89,.03,.06,1.50);
 }
-
-.links a:hover {
+      
+.overlay a {
+  transform: scale(1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  transform: scale(1);
   opacity: 1;
   padding: 0;
   margin: auto;
   color: #ffffff !important;
   font-size: 20px;
 }
+        
+.button-footer:hover 
+  .links a {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+.overlay {
+    transform: translateX(-500px);
+  }
