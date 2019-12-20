@@ -8,7 +8,10 @@ render () {
       <div id="tw-3" class="tw-outside">
           <div class="tw-text"><span><img src="src/images/origami-bird-white.png" /></span></div>
           <div class="tw-click">
-              <a href="https://twitter.com/scotch_io" class="twitter-follow-button" data-show-count="false">Follow @scotch_io</a>
+              <a href="" class="twitter-follow-button" data-show-count="false"><img src="src/images/origami-bird-white" /></a>
+              <a href="" class="twitter-follow-button" data-show-count="false"><img src="src/images/github-cat-white.png" /></a>
+              <a href="" class="twitter-follow-button" data-show-count="false"><img src="src/images/linkedin-white" /></a>
+              <a href="" class="twitter-follow-button" data-show-count="false"><img src="src/images/angels-list-white.png" /></a>
           </div>
       </div>
   </div>
