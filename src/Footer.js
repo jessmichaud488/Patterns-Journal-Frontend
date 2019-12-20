@@ -3,17 +3,16 @@ import React from 'react';
 class Footer extends React.Component {
 render () {
     return (
-  <div className="button-footer">
-  <div className="links">
-    <a className="footer-image" src="images/linkedin-white.png" target="_blank" href="https://www.linkedin.com/in/jessicamichauddevlife/" />
-    <a className="footer-image" src="images/angels-list-white.png" target="_blank" href="https://angel.co/jessica-l-michaud" />
-    <a class="footer-image" src="images/github-cat-image.png" target="_blank" href="https://github.com/jessmichaud488" />
-    <a class="footer-image" src="images/origami-bird-white.png" target="_blank" href="https://jessmichaud488.github.io/" />
-    <div className="overlay">
-      <a>Connect with me!</a>
-    </div>
-</div>
-</div>
+<div id="twitter-circle" class="row">
+  <div class="col-xs-6">
+      <div id="tw-3" class="tw-outside">
+          <div class="tw-text"><span class="fa fa-twitter"></span></div>
+          <div class="tw-click">
+              <a href="https://twitter.com/scotch_io" class="twitter-follow-button" data-show-count="false">Follow @scotch_io</a>
+          </div>
+      </div>
+  </div>
+  </div>
 );
 }
 }
