@@ -6,7 +6,7 @@ render () {
 <div id="twitter-circle" className="row">
   <div>
       <div id="tw-3" className="tw-outside">
-          <div className="tw-text"><img src={require('../src/images/origami-bird-white.png')} className="icon-button" alt="White portfolio logo" /></div>
+          <div className="tw-text"><img src={require('../src/images/origami-bird-white.png')} alt="White portfolio logo" /></div>
           <div className="tw-click">
               <a target="_blank" href="https://jessmichaud488.github.io/"><img src={require('../src/images/origami-bird-white.png')} className="icon-button" alt="White portfolio logo" /></a>
               <a target="_blank" href="https://github.com/jessmichaud488"><img src={require('../src/images/github-cat-white.png')} className="icon-button" alt="White Github logo" /></a>
