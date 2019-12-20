@@ -23,7 +23,7 @@ render () {
                 alt="Convenience"
                 />
                 <h3>Convenience</h3>
-                <p>Open the app and easily record thoughts, events,<br></br>moods, and sleep duration anywhere, anytime.</p>
+                <p>Open the app and easily record thoughts, events,<br></br>moods, and sleep<br></br>duration anywhere, anytime.</p>
             </div>
 
             <div className="card">
