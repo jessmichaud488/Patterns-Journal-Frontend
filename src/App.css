@@ -182,8 +182,8 @@ button {
 
 #twitter-circle .tw-outside { 
   display: block; 
-  margin:0 auto; 
-  position:relative; 
+  margin: 0 auto; 
+  position: relative; 
 }
     
 #twitter-circle .tw-text, #twitter-circle .tw-click { 
@@ -194,27 +194,28 @@ button {
 }
 
 #twitter-circle .tw-text { 
-  font-size:20px; 
-  font-weight:700; 
-  z-index:9999; 
+  font-size: 20px; 
+  font-weight: 700; 
+  z-index: 9999; 
 }
 
 #twitter-circle .tw-click { 
-  z-index:8888; 
+  z-index: 8888; 
 }
 
 /* twitter 3 ------------------------------------ */
 #tw-3 { 
-  height:100px; 
-  width:100px; 
+  height: 100px; 
+  width: 100px; 
 }
 
 #tw-3 .tw-text { 
+  display: inline-block;
   background: rgb(230, 4, 5); 
-  font-size:60px; 
-  height:100%; 
-  padding-top:10px; 
-  border-radius:50%;
+  font-size: 60px; 
+  height: 100%; 
+  padding-top: 10px; 
+  border-radius: 50%;
 }
 
 #tw-3 .tw-click { 
@@ -244,8 +245,8 @@ button {
 }
 
 #tw-3:hover .tw-text { 
-  transform:rotate(-360deg); 
-  margin-left:-100px; 
+  transform: rotate(-360deg); 
+  margin-left: -100px; 
 }
 
 #tw-3:hover .tw-click { 
