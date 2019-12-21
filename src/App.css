@@ -180,25 +180,25 @@ button {
   font-size: 18px;
 }
 
-#twitter-circle .tw-outside { 
+.tw-outside { 
   margin: 0 auto; 
   position: relative; 
 }
     
-#twitter-circle .tw-text, #twitter-circle .tw-click { 
+.tw-text, .tw-click { 
   cursor: pointer;
   position: absolute; 
   width: 100%; 
   transition: 0.3s ease all;
 }
 
-#twitter-circle .tw-text { 
+.tw-text { 
   font-size: 20px; 
   font-weight: 700; 
   z-index: 9999; 
 }
 
-#twitter-circle .tw-click { 
+.tw-click { 
   z-index: 8888; 
 }
 
@@ -229,7 +229,6 @@ button {
 }
 
 .icon-button {
-  display: inline-block;
   width: 35px;
   height: 35px;
 }
