@@ -209,15 +209,16 @@ button {
 }
 
 #tw-3 .tw-text { 
-  background: rgb(230, 4, 5); 
+  background: rgb(26, 27, 101); 
   font-size: 60px; 
   height: 100%; 
   padding-top: 10px; 
   border-radius: 50%;
 }
 
-#tw-3 .tw-click {
-  background:#42e7ff; 
+#tw-3 .tw-click {    
+  display: inline-block;
+  background: rgb(44, 100, 158); 
   opacity: 0; 
   padding: 10px 10px 5px;
   margin-top: 25px; 
