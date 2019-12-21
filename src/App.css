@@ -217,7 +217,6 @@ button {
 }
 
 #tw-3 .tw-click {    
-  display: inline-block;
   background: rgb(44, 100, 158); 
   opacity: 0; 
   padding: 10px 10px 5px;
@@ -227,6 +226,10 @@ button {
   width: auto; 
   border-top-right-radius: 5px; 
   border-bottom-right-radius: 5px;
+}
+
+.tw-click a {
+  display: inline-block;
 }
 
 .icon-button {
