@@ -181,7 +181,6 @@ button {
 }
 
 #twitter-circle .tw-outside { 
-  display: block; 
   margin: 0 auto; 
   position: relative; 
 }
@@ -210,7 +209,6 @@ button {
 }
 
 #tw-3 .tw-text { 
-  display: inline-block;
   background: rgb(230, 4, 5); 
   font-size: 60px; 
   height: 100%; 
@@ -218,8 +216,7 @@ button {
   border-radius: 50%;
 }
 
-#tw-3 .tw-click { 
-  display: inline-block;
+#tw-3 .tw-click {
   background:#42e7ff; 
   opacity: 0; 
   padding: 10px 10px 5px;
@@ -232,7 +229,6 @@ button {
 }
 
 .icon-button {
-  display: inline-block;
   width: 35px;
   height: 35px;
 }
