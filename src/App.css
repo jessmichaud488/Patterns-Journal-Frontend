@@ -77,6 +77,42 @@ body {
   box-shadow: 5px 10px 18px #888888;
 }
 
+.submitFormButton{
+  margin: 75px 35px;
+  height: 75px;
+  width: 200px;
+  text-decoration: none !important;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 80px;
+}
+
+.submitEditFormButton {
+  margin: 75px 35px;
+  height: 75px;
+  width: 200px;
+  text-decoration: none !important;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 80px;
+}
+
+.logOutButton {
+  margin: 75px 35px;
+  height: 75px;
+  width: 200px;
+  text-decoration: none !important;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 80px;
+}
+
 #form input {
   padding: 5px;
   margin: 10px;
