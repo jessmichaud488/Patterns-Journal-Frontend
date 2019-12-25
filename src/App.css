@@ -126,7 +126,7 @@ body {
   margin-left: 400px;
   margin-top: 125px;
   width: 50vw;
-  height: 70vh;
+  height: 80vh;
   background: rgb(83,209,254);
   background: linear-gradient(90deg, rgba(83,209,254,1) 0%, rgba(88,182,221,1) 28%, rgba(25,25,146,1) 79%);
   border: rgb(255,255,255, 0.2) 1px solid;
@@ -135,6 +135,7 @@ body {
 }
 
 #editForm input {
+  display: block;
   padding: 5px;
   margin: 25px;
   font-family: 'Montserrat', sans-serif;
