@@ -48,8 +48,8 @@ render () {
             </div>
             
             <div>
-                <button className="homepageButton"><span><Link to="/logIn">Log In</Link></span></button>
-                <button className="homepageButton"><span><Link to="/signUp">Sign Up</Link></span></button>
+                <button className="homepageButton"><span><Link to="/logIn" className="homepageLink">Log In</Link></span></button>
+                <button className="homepageButton"><span><Link to="/signUp" className="homepageLink">Sign Up</Link></span></button>
             </div>
     </div>
     <Footer />
