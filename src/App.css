@@ -102,7 +102,7 @@ body {
 }
 
 .logOutButton {
-  margin: 75px 35px;
+  margin: 75px 50px;
   height: 75px;
   width: 200px;
   text-decoration: none !important;
@@ -126,7 +126,7 @@ body {
   margin-left: 400px;
   margin-top: 125px;
   width: 50vw;
-  height: 65vh;
+  height: 70vh;
   background: rgb(83,209,254);
   background: linear-gradient(90deg, rgba(83,209,254,1) 0%, rgba(88,182,221,1) 28%, rgba(25,25,146,1) 79%);
   border: rgb(255,255,255, 0.2) 1px solid;
