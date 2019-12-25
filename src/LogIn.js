@@ -21,7 +21,7 @@ render () {
         onChange={this.props.changePasswordHandler}
     />
 
-    <button type="submit" onClick={this.props.handleLogInClick}>Submit</button>
+    <button type="submit" onClick={this.props.handleLogInClick} className="loginButton">Submit</button>
     </div>
     </div>
     </form>
