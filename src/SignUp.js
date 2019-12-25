@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SignUp extends React.Component {
 
@@ -23,7 +24,7 @@ class SignUp extends React.Component {
                 
                 <button type="submit" onClick={this.props.handleSignUpClick} className="signupButton">Submit</button>
             </div>
-            <button className="returnButton"><span><Link to="/" className="returnLink">Log In</Link></span></button>
+            <button className="returnButton"><span><Link to="/" className="returnLink">Return</Link></span></button>
             </div>
         );
     }
