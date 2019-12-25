@@ -102,7 +102,7 @@ body {
 }
 
 .logOutButton {
-  margin: 75px 50px;
+  margin: 75px 70px;
   height: 75px;
   width: 200px;
   text-decoration: none !important;
@@ -135,8 +135,9 @@ body {
 
 #editForm input {
   display: block;
-  padding: 25px;
-  margin: 25px;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
