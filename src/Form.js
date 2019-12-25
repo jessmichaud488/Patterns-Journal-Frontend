@@ -93,6 +93,7 @@ class Form extends React.Component {
                 placeholder="How was your day?" 
                 value={this.props.editEntry} 
                 onChange={this.props.changeEditEntryHandler}
+                id="dayParagraph"
             />
             <br></br>
             <button type="submit" onClick={this.props.handleEditEntry} className="submitEditFormButton">Submit Edit</button>
