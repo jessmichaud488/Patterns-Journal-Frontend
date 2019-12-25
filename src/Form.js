@@ -69,14 +69,6 @@ class Form extends React.Component {
 
             <input 
                 type="text" 
-                placeholder="How was your day?" 
-                value={this.props.editEntry} 
-                onChange={this.props.changeEditEntryHandler}
-                id="dayParagraph"
-            />
-
-            <input 
-                type="text" 
                 placeholder="How many hours did you sleep?" 
                 value={this.props.editSleep} 
                 onChange={this.props.changeEditSleepHandler}
@@ -94,6 +86,14 @@ class Form extends React.Component {
                 placeholder="Intensity of emotions (scale of 1 to 5)?" 
                 value={this.props.editEmotions} 
                 onChange={this.props.changeEditEmotionsHandler}
+            />
+            
+            <input 
+                type="text" 
+                placeholder="How was your day?" 
+                value={this.props.editEntry} 
+                onChange={this.props.changeEditEntryHandler}
+                id="dayParagraph"
             />
             <br></br>
             <button type="submit" onClick={this.props.handleEditEntry} className="submitEditFormButton">Submit Edit</button>
