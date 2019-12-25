@@ -126,7 +126,7 @@ body {
   text-decoration: none !important;
   color: white;
   font-size: 18px;
-  margin: 25px;
+  margin: 75px 25px;
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 80px;
@@ -140,9 +140,8 @@ body {
 }
 
 button {
-  margin: 10px;
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(160deg, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 50%, rgba(58,47,135,1) 100%);
+  background-image: linear-gradient(to right, rgba(144,135,208,1) 0%, rgba(91,82,163,1) 51%, rgba(58,47,135,1) 100%);
   padding: 30px;
   text-align: center;
   transition: 0.5s;
@@ -151,7 +150,7 @@ button {
   box-shadow: 0 0 20px #888888;
   border-radius: 10px;
  }
-
+ 
 .button:hover {
   background-position: right center;
 }
