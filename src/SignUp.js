@@ -21,7 +21,7 @@ class SignUp extends React.Component {
                     onChange={this.props.changePasswordHandler}
                 />
                 
-                <button type="submit" onClick={this.props.handleSignUpClick}>Submit</button>
+                <button type="submit" onClick={this.props.handleSignUpClick} className="signupButton">Submit</button>
             </div>
             </div>
         );

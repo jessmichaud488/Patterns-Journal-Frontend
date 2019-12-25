@@ -47,6 +47,17 @@ body {
   box-shadow: 5px 10px 18px #888888;
 }
 
+.signupButton {
+  margin: 50px 35px;
+  height: 75px;
+  width: 200px;
+  text-decoration: none !important;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .signup input {
   padding: 5px;
   margin: 10px;
@@ -136,6 +147,8 @@ body {
 
 .homepageButton {
   margin: 75px 35px;
+  height: 75px;
+  width: 200px;
 }
 
 .homepageLink {
@@ -162,7 +175,7 @@ button {
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 14px #888888;
   border-radius: 10px;
  }
  
