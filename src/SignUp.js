@@ -23,6 +23,7 @@ class SignUp extends React.Component {
                 
                 <button type="submit" onClick={this.props.handleSignUpClick} className="signupButton">Submit</button>
             </div>
+            <button className="returnButton"><span><Link to="/" className="returnLink">Log In</Link></span></button>
             </div>
         );
     }

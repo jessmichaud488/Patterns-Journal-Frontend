@@ -23,6 +23,7 @@ render () {
 
     <button type="submit" onClick={this.props.handleLogInClick} className="loginButton">Submit</button>
     </div>
+    <button className="returnButton"><span><Link to="/" className="returnLink">Log In</Link></span></button>
     </div>
     </form>
     );

@@ -52,7 +52,6 @@
 	<li>MongoDB</li>
 	<li>Mongoose</li>
 	<li>bcryptjs</li>
-	<li>Passport</li>
 </ul>
 
 <h2>API Documentation</h2>
