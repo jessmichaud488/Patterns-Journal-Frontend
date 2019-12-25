@@ -126,7 +126,7 @@ body {
   margin-left: 400px;
   margin-top: 125px;
   width: 50vw;
-  height: 50vh;
+  height: 75vh;
   background: rgb(83,209,254);
   background: linear-gradient(90deg, rgba(83,209,254,1) 0%, rgba(88,182,221,1) 28%, rgba(25,25,146,1) 79%);
   border: rgb(255,255,255, 0.2) 1px solid;
@@ -157,7 +157,7 @@ body {
 }
 
 #formLogOut {
-  margin-left: 25px;
+  margin-left: 45px;
 }
 
 .card {
