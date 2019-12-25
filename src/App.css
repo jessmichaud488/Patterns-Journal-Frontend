@@ -308,10 +308,9 @@ button {
 #tw-3 .tw-click {    
   background: rgb(44, 100, 158); 
   opacity: 0; 
-  padding: 10px 10px 5px;
+  padding: 5px 20px 5px;
   margin-top: 90px; 
-  margin-left: -40px; 
-  padding-left: 30px; 
+  margin-left: -40px;
   width: 250px; 
   border-top-right-radius: 5px; 
   border-bottom-right-radius: 5px;
