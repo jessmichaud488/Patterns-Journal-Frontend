@@ -121,12 +121,12 @@ body {
 
 #form textarea {
   padding: 5px;
-  margin: 25px;
 }
 
 #dayParagraph {
-width: 500px;
+width: 510px;
 height: 300px;
+margin-top: 25px;
 font-family: 'Montserrat', sans-serif;
 font-size: 24px;
 }
