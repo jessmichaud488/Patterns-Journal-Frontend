@@ -296,6 +296,7 @@ button {
 }
 
 #tw-3 .tw-text { 
+  display: inline-block;
   background: rgb(26, 27, 101); 
   font-size: 60px; 
   height: 100%; 
@@ -311,7 +312,7 @@ button {
   margin-top: 25px; 
   margin-left: -40px; 
   padding-left: 30px; 
-  width: auto; 
+  width: 500px; 
   border-top-right-radius: 5px; 
   border-bottom-right-radius: 5px;
 }
