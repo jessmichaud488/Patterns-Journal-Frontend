@@ -15,6 +15,13 @@ class Form extends React.Component {
             />
 
             <input 
+                type="date" 
+                placeholder="Today's date" 
+                value={this.props.date} 
+                onChange={this.props.changeDateHandler}
+            />
+        
+            <input 
                 type="text" 
                 placeholder="How many hours did you sleep?" 
                 value={this.props.sleep} 
@@ -65,6 +72,13 @@ class Form extends React.Component {
                 placeholder="Give your entry a title" 
                 value={this.props.editTitle} 
                 onChange={this.props.changeEditTitleHandler}
+            />
+
+            <input 
+                type="date" 
+                placeholder="Today's date" 
+                value={this.props.editDate} 
+                onChange={this.props.changeEditDateHandler}
             />
 
             <input 
