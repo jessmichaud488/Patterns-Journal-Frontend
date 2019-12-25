@@ -312,13 +312,14 @@ button {
   margin-top: 100px; 
   margin-left: -40px; 
   padding-left: 30px; 
-  width: 200px; 
+  width: 300px; 
   border-top-right-radius: 5px; 
   border-bottom-right-radius: 5px;
 }
 
 .tw-click a {
   display: inline-block;
+  padding: 10px;
 }
 
 .icon-button {
