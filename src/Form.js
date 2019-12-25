@@ -88,9 +88,8 @@ class Form extends React.Component {
                 onChange={this.props.changeEditEmotionsHandler}
             />
 
-            <input 
+            <textarea 
                 type="text"
-                textarea maxLength="35" 
                 placeholder="How was your day?" 
                 value={this.props.editEntry} 
                 onChange={this.props.changeEditEntryHandler}
