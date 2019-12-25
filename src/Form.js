@@ -72,6 +72,7 @@ class Form extends React.Component {
                 placeholder="How was your day?" 
                 value={this.props.editEntry} 
                 onChange={this.props.changeEditEntryHandler}
+                id="dayParagraph"
             />
 
             <input 

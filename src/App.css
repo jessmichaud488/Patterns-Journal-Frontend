@@ -119,6 +119,10 @@ body {
   font-size: 24px;
 }
 
+#dayParagraph {
+  height: 1000px;
+}
+
 #editForm {
   margin-top: 100px;
   margin-left: 400px;
