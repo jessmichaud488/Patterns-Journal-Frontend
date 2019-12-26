@@ -22,8 +22,8 @@ class AveragesDashboard extends React.Component {
                 alt="Mood"
                 />
                 <h3>Mood</h3>
-                <p>Your most common mood according to your entries. This can give you an idea of what your most consistent
-                mood is.</p>
+                <p>Your most common mood according to your entries. This indicator can give you an idea of what your most consistent
+                mood is<br></br>and may indicate when a change in mood has begun.</p>
             </div>
 
             <div className="card">
