@@ -1,10 +1,11 @@
 import React from 'react';
+import AveragesDashboard from './AveragesDashboard';
 
 class Form extends React.Component {
-
     render () {
     return (
         <div className="wrapper" ref="wrapper">
+        <AveragesDashboard />
         <div id="form">
             <h1>New Entry</h1>
             <input 
