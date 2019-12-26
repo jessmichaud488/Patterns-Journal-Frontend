@@ -22,7 +22,7 @@ class AveragesDashboard extends React.Component {
                 alt="Mood"
                 />
                 <h3>Mood</h3>
-                <p>Your most common mood according to your entries. This can give you an idea of what your most<br></br>consistent
+                <p>Your most common mood according to your entries. This can give you an idea of what your most consistent
                 mood is.</p>
             </div>
 
@@ -32,8 +32,7 @@ class AveragesDashboard extends React.Component {
                 alt="Emotional Intensity"
                 />
                 <h3>Emotional Intensity</h3>
-                <p>Your current average of daily emotional intensity according to your entries,<br></br>
-                based on a mesaure of 1 (least intense) to 5 (most intense).<br></br>This number can help you gauge
+                <p>Your current average of daily emotional intensity according to your entries, this number can help you gauge
                 how much of an impact daily life events may be effecting your emotional health.</p>
             </div>
         </div>
