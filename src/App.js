@@ -30,7 +30,11 @@ class App extends React.Component {
       editMood: '',
       editEmotions: '',
       editEntryid: '',
-      error: ''
+      error: '',
+      //these are for the Averages Dashboard
+      totalEntries: this.props.entries.length,
+      avgSleepTime: 0,
+      avgIntensityLevel: 0
     }
 
     this.handleSignUpClick=this.handleSignUpClick.bind(this);
@@ -263,6 +267,27 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
+componentWillMount() {
+  const entries = this.entry
+  let totalSleepTime = 0
+
+  // Calculate average sleep time
+  totalSleepTime += entry.hoursSlept
+  this.setState(() => {
+    return {
+      avgSleepTime: (totalSleepTime / entry.length).toFixed(1)
+    }
+  })
+
+  // Calculate average emotional intensity level
+  totalIntensityLevel += entry.instensityLevel
+  this.setState(() => {
+    return {
+      avgIntensityLevel: (totalIntensityLevel / entry.length).toFixed(1)
+    }
+  })
+};
+
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
@@ -278,7 +303,7 @@ componentDidMount() {
   .catch(err =>
     console.log(err)
       )
-  }
+  };
 
   render () {
   return (
@@ -323,6 +348,9 @@ componentDidMount() {
           sleep={this.state.sleep}
           mood={this.state.mood}
           emotions={this.state.emotions}
+          totalEntries={this.state.totalEntries}
+          avgSleepTime={this.state.avgSleepTime}
+          avgIntensityLevel={this.state.avgIntensityLevel}
           entryArray={this.state.entryArray}
           editEntryForm={this.state.editEntryForm}
           editTitle={this.state.editTitle}
@@ -355,6 +383,5 @@ componentDidMount() {
     </Router>
   );
   }
-}
 
 export default App
