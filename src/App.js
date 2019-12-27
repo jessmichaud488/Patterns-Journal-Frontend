@@ -273,8 +273,8 @@ componentWillMount() {
   let entryCount = 0
 
 //Calculate number of entries made
-  for(var i = 0; i < array.length; ++i){
-    if(array[i] == 2)
+  for(var i = 0; i < this.state.entry.length; ++i){
+    if(this.state.entry[i] == 2)
         entryCount++;
 }
 
