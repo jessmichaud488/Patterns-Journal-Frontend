@@ -268,22 +268,22 @@ changeEditEmotionsHandler (e) {
 };
 
 componentWillMount() {
-  const entries = this.state.entry
   let totalSleepTime = 0
+  let totalIntensityLevel = 0
 
   // Calculate average sleep time
-  totalSleepTime += entry.hoursSlept
+  totalSleepTime += this.state.entry.hoursSlept
   this.setState(() => {
     return {
-      avgSleepTime: (totalSleepTime / entry.length).toFixed(1)
+      avgSleepTime: (totalSleepTime / this.state.entry.length).toFixed(1)
     }
   })
 
   // Calculate average emotional intensity level
-  totalIntensityLevel += entry.instensityLevel
+  totalIntensityLevel += this.state.entry.instensityLevel
   this.setState(() => {
     return {
-      avgIntensityLevel: (totalIntensityLevel / entry.length).toFixed(1)
+      avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
 };
