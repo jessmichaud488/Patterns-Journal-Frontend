@@ -32,7 +32,7 @@ class App extends React.Component {
       editEntryid: '',
       error: '',
       //these are for the Averages Dashboard
-      totalEntries: this.props.entries.length,
+      totalEntries: this.state.entry.length,
       avgSleepTime: 0,
       avgIntensityLevel: 0
     }
