@@ -75,17 +75,17 @@ class App extends React.Component {
       editEntryid: e.currentTarget.dataset.id,
       editEmotions: item.emotions
     })
-    }
+    };
 
   showLogIn (e) {
     e.preventDefault();
     this.history.pushState(null, 'logIn');
-  }
+  };
 
   showSignUp (e) {
     e.preventDefault();
     this.history.pushState(null, 'signUp');
-  }
+  };
 
   handleSignUpClick (e) {
     e.preventDefault();
@@ -123,7 +123,7 @@ class App extends React.Component {
     .catch(err => {
     console.log("error", err);
     });
-  }
+  };
 
   handleLogInClick (e) {
     e.preventDefault();
@@ -145,7 +145,7 @@ class App extends React.Component {
       .catch(function() {
         console.log("error");
     })
-}
+};
 
   handleLogOutClick (e) {
     localStorage.removeItem("auth")
@@ -381,7 +381,9 @@ componentDidMount() {
       />
     </div>
     </Router>
-  );
+  )
   }
+  
+}
 
 export default App
