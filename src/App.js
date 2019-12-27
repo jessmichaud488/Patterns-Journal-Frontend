@@ -268,7 +268,7 @@ changeEditEmotionsHandler (e) {
 };
 
 componentWillMount() {
-  const entries = this.entry
+  const entries = this.state.entry
   let totalSleepTime = 0
 
   // Calculate average sleep time
