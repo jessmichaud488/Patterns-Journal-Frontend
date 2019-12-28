@@ -331,8 +331,7 @@ componentDidMount() {
         <HomePage
           showSignUp={this.showSignUp}
           showLogIn={this.showLogIn}
-        />
-      }
+        />}
        />
 
         <Route exact path="/entries" render={() =>
@@ -341,7 +340,8 @@ componentDidMount() {
           avgSleepTime={this.state.avgSleepTime}
           avgIntensityLevel={this.state.avgIntensityLevel}
         />
-        
+
+        <Route exact path="/entries" render={() =>
         <Form
           handleFormClick={this.handleFormClick}
           handleLiClick={this.handleLiClick}
