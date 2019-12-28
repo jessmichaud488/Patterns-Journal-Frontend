@@ -7,6 +7,7 @@ import SignUp from './SignUp';
 import Form from './Form';
 import HomePage from './HomePage';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+import AveragesDashboard from './AveragesDashboard';
 
 class App extends React.Component {
   constructor (props) {
@@ -271,12 +272,14 @@ componentWillMount() {
   let totalSleepTime = 0
   let totalIntensityLevel = 0
   let entryCount = 0
+  const entries = this.state.entry
 
 //Calculate number of entries made
-  for(var i = 0; i < this.state.entry.length; ++i){
-    if(this.state.entry[i] == 2)
-        entryCount++;
-}
+entries.forEach((entry) => {
+  if (entry[i] == 2) {
+    entryCount++;
+  }
+  })
 
   // Calculate average sleep time
   totalSleepTime += this.state.entry.hoursSlept
@@ -333,6 +336,12 @@ componentDidMount() {
        />
 
         <Route exact path="/entries" render={() =>
+        <AveragesDashboard
+          entryCount={this.state.entryCount}
+          avgSleepTime={this.state.avgSleepTime}
+          avgIntensityLevel={this.state.avgIntensityLevel}
+        />
+        
         <Form
           handleFormClick={this.handleFormClick}
           handleLiClick={this.handleLiClick}
@@ -355,9 +364,6 @@ componentDidMount() {
           sleep={this.state.sleep}
           mood={this.state.mood}
           emotions={this.state.emotions}
-          entryCount={this.state.entryCount}
-          avgSleepTime={this.state.avgSleepTime}
-          avgIntensityLevel={this.state.avgIntensityLevel}
           entryArray={this.state.entryArray}
           editEntryForm={this.state.editEntryForm}
           editTitle={this.state.editTitle}
