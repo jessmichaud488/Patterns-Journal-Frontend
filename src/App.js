@@ -273,12 +273,6 @@ componentWillMount() {
   let totalIntensityLevel = 0
   const entries = this.state.entry
 
-  //Calculate mood
-  entries.forEach((entry) => {
-    if (this.state.mood === 'content') {
-      moodCount += 1
-    }
-
   // Calculate average sleep time
   totalSleepTime += this.state.entry.hoursSlept
   this.setState(() => {
