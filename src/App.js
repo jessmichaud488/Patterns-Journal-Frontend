@@ -339,6 +339,7 @@ componentDidMount() {
           entryCount={this.state.entryCount}
           avgSleepTime={this.state.avgSleepTime}
           avgIntensityLevel={this.state.avgIntensityLevel}
+        />}
         />
 
         <Route exact path="/entries" render={() =>
