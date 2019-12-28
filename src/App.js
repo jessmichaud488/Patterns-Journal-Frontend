@@ -33,7 +33,7 @@ class App extends React.Component {
       editEntryid: '',
       error: '',
       //these are for the Averages Dashboard
-      entryCount: 0,
+      entryCount: this.state.entries.length,
       avgSleepTime: 0,
       avgIntensityLevel: 0
     }
@@ -271,15 +271,13 @@ changeEditEmotionsHandler (e) {
 componentWillMount() {
   let totalSleepTime = 0
   let totalIntensityLevel = 0
-  let entryCount = 0
   const entries = this.state.entry
 
-//Calculate number of entries made
-entries.forEach((entry) => {
-  if (entry[i] == 2) {
-    entryCount++;
-  }
-  })
+  //Calculate mood
+  entries.forEach((entry) => {
+    if (this.state.mood === 'content') {
+      moodCount += 1
+    }
 
   // Calculate average sleep time
   totalSleepTime += this.state.entry.hoursSlept
