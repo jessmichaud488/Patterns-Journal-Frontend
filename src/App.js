@@ -33,7 +33,6 @@ class App extends React.Component {
       editEntryid: '',
       error: '',
       //these are for the Averages Dashboard
-      entryCount: this.state.entry.length,
       avgSleepTime: 0,
       avgIntensityLevel: 0
     }
@@ -269,11 +268,29 @@ changeEditEmotionsHandler (e) {
 };
 
 componentWillMount() {
+  let entryCount = 0
   let totalSleepTime = 0
   let totalIntensityLevel = 0
   const entries = this.state.entry
 
-  // Calculate average sleep time
+  entries.forEach((entry) => {
+    if (entry.mood === 'content') {
+      entryCount += 1
+    }
+
+    entries.length !== 0 ? 
+    this.setState(() => {
+      return {
+        entryPct: ((entryCount / entries.length) * 100).toFixed(2).toString() + '%'
+      }
+    })
+    :
+    this.setState(() => {
+      return {
+        entryPct: '0%'
+      }
+    })
+    
   totalSleepTime += this.state.entry.hoursSlept
   this.setState(() => {
     return {
@@ -281,7 +298,6 @@ componentWillMount() {
     }
   })
 
-  // Calculate average emotional intensity level
   totalIntensityLevel += this.state.entry.instensityLevel
   this.setState(() => {
     return {
@@ -328,7 +344,6 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <AveragesDashboard
-          entryCount={this.state.entryCount}
           avgSleepTime={this.state.avgSleepTime}
           avgIntensityLevel={this.state.avgIntensityLevel}
         />}

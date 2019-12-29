@@ -32,13 +32,14 @@ class Form extends React.Component {
                 required
             />
 
-            <input 
-                type="text" 
-                placeholder="What is your mood?" 
+            <select> 
                 value={this.props.mood} 
                 onChange={this.props.changeMoodHandler}
+                <option value="content">Content</option>
+                <option value="undecided">Undecided</option>
+                <option value="depressed">Depressed</option>
                 required
-            />
+            </select>
 
             <input 
                 type="text" 
