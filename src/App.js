@@ -33,6 +33,7 @@ class App extends React.Component {
       editEntryid: '',
       error: '',
       //these are for the Averages Dashboard
+      entryPct: 0,
       avgSleepTime: 0,
       avgIntensityLevel: 0
     }
@@ -304,7 +305,6 @@ componentWillMount() {
       avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
-};
 
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
@@ -344,6 +344,7 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <AveragesDashboard
+          entryPct={this.state.entryPct}
           avgSleepTime={this.state.avgSleepTime}
           avgIntensityLevel={this.state.avgIntensityLevel}
         />}
