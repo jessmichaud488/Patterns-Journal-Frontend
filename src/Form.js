@@ -96,12 +96,14 @@ class Form extends React.Component {
                 onChange={this.props.changeEditSleepHandler}
             />
 
-            <input 
-                type="text" 
-                placeholder="What is your mood?" 
-                value={this.props.editMood} 
-                onChange={this.props.changeEditMoodHandler}
-            />
+            <select> 
+                value={this.props.mood} 
+                onChange={this.props.changeMoodHandler}
+                <option value="content">Content</option>
+                <option value="undecided">Undecided</option>
+                <option value="depressed">Depressed</option>
+                required
+            </select>
 
             <input 
                 type="text" 
