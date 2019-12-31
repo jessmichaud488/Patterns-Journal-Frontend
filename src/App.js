@@ -286,19 +286,6 @@ componentWillMount() {
       avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
-
-  entries.length !== 0 ? 
-    this.setState(() => {
-      return {
-        entryPct: ((entryCount / entries.length) * 100).toFixed(2).toString() + '%'
-      }
-    })
-    :
-    this.setState(() => {
-      return {
-        entryPct: '0%'
-      }
-    })
 }
 
 componentDidMount() {
