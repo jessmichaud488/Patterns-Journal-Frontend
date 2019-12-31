@@ -278,6 +278,7 @@ componentWillMount() {
     if (this.state.mood === 'content') {
       entryCount += 1
     }
+  })
 
   totalSleepTime += this.state.entry.hoursSlept
   this.setState(() => {
@@ -292,7 +293,6 @@ componentWillMount() {
       avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
-}
 
   entries.length !== 0 ? 
     this.setState(() => {
@@ -306,8 +306,8 @@ componentWillMount() {
         entryPct: '0%'
       }
     })
-  }
-  
+}
+
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
@@ -329,7 +329,6 @@ componentDidMount() {
   return (
     <Router>
     <div className="main-wrapper">
-      {/* Moving star background */}
       <div id="stars1"></div>
       <div id="stars1-2"></div> 
       <div id="stars2"></div>
