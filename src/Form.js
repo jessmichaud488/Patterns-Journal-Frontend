@@ -49,12 +49,12 @@ class Form extends React.Component {
                 required
             />
 
-            <input id="entryInput"
-                type="text" 
+            <textarea 
+                type="text"
                 placeholder="How was your day?" 
-                value={this.props.entry} 
-                onChange={this.props.changeEntryHandler}
-                required
+                value={this.props.editEntry} 
+                onChange={this.props.changeEditEntryHandler}
+                id="dayParagraph"
             />
             <br></br>
             <button type="submit" onClick={this.props.handleFormClick} className="submitFormButton">Submit</button>
