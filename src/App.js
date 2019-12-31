@@ -269,17 +269,9 @@ changeEditEmotionsHandler (e) {
 };
 
 componentWillMount() {
-  let entryCount = 0
   let totalSleepTime = 0
   let totalIntensityLevel = 0
   const entries = this.state.entry
-
- entryCount+= this.state.entry
-  entries.forEach((entry) => {
-    if (this.state.mood === 'content') {
-      entryCount += 1
-    }
-  })
 
   totalSleepTime += this.state.entry.hoursSlept
   this.setState(() => {
