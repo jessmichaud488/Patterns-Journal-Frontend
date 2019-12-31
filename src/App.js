@@ -275,23 +275,10 @@ componentWillMount() {
   const entries = this.state.entry
 
   entries.forEach((entry) => {
-    if (entry.mood === 'content') {
+    if (this.state.mood === 'content') {
       entryCount += 1
     }
 
-    entries.length !== 0 ? 
-    this.setState(() => {
-      return {
-        entryPct: ((entryCount / entries.length) * 100).toFixed(2).toString() + '%'
-      }
-    })
-    :
-    this.setState(() => {
-      return {
-        entryPct: '0%'
-      }
-    })
-    
   totalSleepTime += this.state.entry.hoursSlept
   this.setState(() => {
     return {
@@ -305,7 +292,22 @@ componentWillMount() {
       avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
+}
 
+  entries.length !== 0 ? 
+    this.setState(() => {
+      return {
+        entryPct: ((entryCount / entries.length) * 100).toFixed(2).toString() + '%'
+      }
+    })
+    :
+    this.setState(() => {
+      return {
+        entryPct: '0%'
+      }
+    })
+  }
+  
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
