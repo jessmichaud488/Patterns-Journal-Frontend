@@ -274,6 +274,7 @@ componentWillMount() {
   let totalIntensityLevel = 0
   const entries = this.state.entry
 
+ entryCount+= this.state.entry
   entries.forEach((entry) => {
     if (this.state.mood === 'content') {
       entryCount += 1
