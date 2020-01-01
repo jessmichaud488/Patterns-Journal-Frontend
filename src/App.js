@@ -268,7 +268,7 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-componentDidMount() {
+componentWillMount() {
   let totalSleepTime = 0
   let totalIntensityLevel = 0
   const entries = this.state.entry
@@ -286,7 +286,9 @@ componentDidMount() {
       avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
-  
+}
+
+componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
     headers: {
@@ -322,12 +324,12 @@ componentDidMount() {
        />
 
         <Route exact path="/entries" render={() =>
-        <AveragesDashboard
+        /*<AveragesDashboard
           entryPct={this.state.entryPct}
           avgSleepTime={this.state.avgSleepTime}
           avgIntensityLevel={this.state.avgIntensityLevel}
         />}
-        />
+        />*/
 
         <Route exact path="/entries" render={() =>
         <Form
