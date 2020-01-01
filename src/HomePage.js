@@ -5,7 +5,7 @@ import Footer from './Footer';
 class HomePage extends React.Component {
 render () {
     return (
-    <div className="wrapper" ref="wrapper">
+    <div className="homepage-wrapper" ref="wrapper">
     <div id="main-div">
         <section id="intro">
             <h1 className="gradient">Welcome to Patterns!</h1>
