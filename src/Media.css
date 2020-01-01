@@ -122,9 +122,12 @@
         width: 55vw;
       }
   
+      .login-wrapper {
+        margin-left: 2px;
+      }
+
       .login {
         margin-top: 60px;
-        margin-left: 5px;
         height: 75vh;
         width: 75vw;
       }
