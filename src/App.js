@@ -7,7 +7,6 @@ import SignUp from './SignUp';
 import Form from './Form';
 import HomePage from './HomePage';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-import AveragesDashboard from './AveragesDashboard';
 
 class App extends React.Component {
   constructor (props) {
@@ -31,11 +30,7 @@ class App extends React.Component {
       editMood: '',
       editEmotions: '',
       editEntryid: '',
-      error: '',
-      //these are for the Averages Dashboard
-      entryPct: 0,
-      avgSleepTime: 0,
-      avgIntensityLevel: 0
+      error: ''
     }
 
     this.handleSignUpClick=this.handleSignUpClick.bind(this);
@@ -76,17 +71,17 @@ class App extends React.Component {
       editEntryid: e.currentTarget.dataset.id,
       editEmotions: item.emotions
     })
-    };
+    }
 
   showLogIn (e) {
     e.preventDefault();
     this.history.pushState(null, 'logIn');
-  };
+  }
 
   showSignUp (e) {
     e.preventDefault();
     this.history.pushState(null, 'signUp');
-  };
+  }
 
   handleSignUpClick (e) {
     e.preventDefault();
@@ -124,7 +119,7 @@ class App extends React.Component {
     .catch(err => {
     console.log("error", err);
     });
-  };
+  }
 
   handleLogInClick (e) {
     e.preventDefault();
@@ -146,7 +141,7 @@ class App extends React.Component {
       .catch(function() {
         console.log("error");
     })
-};
+}
 
   handleLogOutClick (e) {
     localStorage.removeItem("auth")
@@ -268,26 +263,6 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-/*componentWillMount() {
-  let totalSleepTime = 0
-  let totalIntensityLevel = 0
-  const entries = this.state.entry
-
-  totalSleepTime += this.state.entry.hoursSlept
-  this.setState(() => {
-    return {
-      avgSleepTime: (totalSleepTime / this.state.entry.length).toFixed(1)
-    }
-  })
-
-  totalIntensityLevel += this.state.entry.instensityLevel
-  this.setState(() => {
-    return {
-      avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
-    }
-  })
-}*/
-
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
@@ -303,12 +278,13 @@ componentDidMount() {
   .catch(err =>
     console.log(err)
       )
-  };
+  }
 
   render () {
   return (
     <Router>
     <div className="main-wrapper">
+      {/* Moving star background */}
       <div id="stars1"></div>
       <div id="stars1-2"></div> 
       <div id="stars2"></div>
@@ -320,7 +296,8 @@ componentDidMount() {
         <HomePage
           showSignUp={this.showSignUp}
           showLogIn={this.showLogIn}
-        />}
+        />
+      }
        />
 
         <Route exact path="/entries" render={() =>
@@ -376,9 +353,8 @@ componentDidMount() {
       />
     </div>
     </Router>
-  )
+  );
   }
-  
 }
 
 export default App
