@@ -268,7 +268,7 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-componentWillMount() {
+/*componentWillMount() {
   let totalSleepTime = 0
   let totalIntensityLevel = 0
   const entries = this.state.entry
@@ -286,7 +286,7 @@ componentWillMount() {
       avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
     }
   })
-}
+}*/
 
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
