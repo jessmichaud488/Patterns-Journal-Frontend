@@ -362,5 +362,6 @@ button:hover {
 }
 
 #ft-3:hover .ft-click { 
-  opacity: 1;  
+  opacity: 1; 
+  margin-right: 30px; 
 }
