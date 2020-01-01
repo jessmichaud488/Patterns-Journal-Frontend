@@ -92,12 +92,15 @@
   }
   
     @media screen and (min-width: 360px) and (max-width: 374px) and (min-height: 639px) and (max-height: 640px) {
-      h1{ 
+      .wrapper {
+        margin-left: 20px;
+      }
+      
+      #intro h1{ 
         font-size: 60px;
       }
 
       .card {
-        display: inline-block;
         height: 55vh;
         width: 75vw;
       }
