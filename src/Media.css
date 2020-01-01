@@ -93,11 +93,11 @@
   
     @media screen and (min-width: 360px) and (max-width: 374px) and (min-height: 639px) and (max-height: 640px) {
       .wrapper {
-        margin-left: 20px;
+        margin-left: 30px;
       }
-      
+
       #intro h1{ 
-        font-size: 60px;
+        font-size: 72px;
       }
 
       .card {
