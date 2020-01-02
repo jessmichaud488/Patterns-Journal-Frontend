@@ -139,7 +139,7 @@
       }
 
       .entry-card {
-        margin-left: 45px;
+        margin-left: 55px;
         height: 65vh;
         width: 75vw;
       }
@@ -156,6 +156,18 @@
         width: 75vw;
       }
   
+      #form select {
+        font-size: 14px;
+        height: 2vh;
+        width: 75vw;
+      }
+
+      #form textarea {
+        font-size: 14px;
+        height: 150vh;
+        width: 75vw;
+      }
+
       #pastEntries {
         margin-left: 5px;
         width: 87vw;
@@ -174,6 +186,18 @@
         width: 75vw;
       }
   
+      #editForm select {
+        font-size: 14px;
+        height: 2vh;
+        width: 75vw;
+      }
+
+      #editForm textarea {
+        font-size: 14px;
+        height: 150vh;
+        width: 75vw;
+      }
+
       #formLogOut {
         margin-left: 30px;
       }
