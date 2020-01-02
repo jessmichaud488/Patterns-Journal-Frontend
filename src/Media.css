@@ -16,7 +16,7 @@
       height: 65vh;
       width: 75vw;
     }
-  
+
     .login {
       margin-top: 60px;
       margin-left: 20px;
@@ -123,6 +123,7 @@
       }
 
       .login {
+        margin-top: 60px;
         height: 75vh;
         width: 75vw;
       }
