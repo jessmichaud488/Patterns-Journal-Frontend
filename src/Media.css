@@ -137,6 +137,12 @@
         height: 10vh;
         width: 55vw;
       }
+
+      .entry-card {
+        margin-left: 45px;
+        height: 65vh;
+        width: 75vw;
+      }
   
       #form {
         margin-left: 5px;

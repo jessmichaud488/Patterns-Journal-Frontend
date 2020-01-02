@@ -6,7 +6,7 @@ class AveragesDashboard extends React.Component {
         <div id="card-main">
             <h1>My Entry Stats</h1>
             <h2>Here you will find your most current averages for your sleep, emotion, and mood patterns based on your entries</h2>
-            <div className="card">
+            <div className="entry-card">
                 <img
                 src={require('../src/images/entry.png')}
                 alt="Entry image"
@@ -17,7 +17,7 @@ class AveragesDashboard extends React.Component {
                 of what you've recorded so far. Write on!</p>
             </div>
 
-            <div className="card">
+            <div className="entry-card">
                 <img 
                 src={require('../src/images/sleep.png')}
                 alt="Sleep image"
@@ -28,7 +28,7 @@ class AveragesDashboard extends React.Component {
                 health and sleeping for a consistent length helps maintain your well-being.</p>
             </div>
 
-            <div className="card">
+            <div className="entry-card">
                 <img
                 src={require('../src/images/emotion.png')}
                 alt="Emotional Intensity image"
