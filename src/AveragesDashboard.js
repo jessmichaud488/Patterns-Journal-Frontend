@@ -4,8 +4,10 @@ class AveragesDashboard extends React.Component {
     render () {
         return (
         <div id="card-main">
+            <div id="entry-intro">
             <h1>My Entry Stats</h1>
             <h2>Here you will find your most current averages for your sleep, emotion, and mood patterns based on your entries</h2>
+            </div>
             <div className="entry-card">
                 <img
                 src={require('../src/images/entry.png')}

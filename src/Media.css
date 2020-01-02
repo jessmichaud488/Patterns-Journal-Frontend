@@ -138,8 +138,13 @@
         width: 55vw;
       }
 
+      #entry-intro {
+        margin-left: 50px;
+        text-align:center;
+      }
+
       .entry-card {
-        margin-left: 55px;
+        margin-left: 50px;
         height: 65vh;
         width: 75vw;
       }
@@ -158,13 +163,13 @@
   
       #form select {
         font-size: 14px;
-        height: 2vh;
+        height: 5vh;
         width: 75vw;
       }
 
       #form textarea {
         font-size: 14px;
-        height: 150vh;
+        height: 25vh;
         width: 75vw;
       }
 
@@ -188,13 +193,13 @@
   
       #editForm select {
         font-size: 14px;
-        height: 2vh;
+        height: 5vh;
         width: 75vw;
       }
 
       #editForm textarea {
         font-size: 14px;
-        height: 150vh;
+        height: 25vh;
         width: 75vw;
       }
 
