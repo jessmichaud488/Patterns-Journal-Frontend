@@ -139,8 +139,8 @@
       }
 
       #entry-intro {
-        margin-left: 20px;
-        text-align:center;
+        margin-left: 10px;
+        text-align: center;
       }
 
       .entry-card {
@@ -179,6 +179,10 @@
         height: 50vh;
       }
     
+      #pastEntries h1{
+        text-align: center;
+      }
+
       #editForm {
         margin-left: 8px;
         width: 87vw;
