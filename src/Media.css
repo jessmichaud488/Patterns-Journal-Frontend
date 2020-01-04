@@ -548,14 +548,14 @@
 
       .entry-card {
         margin-left: 20px;
-        height: 65vh;
+        height: 55vh;
         width: 70vw;
       }
   
       #form {
         margin-left: 8px;
         width: 87vw;
-        height: 130vh;
+        height: 120vh;
       }
   
       #form input {
@@ -589,7 +589,7 @@
       #editForm {
         margin-left: 8px;
         width: 87vw;
-        height: 130vh;
+        height: 120vh;
       }
   
       #editForm input {
