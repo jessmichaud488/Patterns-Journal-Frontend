@@ -139,7 +139,7 @@
       }
 
       #entry-intro {
-        margin-left: 40px;
+        margin-left: 20px;
         text-align:center;
       }
 
@@ -150,9 +150,9 @@
       }
   
       #form {
-        margin-left: 10px;
+        margin-left: 8px;
         width: 87vw;
-        height: 150vh;
+        height: 120vh;
       }
   
       #form input {
@@ -180,9 +180,9 @@
       }
     
       #editForm {
-        margin-left: 10px;
+        margin-left: 8px;
         width: 87vw;
-        height: 150vh;
+        height: 120vh;
       }
   
       #editForm input {
@@ -278,8 +278,8 @@
         width: 250px;
       }
   
-      #formLogOut {
-        margin-right: -5px;
+      .logOutButton {
+        margin-left: 20px;
       }
     }
   
