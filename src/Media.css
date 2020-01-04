@@ -96,6 +96,10 @@
         margin-left: 55px;
       }
 
+      .homepageButton {
+        margin-right: 20px;
+      }
+
       #intro h1{ 
         font-size: 55px;
       }
@@ -496,7 +500,7 @@
 
       .card {
         height: 55vh;
-        width: 75vw;
+        width: 70vw;
       }
   
       .signup {
