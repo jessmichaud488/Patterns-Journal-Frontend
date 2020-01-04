@@ -139,12 +139,12 @@
       }
 
       #entry-intro {
-        margin-left: 50px;
+        margin-left: 40px;
         text-align:center;
       }
 
       .entry-card {
-        margin-left: 30px;
+        margin-left: 20px;
         height: 65vh;
         width: 75vw;
       }
@@ -152,13 +152,13 @@
       #form {
         margin-left: 10px;
         width: 87vw;
-        height: 105vh;
+        height: 150vh;
       }
   
       #form input {
         font-size: 14px;
         height: 2vh;
-        width: 70vw;
+        width: 72vw;
       }
   
       #form select {
@@ -182,13 +182,13 @@
       #editForm {
         margin-left: 10px;
         width: 87vw;
-        height: 105vh;
+        height: 150vh;
       }
   
       #editForm input {
         font-size: 14px;
         height: 2vh;
-        width: 70vw;
+        width: 72vw;
       }
   
       #editForm select {
