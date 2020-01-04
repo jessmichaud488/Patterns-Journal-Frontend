@@ -396,7 +396,8 @@
 
       .login {
         margin-top: 60px;
-        height: 75vh;
+        margin-left: 25px;
+        height: 65vh;
         width: 75vw;
       }
   
@@ -409,6 +410,7 @@
         height: 10vh;
         width: 55vw;
       }
+
 
       #entry-intro {
         margin-left: 10px;
