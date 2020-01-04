@@ -112,8 +112,8 @@
       .signup {
         margin-top: 60px;
         margin-left: 25px;
-        height: 65vh;
-        width: 75vw;
+        height: 60vh;
+        width: 80vw;
       }
   
       .signup input {
@@ -128,8 +128,8 @@
 
       .login {
         margin-top: 60px;
-        height: 75vh;
-        width: 75vw;
+        height: 60vh;
+        width: 80vw;
       }
   
       .login input {
