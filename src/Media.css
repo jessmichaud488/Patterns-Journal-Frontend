@@ -144,21 +144,21 @@
       }
 
       .entry-card {
-        margin-left: 50px;
+        margin-left: 30px;
         height: 65vh;
         width: 75vw;
       }
   
       #form {
-        margin-left: 5px;
+        margin-left: 10px;
         width: 87vw;
-        height: 75vh;
+        height: 105vh;
       }
   
       #form input {
         font-size: 14px;
         height: 2vh;
-        width: 75vw;
+        width: 70vw;
       }
   
       #form select {
@@ -180,15 +180,15 @@
       }
     
       #editForm {
-        margin-left: 5px;
+        margin-left: 10px;
         width: 87vw;
-        height: 80vh;
+        height: 105vh;
       }
   
       #editForm input {
         font-size: 14px;
         height: 2vh;
-        width: 75vw;
+        width: 70vw;
       }
   
       #editForm select {
