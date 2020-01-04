@@ -418,13 +418,13 @@
       .entry-card {
         margin-left: 20px;
         height: 65vh;
-        width: 75vw;
+        width: 70vw;
       }
   
       #form {
         margin-left: 8px;
         width: 87vw;
-        height: 140vh;
+        height: 130vh;
       }
   
       #form input {
@@ -458,7 +458,7 @@
       #editForm {
         margin-left: 8px;
         width: 87vw;
-        height: 140vh;
+        height: 130vh;
       }
   
       #editForm input {
