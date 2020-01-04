@@ -8,7 +8,7 @@ render () {
     <form>
     <div className="login-wrapper" ref="wrapper">
     <div className="login">
-    <h1>Weclome back, its great to see you again!</h1>
+    <h1>Weclome back,<br></br>its great to see you again!</h1>
     <input 
         type="text" 
         placeholder="Your username" 
