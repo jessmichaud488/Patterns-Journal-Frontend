@@ -96,10 +96,6 @@
         margin-left: 55px;
       }
 
-      .homepageButton {
-        margin-right: 50px;
-      }
-
       #intro h1{ 
         font-size: 55px;
       }
@@ -112,8 +108,8 @@
       .signup {
         margin-top: 60px;
         margin-left: 25px;
-        height: 60vh;
-        width: 80vw;
+        height: 65vh;
+        width: 75vw;
       }
   
       .signup input {
@@ -128,8 +124,8 @@
 
       .login {
         margin-top: 60px;
-        height: 60vh;
-        width: 80vw;
+        height: 75vh;
+        width: 75vw;
       }
   
       .login input {
@@ -494,20 +490,28 @@
         margin-left: 20px;
       }
 
+      .homepageButton {
+        margin-right: 10px;
+      }
+
+      #intro {
+        margin-right: 5px;
+      }
+
       #intro h1{ 
         font-size: 55px;
       }
 
       .card {
         height: 55vh;
-        width: 70vw;
+        width: 75vw;
       }
   
       .signup {
         margin-top: 60px;
         margin-left: 30px;
-        height: 70vh;
-        width: 75vw;
+        height: 65vh;
+        width: 80vw;
       }
   
       .signup input {
@@ -523,8 +527,8 @@
       .login {
         margin-top: 60px;
         margin-left: 30px;
-        height: 70vh;
-        width: 75vw;
+        height: 65vh;
+        width: 80vw;
       }
   
       .login input {
