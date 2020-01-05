@@ -93,7 +93,7 @@
   
     @media screen and (min-width: 360px) and (max-width: 374px) and (min-height: 639px) and (max-height: 640px) {
       .homepage-wrapper {
-        margin-left: 45px;
+        margin-left: 40px;
       }
 
       #intro {
