@@ -21,12 +21,12 @@
     margin-top: 60px;
     margin-left: 30px;
     height: 70vh;
-    width: 75vw;
+    width: 80vw;
   }
 
   .signup input {
     height: 2vh;
-    width: 55vw;
+    width: 60vw;
   }
 
   .signup button {
@@ -38,17 +38,23 @@
     margin-top: 60px;
     margin-left: 30px;
     height: 70vh;
-    width: 75vw;
+    width: 80vw;
   }
 
   .login input {
     height: 2vh;
-    width: 55vw;
+    width: 60vw;
   }
 
   .login button {
     height: 10vh;
     width: 55vw;
+  }
+
+  .returnButton {
+      margin-top: 20px;
+      height: 10vh;
+      width: 55vw;
   }
 
   #entry-intro {
