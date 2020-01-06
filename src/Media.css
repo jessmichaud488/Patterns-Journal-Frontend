@@ -68,13 +68,13 @@
 
   .entry-card {
     margin-left: 20px;
-    height: 80vh;
+    height: 75vh;
     width: 70vw;
   }
 
   #form {
-    margin-left: 5px;
-    width: 70vw;
+    margin-left: 8px;
+    width: 87vw;
     height: 130vh;
   }
 
@@ -98,7 +98,7 @@
 
   #pastEntries {
     margin-left: 5px;
-    width: 70vw;
+    width: 87vw;
     height: 50vh;
   }
 
@@ -107,8 +107,8 @@
   }
 
   #editForm {
-    margin-left: 5px;
-    width: 70vw;
+    margin-left: 8px;
+    width: 87vw;
     height: 130vh;
   }
 
