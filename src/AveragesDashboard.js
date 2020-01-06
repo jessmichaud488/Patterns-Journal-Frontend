@@ -11,7 +11,7 @@ class AveragesDashboard extends React.Component {
             <div className="entry-card">
                 <img
                 src={require('../src/images/entry.png')}
-                alt="Entry image"
+                alt="Purple lotus"
                 />
                 <h2>{this.props.entryPct}</h2>
                 <h3>Total Entries by Mood</h3>
@@ -22,7 +22,7 @@ class AveragesDashboard extends React.Component {
             <div className="entry-card">
                 <img 
                 src={require('../src/images/sleep.png')}
-                alt="Sleep image"
+                alt="Crescent moon"
                 />
                 <h2>{this.props.avgSleepTime}</h2>
                 <h3>Sleep</h3>
@@ -33,7 +33,7 @@ class AveragesDashboard extends React.Component {
             <div className="entry-card">
                 <img
                 src={require('../src/images/emotion.png')}
-                alt="Emotional Intensity image"
+                alt="Human side profile"
                 />
                 <h2>{this.props.avgIntensityLevel}</h2>
                 <h3>Emotional Intensity</h3>
