@@ -62,19 +62,19 @@
   }
 
   #entry-intro {
-    margin-left: 10px;
+    margin-left: 5px;
     text-align: center;
   }
 
   .entry-card {
     margin-left: 20px;
-    height: 65vh;
+    height: 80vh;
     width: 70vw;
   }
 
   #form {
-    margin-left: 8px;
-    width: 87vw;
+    margin-left: 5px;
+    width: 70vw;
     height: 130vh;
   }
 
@@ -98,7 +98,7 @@
 
   #pastEntries {
     margin-left: 5px;
-    width: 87vw;
+    width: 70vw;
     height: 50vh;
   }
 
@@ -107,8 +107,8 @@
   }
 
   #editForm {
-    margin-left: 8px;
-    width: 87vw;
+    margin-left: 5px;
+    width: 70vw;
     height: 130vh;
   }
 
