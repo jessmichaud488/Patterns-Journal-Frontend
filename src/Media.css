@@ -75,7 +75,7 @@
   #form {
     margin-left: 6px;
     width: 87vw;
-    height: 150vh;
+    height: 160vh;
   }
 
   #form input {
@@ -93,7 +93,7 @@
   #form textarea {
     font-size: 14px;
     height: 25vh;
-    width: 70vw;
+    width: 72vw;
   }
 
   #pastEntries {
@@ -109,7 +109,7 @@
   #editForm {
     margin-left: 6px;
     width: 87vw;
-    height: 150vh;
+    height: 165vh;
   }
 
   #editForm input {
@@ -127,11 +127,11 @@
   #editForm textarea {
     font-size: 14px;
     height: 25vh;
-    width: 70vw;
+    width: 72vw;
   }
 
-  #formLogOut {
-    margin-left: 70px;
+  .logOutButton {
+    margin-left: 30px;
   }
   }
   
