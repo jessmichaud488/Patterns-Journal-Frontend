@@ -93,7 +93,7 @@
   #form textarea {
     font-size: 14px;
     height: 25vh;
-    width: 72vw;
+    width: 71vw;
   }
 
   #pastEntries {
@@ -127,7 +127,7 @@
   #editForm textarea {
     font-size: 14px;
     height: 25vh;
-    width: 72vw;
+    width: 71vw;
   }
 
   .logOutButton {
@@ -206,7 +206,7 @@
       }
   
       .logOutButton {
-        margin-left: 20px;
+        margin-left: 50px;
       }
     }
   
