@@ -25,6 +25,7 @@
   }
 
   .signup input {
+    padding: 2px;
     height: 2vh;
     width: 60vw;
   }
@@ -42,6 +43,7 @@
   }
 
   .login input {
+    padding: 2px;
     height: 2vh;
     width: 60vw;
   }
