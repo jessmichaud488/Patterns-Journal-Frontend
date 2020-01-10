@@ -308,7 +308,7 @@ componentDidMount() {
   render () {
   return (
     <Router>
-    <div className="main-wrapper">
+    <div className="main-wrap">
       <div id="stars1"></div>
       <div id="stars1-2"></div> 
       <div id="stars2"></div>

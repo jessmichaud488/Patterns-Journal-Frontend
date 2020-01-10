@@ -5,7 +5,7 @@ class SignUp extends React.Component {
 
     render () {
         return (
-            <div className="wrapper" ref="wrapper">
+            <div className="wrap">
             <div className="signup">
                 <h1>Weclome,<br></br>sign up below!</h1>
                 <input 

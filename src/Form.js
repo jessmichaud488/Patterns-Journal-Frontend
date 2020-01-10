@@ -4,7 +4,7 @@ import AveragesDashboard from './AveragesDashboard';
 class Form extends React.Component {
     render () {
     return (
-        <div className="wrapper" ref="wrapper">
+        <div className="wrap">
         <AveragesDashboard />
         <div id="form">
             <h1>New Entry</h1>
