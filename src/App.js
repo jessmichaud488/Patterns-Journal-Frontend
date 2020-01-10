@@ -316,6 +316,7 @@ componentDidMount() {
       <div id="stars3"></div>
       <div id="stars3-2"></div>
 
+    <React.StrictMode>
       <Route exact path="/" render={() =>
         <HomePage
           showSignUp={this.showSignUp}
@@ -374,6 +375,7 @@ componentDidMount() {
           changePasswordHandler={this.changePasswordHandler} 
         />}
       />
+    </React.StrictMode>
     </div>
     </Router>
   )
