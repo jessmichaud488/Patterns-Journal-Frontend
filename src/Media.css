@@ -798,7 +798,8 @@
       .login input {
         font-size: 12px;
         height: 2vh;
-        width: 62vw;
+        width: 60vw;
+        margin-right: 2px;
       }
   
       .login button {
@@ -816,7 +817,8 @@
       .signup input {
         font-size: 12px;
         height: 2vh;
-        width: 62vw;
+        width: 60vw;
+        margin-right: 2px;
       }
   
       .signup button {
