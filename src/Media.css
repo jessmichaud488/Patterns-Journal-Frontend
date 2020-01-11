@@ -395,20 +395,20 @@
   
     @media screen and (min-width: 375px) and (max-width: 410px) and (min-height: 811px) and (max-height: 812px) {
       .homepageButton {
-        margin-left: 40px;
+        margin-left: 50px;
         width: 225px;
       }
       
       #intro {
-        right: 10px;
+        right: 5px;
       }
 
       #intro h1{ 
-        font-size: 60px;
+        font-size: 70px;
       }
     
       .card {
-        margin-left: 40px;
+        margin-left: 30px;
         height: 50vh;
         width: 75vw;
       }
