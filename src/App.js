@@ -1,17 +1,17 @@
-import React from 'react';
-import './App.css';
-import './Media.css';
-import './Stars.css';
-import LogIn from './LogIn';
-import SignUp from './SignUp';
-import Form from './Form';
-import HomePage from './HomePage';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
-import AveragesDashboard from './AveragesDashboard';
+import React from 'react'
+import './App.css'
+import './Media.css'
+import './Stars.css'
+import LogIn from './LogIn'
+import SignUp from './SignUp'
+import Form from './Form'
+import HomePage from './HomePage'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
+import AveragesDashboard from './AveragesDashboard'
 
 class App extends React.Component {
   constructor (props) {
-    super(props);
+    super(props)
     this.state = {
       isLoggedIn: false,
       entryArray: [],
@@ -38,35 +38,35 @@ class App extends React.Component {
       avgIntensityLevel: 0
     }
 
-    this.handleSignUpClick=this.handleSignUpClick.bind(this);
-    this.handleLogInClick=this.handleLogInClick.bind(this);
-    this.handleLogOutClick=this.handleLogOutClick.bind(this);
-    this.handleFormClick=this.handleFormClick.bind(this);
-    this.handleEditEntry=this.handleEditEntry.bind(this);
-    this.showSignUp=this.showSignUp.bind(this);
-    this.showLogIn=this.showLogIn.bind(this)
-    this.handleLiClick=this.handleLiClick.bind(this);
+    this.handleSignUpClick = this.handleSignUpClick.bind(this)
+    this.handleLogInClick = this.handleLogInClick.bind(this)
+    this.handleLogOutClick = this.handleLogOutClick.bind(this)
+    this.handleFormClick = this.handleFormClick.bind(this)
+    this.handleEditEntry = this.handleEditEntry.bind(this)
+    this.showSignUp = this.showSignUp.bind(this)
+    this.showLogIn = this.showLogIn.bind(this)
+    this.handleLiClick = this.handleLiClick.bind(this)
 
-    this.changeUsernameHandler = this.changeUsernameHandler.bind(this);
-    this.changePasswordHandler = this.changePasswordHandler.bind(this);
+    this.changeUsernameHandler = this.changeUsernameHandler.bind(this)
+    this.changePasswordHandler = this.changePasswordHandler.bind(this)
 
-    this.changeEntryHandler = this.changeEntryHandler.bind(this);
-    this.changeTitleHandler = this.changeTitleHandler.bind(this);
-    this.changeDateHandler = this.changeDateHandler.bind(this);
-    this.changeSleepHandler = this.changeSleepHandler.bind(this);
-    this.changeMoodHandler = this.changeMoodHandler.bind(this);
-    this.changeEmotionsHandler = this.changeEmotionsHandler.bind(this);
-    this.changeEditEntryHandler = this.changeEditEntryHandler.bind(this);
-    this.changeEditTitleHandler = this.changeEditTitleHandler.bind(this);
-    this.changeEditDateHandler = this.changeEditDateHandler.bind(this);
-    this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this);
-    this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this);
-    this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this);
+    this.changeEntryHandler = this.changeEntryHandler.bind(this)
+    this.changeTitleHandler = this.changeTitleHandler.bind(this)
+    this.changeDateHandler = this.changeDateHandler.bind(this)
+    this.changeSleepHandler = this.changeSleepHandler.bind(this)
+    this.changeMoodHandler = this.changeMoodHandler.bind(this)
+    this.changeEmotionsHandler = this.changeEmotionsHandler.bind(this)
+    this.changeEditEntryHandler = this.changeEditEntryHandler.bind(this)
+    this.changeEditTitleHandler = this.changeEditTitleHandler.bind(this)
+    this.changeEditDateHandler = this.changeEditDateHandler.bind(this)
+    this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this)
+    this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this)
+    this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this)
   }
 
   handleLiClick (e) {
-    e.preventDefault();
-    const item=this.state.entryArray[e.currentTarget.dataset.id]
+    e.preventDefault()
+    const item = this.state.entryArray[e.currentTarget.dataset.id]
     this.setState ({
       editEntryForm: true,
       editEntry: item.entry,
@@ -76,21 +76,21 @@ class App extends React.Component {
       editEntryid: e.currentTarget.dataset.id,
       editEmotions: item.emotions
     })
-    };
+};
 
   showLogIn (e) {
-    e.preventDefault();
-    this.history.pushState(null, 'logIn');
+    e.preventDefault()
+    this.history.pushState(null, 'logIn')
   };
 
   showSignUp (e) {
-    e.preventDefault();
-    this.history.pushState(null, 'signUp');
+    e.preventDefault()
+    this.history.pushState(null, 'signUp')
   };
 
   handleSignUpClick (e) {
     e.preventDefault();
-    
+
     fetch(`https://evening-thicket-00015.herokuapp.com/userRouter/signUp`, {
       method: 'POST',
       body: JSON.stringify({username: this.state.username, 
