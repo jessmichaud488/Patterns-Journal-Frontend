@@ -275,6 +275,10 @@
         width: 225px;
       }
       
+      #intro {
+        right: 5px;
+      }
+
       #intro h1{ 
         font-size: 60px;
       }
