@@ -271,16 +271,12 @@
       }
     
       .homepageButton {
-        margin-left: 40px;
+        margin-left: 30px;
         width: 225px;
       }
     
-      #intro {
-        margin-left: 45px;
-      }
-    
       #intro h1{ 
-        font-size: 52px;
+        font-size: 60px;
       }
     
       .card {
