@@ -266,12 +266,12 @@
   }
   
     @media screen and (min-width: 375px) and (max-width: 410px) and (min-height: 666px) and (max-height: 667px) {
-      .homepage-wrapper {
+      .homepage-wrap {
         margin-left: 40px;
       }
     
       .homepageButton {
-        margin-left: 50px;
+        margin-left: 40px;
         width: 225px;
       }
     
