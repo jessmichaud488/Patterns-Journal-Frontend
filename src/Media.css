@@ -400,7 +400,7 @@
       }
       
       #intro {
-        right: 5px;
+        right: 2px;
       }
 
       #intro h1{ 
@@ -416,7 +416,7 @@
       .signup {
         margin-top: 60px;
         margin-left: 25px;
-        height: 80vh;
+        height: 70vh;
         width: 75vw;
       }
     
@@ -433,7 +433,7 @@
       .login {
         margin-top: 60px;
         margin-left: 25px;
-        height: 80vh;
+        height: 70vh;
         width: 75vw;
       }
     
