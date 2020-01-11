@@ -775,10 +775,19 @@
   
     @media screen and (min-width: 414px) and (max-width: 767px) and (min-height: 735px) and (max-height: 736px) {
       .card {
+        margin-left: 20px;
         height: 50vh;
         width: 75vw;
       }
-  
+      
+      #intro h1 {
+        font-size: 60px;
+      }
+      
+      .homepageButton {
+        width: 225px;
+      }
+      
       .login {
         margin-top: 120px;
         margin-left: 30px;
