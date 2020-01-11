@@ -271,10 +271,14 @@
       }
     
       .homepageButton {
-        margin-left: 30px;
+        margin-left: 20px;
         width: 225px;
       }
     
+      #intro {
+        margin-left: 10px;
+      }
+      
       #intro h1{ 
         font-size: 60px;
       }
