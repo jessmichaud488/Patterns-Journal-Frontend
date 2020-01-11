@@ -388,7 +388,7 @@
         width: 70vw;
       }
     
-      #formLogOut {
+      .returnButton {
         margin-left: 60px;
       }
     }
