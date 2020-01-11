@@ -271,21 +271,21 @@
       }
     
       .homepageButton {
-        margin-left: 60px;
+        margin-left: 50px;
         width: 225px;
       }
     
       #intro {
-        margin-left: 55px;
+        margin-left: 45px;
       }
     
       #intro h1{ 
-        font-size: 48px;
+        font-size: 52px;
       }
     
       .card {
         height: 60vh;
-        width: 85vw;
+        width: 75vw;
       }
     
       .signup {

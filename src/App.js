@@ -93,11 +93,10 @@ class App extends React.Component {
 
     fetch(`https://evening-thicket-00015.herokuapp.com/userRouter/signUp`, {
       method: 'POST',
-      body: JSON.stringify({username: this.state.username, 
-                            password: this.state.password}),
-      headers: {
-        "Content-Type": "application/json; charset=utf-8"
-    }
+      body: JSON.stringify({ 
+      username: this.state.username, password: this.state.password }),
+      headers: { "Content-Type": "application/json; charset=utf-8" }
+
   })
   .then(res => {
         return res.json();
