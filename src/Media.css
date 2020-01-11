@@ -394,78 +394,130 @@
     }
   
     @media screen and (min-width: 375px) and (max-width: 410px) and (min-height: 811px) and (max-height: 812px) {
+      .homepageButton {
+        margin-left: 20px;
+        width: 225px;
+      }
+      
+      #intro {
+        right: 15px;
+      }
+
+      #intro h1{ 
+        font-size: 60px;
+      }
+    
       .card {
-        height: 45vh;
+        margin-left: 20px;
+        height: 60vh;
         width: 75vw;
       }
-  
-      .login {
-        margin-top: 100px;
-        margin-left: 30px;
-        height: 55vh;
-        width: 75vw;
-      }
-  
-      .login input {
-        height: 2vh;
-        width: 55vw;
-      }
-  
-      .login button {
-        height: 10vh;
-        width: 45vw;
-      }
-  
+    
       .signup {
-        margin-top: 100px;
-        margin-left: 30px;
-        height: 55vh;
+        margin-top: 60px;
+        margin-left: 25px;
+        height: 80vh;
         width: 75vw;
       }
-  
+    
       .signup input {
         height: 2vh;
         width: 55vw;
       }
-  
+    
       .signup button {
         height: 10vh;
-        width: 45vw;
+        width: 55vw;
       }
-  
+    
+      .login {
+        margin-top: 60px;
+        margin-left: 25px;
+        height: 80vh;
+        width: 75vw;
+      }
+    
+      .login input {
+        height: 2vh;
+        width: 55vw;
+      }
+    
+      .login button {
+        height: 10vh;
+        width: 55vw;
+      }
+    
+      #entry-intro {
+        margin-left: 10px;
+        text-align: center;
+      }
+    
+      .entry-card {
+        margin-left: 20px;
+        height: 65vh;
+        width: 75vw;
+      }
+    
       #form {
         margin-left: 5px;
         width: 87vw;
-        height: 60vh;
+        height: 140vh;
       }
-  
+    
       #form input {
         font-size: 14px;
-        height: 16px;
-        width: 250px;
+        height: 2vh;
+        width: 70vw;
       }
-  
+    
+      #form select {
+        font-size: 14px;
+        height: 5vh;
+        width: 75vw;
+      }
+    
+      #form textarea {
+        font-size: 14px;
+        height: 25vh;
+        width: 70vw;
+      }
+    
       #pastEntries {
-        margin-top: 150px;
         margin-left: 5px;
         width: 87vw;
-        height: 40vh;
+        height: 50vh;
+      }
+    
+      #pastEntries h1{
+        text-align: center;
       }
     
       #editForm {
         margin-left: 5px;
         width: 87vw;
-        height: 65vh;
+        height: 140vh;
       }
-  
+    
       #editForm input {
-        font-size: 16px;
-        height: 14px;
-        width: 250px;
+        font-size: 14px;
+        height: 2vh;
+        width: 70vw;
       }
-  
-      #formLogOut {
-        margin-right: 5px;
+    
+      #editForm select {
+        font-size: 14px;
+        height: 5vh;
+        width: 75vw;
+      }
+    
+      #editForm textarea {
+        font-size: 14px;
+        height: 25vh;
+        width: 70vw;
+      }
+    
+      .returnButton {
+        margin-left: 20px;
       }
     }
   
