@@ -969,11 +969,11 @@
       }
   
       .card h3 {
-        font-size: 36px;
+        font-size: 48px;
       }
 
       .card p {
-        font-size: 24px;
+        font-size: 36px;
       }
 
       #intro h1 {
@@ -989,7 +989,7 @@
       }
 
       .homepageButton {
-        width: 225px;
+        width: 325px;
       }
 
       .login h1 {
