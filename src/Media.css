@@ -963,10 +963,23 @@
   
     @media screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1365px) and (max-height: 1366px) {
       .card {
-        height: 25vh;
+        margin-left: 10px;
+        height: 35vh;
         width: 70vw;
       }
   
+      #intro h1 {
+        font-size: 84px;
+      }
+
+      #intro h3 {
+        font-size: 48px;
+      }
+
+      .homepageButton {
+        width: 225px;
+      }
+
       .login h1 {
         font-size: 48px;
       }
