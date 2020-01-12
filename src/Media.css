@@ -1005,8 +1005,8 @@
       }
   
       .login button {
-        height: 8vh;
-        width: 45vw;
+        height: 110px;
+        width: 325px;
       }
   
       .signup h1 {
@@ -1021,8 +1021,8 @@
       }
   
       .signup button {
-        height: 8vh;
-        width: 45vw;
+        height: 110px;
+        width: 325px;
       }
   
       #form {
