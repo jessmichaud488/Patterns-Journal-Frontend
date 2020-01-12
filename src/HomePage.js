@@ -13,6 +13,7 @@ render () {
         assists users<br></br> in becoming aware of their moods and sleep
         schedules and<br></br> the affects they have on their mental health.</p>
         <h3 className="gradient">An easier way to manage mental health</h3>
+        <br></br>
          <p>See the patterns, identify needs, and communicate more clearly what you need most</p>
         </section>
 
