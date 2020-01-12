@@ -886,6 +886,10 @@
         font-size: 36px;
       }
 
+      .homepageButton {
+        left: 10px;
+      }
+
       .login {
         margin-top: 250px;
         margin-left: 155px;
