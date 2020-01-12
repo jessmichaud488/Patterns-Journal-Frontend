@@ -1024,6 +1024,11 @@
         height: 110px;
         width: 325px;
       }
+
+      .returnButton {
+        height: 110px;
+        width: 325px;
+      }
   
       #form {
         margin-left: 35px;
