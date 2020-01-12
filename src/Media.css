@@ -968,12 +968,24 @@
         width: 70vw;
       }
   
+      .card h3 {
+        font-size: 36px;
+      }
+
+      .card p {
+        font-size: 24px;
+      }
+
       #intro h1 {
         font-size: 84px;
       }
 
       #intro h3 {
-        font-size: 48px;
+        font-size: 36px;
+      }
+
+      #intro p {
+        font-size: 24px;
       }
 
       .homepageButton {
