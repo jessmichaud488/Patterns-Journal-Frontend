@@ -1030,6 +1030,10 @@
         width: 325px;
       }
   
+      .returnLink {
+        font-size: 16px;
+      }
+
       #form {
         margin-left: 35px;
         width: 87vw;
