@@ -1049,7 +1049,7 @@
 
       #form input {
         font-size: 36px;
-        height: 40px;
+        height: 50px;
         width: 800px;
       }
   
@@ -1075,20 +1075,32 @@
         width: 87vw;
         height: 30vh;
       }
+
+      #pastEntries h1 {
+        font-size: 48px;
+      }
+
+      #pastEntries section {
+        font-size: 36px;
+      }
     
       #editForm {
         margin-left: 40px;
         width: 87vw;
-        height: 85vh;
+        height: 90vh;
       }
   
       #editForm h1 {
         font-size: 48px;
       }
 
+      #editForm p {
+        font-size: 24px;
+      }
+
       #editForm input {
         font-size: 36px;
-        height: 40px;
+        height: 50px;
         width: 800px;
       }
 
