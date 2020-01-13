@@ -1045,8 +1045,16 @@
 
       .entry-card {
         margin-left: 20px;
-        height: 55vh;
+        height: 35vh;
         width: 75vw;
+      }
+
+      #entry-card h3 {
+        font-size: 48px;
+      }
+
+      #entry-card p {
+        font-size: 36px;
       }
 
       #form {
