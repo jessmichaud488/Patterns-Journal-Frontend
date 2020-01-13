@@ -1028,6 +1028,7 @@
       }
 
       .returnButton {
+        margin-left: 60px;
         height: 110px;
         width: 325px;
       }
