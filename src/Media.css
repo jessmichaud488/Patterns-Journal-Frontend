@@ -890,6 +890,12 @@
         margin-right: 60px;
       }
 
+      .entry-card {
+        margin-left: 20px;
+        height: 55vh;
+        width: 75vw;
+      }
+
       .login {
         margin-top: 250px;
         margin-left: 155px;
@@ -1035,6 +1041,12 @@
   
       .returnLink {
         font-size: 32px;
+      }
+
+      .entry-card {
+        margin-left: 20px;
+        height: 55vh;
+        width: 75vw;
       }
 
       #form {
