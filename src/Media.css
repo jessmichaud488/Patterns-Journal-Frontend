@@ -1050,6 +1050,7 @@
       #entry-intro h2 {
         font-size: 24px;
       }
+
       .entry-card {
         margin-left: 20px;
         height: 35vh;
@@ -1149,8 +1150,9 @@
         width: 325px;
       }
 
-      #formLogOut {
-        margin-right: 10px;
+      .logOutButton {
+        width: 225px;
+        margin-right: 80px;
       }
     }
   
