@@ -1134,18 +1134,18 @@
       }
 
       #editForm select {
-        width: 805px;
+        width: 810px;
         height: 60px;
       }
   
       #editForm textarea {
-        width: 800px;
+        width: 810px;
         height: 250px;
       }
 
       .submitEditFormButton {
         font-size: 32px;
-        margin-left: 5px;
+        margin-left: 10px;
         height: 110px;
         width: 325px;
       }
