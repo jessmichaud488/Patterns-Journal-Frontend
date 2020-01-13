@@ -1043,6 +1043,13 @@
         font-size: 32px;
       }
 
+      #entry-intro h1 {
+        font-size: 48px;
+      }
+
+      #entry-intro h2 {
+        font-size: 24px;
+      }
       .entry-card {
         margin-left: 20px;
         height: 35vh;
