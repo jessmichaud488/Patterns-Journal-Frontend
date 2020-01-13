@@ -956,6 +956,13 @@
         width: 500px;
       }
   
+      .submitFormButton {
+        font-size: 28px;
+        width: 225px;
+        margin-right: 60px;
+        height: 110px;
+    }
+
       #pastEntries {
         margin-left: 30px;
         margin-top: 125px;
@@ -976,8 +983,18 @@
         width: 500px;
       }
   
+      .submitEditFormButton {
+          font-size: 28px;
+          width: 225px;
+          margin-right: 60px;
+          height: 110px;
+      }
+
       .logOutButton {
-        margin-left: 60px;
+        font-size: 28px;
+        width: 225px;
+        margin-right: 60px;
+        height: 110px;
       }
     }
   
