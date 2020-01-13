@@ -899,7 +899,7 @@
       .login {
         margin-top: 250px;
         margin-left: 155px;
-        height: 95vh;
+        height: 40vh;
         width: 55vw;
       }
   
@@ -916,7 +916,7 @@
       .signup {
         margin-top: 250px;
         margin-left: 155px;
-        height: 95vh;
+        height: 40vh;
         width: 55vw;
       }
   
@@ -947,7 +947,7 @@
       #form {
         margin-left: 25px;
         width: 87vw;
-        height: 65vh;
+        height: 75vh;
       }
   
       #form input {
@@ -966,7 +966,7 @@
       #editForm {
         margin-left: 25px;
         width: 87vw;
-        height: 70vh;
+        height: 80vh;
         margin-bottom: 25px;
       }
   
