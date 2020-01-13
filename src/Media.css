@@ -1040,7 +1040,7 @@
       #form {
         margin-left: 35px;
         width: 87vw;
-        height: 85vh;
+        height: 100vh;
       }
   
       #form h1 {
@@ -1050,7 +1050,7 @@
       #form input {
         font-size: 36px;
         height: 50px;
-        width: 800px;
+        width: 805px;
       }
   
       #form select {
@@ -1064,6 +1064,7 @@
       }
 
       .submitFormButton {
+        font-size: 32px;
         margin-left: 5px;
         height: 110px;
         width: 325px;
@@ -1087,7 +1088,7 @@
       #editForm {
         margin-left: 40px;
         width: 87vw;
-        height: 90vh;
+        height: 100vh;
       }
   
       #editForm h1 {
@@ -1095,13 +1096,13 @@
       }
 
       #editForm p {
-        font-size: 24px;
+        font-size: 28px;
       }
 
       #editForm input {
         font-size: 36px;
         height: 50px;
-        width: 800px;
+        width: 805px;
       }
 
       #editForm select {
@@ -1115,6 +1116,7 @@
       }
 
       .submitEditFormButton {
+        font-size: 32px;
         margin-left: 5px;
         height: 110px;
         width: 325px;
