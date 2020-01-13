@@ -1151,8 +1151,10 @@
       }
 
       .logOutButton {
+        font-size: 32px;
         width: 225px;
         margin-right: 80px;
+        height: 110px;
       }
     }
   
