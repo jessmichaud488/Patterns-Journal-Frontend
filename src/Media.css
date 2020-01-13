@@ -1040,15 +1040,29 @@
       #form {
         margin-left: 35px;
         width: 87vw;
-        height: 55vh;
+        height: 85vh;
       }
   
+      #form h1 {
+        font-size: 48px;
+      }
+
       #form input {
         font-size: 36px;
         height: 40px;
         width: 800px;
       }
   
+      #form select {
+        width: 800px;
+        height: 40px;
+      }
+      
+      #form textarea {
+        width: 800px;
+        height: 40px;
+      }
+      
       #pastEntries {
         margin-top: 125px;
         margin-left: 30px;
@@ -1059,15 +1073,29 @@
       #editForm {
         margin-left: 40px;
         width: 87vw;
-        height: 55vh;
+        height: 85vh;
       }
   
+      #editForm h1 {
+        font-size: 48px;
+      }
+
       #editForm input {
         font-size: 36px;
         height: 40px;
         width: 800px;
       }
+
+      #editForm select {
+        width: 800px;
+        height: 40px;
+      }
   
+      #editForm textarea {
+        width: 800px;
+        height: 40px;
+      }
+
       #formLogOut {
         margin-right: 10px;
       }
