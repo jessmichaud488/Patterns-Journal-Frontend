@@ -957,10 +957,10 @@
       }
   
       .submitFormButton {
-        font-size: 28px;
-        width: 225px;
+        font-size: 24px;
+        width: 325px;
         margin-right: 60px;
-        height: 110px;
+        height: 75px;
     }
 
       #pastEntries {
@@ -984,17 +984,17 @@
       }
   
       .submitEditFormButton {
-          font-size: 28px;
-          width: 225px;
-          margin-right: 60px;
-          height: 110px;
+        font-size: 24px;
+        width: 325px;
+        margin-right: 60px;
+        height: 75px;
       }
 
       .logOutButton {
-        font-size: 28px;
-        width: 225px;
+        font-size: 24px;
+        width: 325px;
         margin-right: 60px;
-        height: 110px;
+        height: 75px;
       }
     }
   
