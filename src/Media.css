@@ -1050,12 +1050,12 @@
       #form input {
         font-size: 36px;
         height: 50px;
-        width: 805px;
+        width: 800px;
       }
   
       #form select {
-        width: 800px;
-        height: 50px;
+        width: 805px;
+        height: 60px;
       }
       
       #form textarea {
@@ -1102,12 +1102,12 @@
       #editForm input {
         font-size: 36px;
         height: 50px;
-        width: 805px;
+        width: 800px;
       }
 
       #editForm select {
-        width: 800px;
-        height: 50px;
+        width: 805px;
+        height: 60px;
       }
   
       #editForm textarea {
