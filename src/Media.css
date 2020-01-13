@@ -1049,12 +1049,12 @@
         width: 75vw;
       }
 
-      #entry-card h3 {
-        font-size: 96px;
+      .entry-card h3 {
+        font-size: 72px;
       }
 
-      #entry-card p {
-        font-size: 72px;
+      .entry-card p {
+        font-size: 48px;
       }
 
       #form {
