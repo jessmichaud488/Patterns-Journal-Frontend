@@ -379,5 +379,6 @@ componentDidMount() {
     </Router>
   )
   }
+}
 
 export default App
