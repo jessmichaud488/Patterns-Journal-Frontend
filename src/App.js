@@ -7,7 +7,6 @@ import SignUp from './SignUp'
 import Form from './Form'
 import HomePage from './HomePage'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
-import AveragesDashboard from './AveragesDashboard'
 
 class App extends React.Component {
   constructor (props) {
