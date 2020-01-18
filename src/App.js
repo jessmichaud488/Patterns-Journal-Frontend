@@ -300,8 +300,7 @@ componentDidMount() {
         avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
       }
     })
-    }
-  };
+    };
 
   render () {
   return (
@@ -379,6 +378,6 @@ componentDidMount() {
     </div>
     </Router>
   )
-  };
+  }
 
 export default App
