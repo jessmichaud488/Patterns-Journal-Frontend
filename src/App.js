@@ -267,26 +267,6 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-/*componentWillMount() {
-  let totalSleepTime = 0
-  let totalIntensityLevel = 0
-  const entries = this.state.entry
-
-  totalSleepTime += this.state.entry.hoursSlept
-  this.setState(() => {
-    return {
-      avgSleepTime: (totalSleepTime / this.state.entry.length).toFixed(1)
-    }
-  })
-
-  totalIntensityLevel += this.state.entry.instensityLevel
-  this.setState(() => {
-    return {
-      avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
-    }
-  })
-}*/
-
 componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
@@ -302,6 +282,25 @@ componentDidMount() {
   .catch(err =>
     console.log(err)
       )
+
+  let totalSleepTime = 0
+  let totalIntensityLevel = 0
+  const entries = this.state.entry
+    
+  totalSleepTime += this.state.entry.hoursSlept
+    this.setState(() => {
+      return {
+        avgSleepTime: (totalSleepTime / this.state.entry.length).toFixed(1)
+      }
+    })
+    
+  totalIntensityLevel += this.state.entry.instensityLevel
+    this.setState(() => {
+      return {
+        avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
+      }
+    })
+    }
   };
 
   render () {
@@ -355,7 +354,9 @@ componentDidMount() {
           editMood={this.state.editMood}
           editEmotions={this.state.editEmotions}
           editEntryid={this.state.editEntryid}
-          handleLogOutClick={this.handleLogOutClick}
+          entryPct={this.state.entryPct}
+          avgSleepTime={this.state.avgSleepTime}
+          avgIntensityLevel={this.state.avgIntensityLevel}
         />}
         />
 
@@ -378,8 +379,6 @@ componentDidMount() {
     </div>
     </Router>
   )
-  }
-  
-}
+  };
 
 export default App
