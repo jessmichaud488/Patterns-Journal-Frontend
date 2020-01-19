@@ -33,7 +33,7 @@ class App extends React.Component {
       editEntryid: '',
       error: '',
       //these are for the Averages Dashboard
-      entryPct: 0,
+      contentEntryCount : 0,
       avgSleepTime: 0,
       avgIntensityLevel: 0
     }
@@ -62,6 +62,8 @@ class App extends React.Component {
     this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this)
     this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this)
     this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this)
+
+    this.totalSleepTime = this.totalSleepTime.bind(this)
   }
 
   handleLiClick (e) {
@@ -284,9 +286,6 @@ componentDidMount() {
       )
 
       const entries = this.state.entryArray
-      let contentEntryCount = 0
-      let totalSleepTime = 0
-      let totalIntensityLevel = 0
   
       entries.forEach((entry) => {
         if (entry.mood === 'content') {
@@ -343,9 +342,9 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <AveragesDashboard 
-          entryPct={this.state.entryPct}
-          avgSleepTime={this.state.avgSleepTime}
-          avgIntensityLevel={this.state.avgIntensityLevel}
+          contentEntryCount  = {this.state.contentEntryCount}
+          avgSleepTime = {this.state.avgSleepTime}
+          avgIntensityLevel = {this.state.avgIntensityLevel}
       />}
       />
 
