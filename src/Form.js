@@ -1,5 +1,4 @@
-import React from 'react';
-import AveragesDashboard from './AveragesDashboard';
+import React from 'react'
 
 class Form extends React.Component {
     render () {

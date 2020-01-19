@@ -337,8 +337,8 @@ componentDidMount() {
     <React.StrictMode>
       <Route exact path="/" render={() =>
         <HomePage
-          showSignUp={this.showSignUp}
-          showLogIn={this.showLogIn}
+          showSignUp = {this.showSignUp}
+          showLogIn = {this.showLogIn}
         />}
        />
 
@@ -352,52 +352,53 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <Form
-          handleFormClick={this.handleFormClick}
-          handleLiClick={this.handleLiClick}
-          handleEditEntry={this.handleEditEntry}
-          changeTitleHandler={this.changeTitleHandler} 
-          changeDateHandler={this.changeDateHandler}
-          changeEntryHandler={this.changeEntryHandler} 
-          changeSleepHandler={this.changeSleepHandler} 
-          changeMoodHandler={this.changeMoodHandler} 
-          changeEmotionsHandler={this.changeEmotionsHandler}
-          changeEditTitleHandler={this.changeEditTitleHandler} 
-          changeEditDateHandler={this.changeEditDateHandler} 
-          changeEditEntryHandler={this.changeEditEntryHandler} 
-          changeEditSleepHandler={this.changeEditSleepHandler} 
-          changeEditMoodHandler={this.changeEditMoodHandler} 
-          changeEditEmotionsHandler={this.changeEditEmotionsHandler}
-          title={this.state.title}
-          date={this.state.date}
-          entry={this.state.entry}
-          sleep={this.state.sleep}
-          mood={this.state.mood}
-          emotions={this.state.emotions}
-          entryArray={this.state.entryArray}
-          editEntryForm={this.state.editEntryForm}
-          editTitle={this.state.editTitle}
-          editDate={this.state.date}
-          editEntry={this.state.editEntry}
-          editSleep={this.state.editSleep}
-          editMood={this.state.editMood}
-          editEmotions={this.state.editEmotions}
-          editEntryid={this.state.editEntryid}
+          handleFormClick = {this.handleFormClick}
+          handleLiClick = {this.handleLiClick}
+          handleEditEntry = {this.handleEditEntry}
+          changeTitleHandler = {this.changeTitleHandler} 
+          changeDateHandler = {this.changeDateHandler}
+          changeEntryHandler = {this.changeEntryHandler} 
+          changeSleepHandler = {this.changeSleepHandler} 
+          changeMoodHandler = {this.changeMoodHandler} 
+          changeEmotionsHandler = {this.changeEmotionsHandler}
+          changeEditTitleHandler = {this.changeEditTitleHandler} 
+          changeEditDateHandler = {this.changeEditDateHandler} 
+          changeEditEntryHandler = {this.changeEditEntryHandler} 
+          changeEditSleepHandler = {this.changeEditSleepHandler} 
+          changeEditMoodHandler = {this.changeEditMoodHandler} 
+          changeEditEmotionsHandler = {this.changeEditEmotionsHandler}
+          handleLogOutClick = {this.handleLogOutClick}
+          title = {this.state.title}
+          date = {this.state.date}
+          entry = {this.state.entry}
+          sleep = {this.state.sleep}
+          mood = {this.state.mood}
+          emotions = {this.state.emotions}
+          entryArray = {this.state.entryArray}
+          editEntryForm = {this.state.editEntryForm}
+          editTitle = {this.state.editTitle}
+          editDate = {this.state.date}
+          editEntry = {this.state.editEntry}
+          editSleep = {this.state.editSleep}
+          editMood = {this.state.editMood}
+          editEmotions = {this.state.editEmotions}
+          editEntryid = {this.state.editEntryid}
         />}
         />
 
       <Route exact path="/logIn" render={() =>
         <LogIn 
-          handleLogInClick={this.handleLogInClick}
-          changeUsernameHandler={this.changeUsernameHandler} 
-          changePasswordHandler={this.changePasswordHandler} 
+          handleLogInClick = {this.handleLogInClick}
+          changeUsernameHandler = {this.changeUsernameHandler} 
+          changePasswordHandler = {this.changePasswordHandler} 
         />}
       />
 
       <Route exact path="/signUp" render={() =>
         <SignUp 
-          handleSignUpClick={this.handleSignUpClick}
-          changeUsernameHandler={this.changeUsernameHandler} 
-          changePasswordHandler={this.changePasswordHandler} 
+          handleSignUpClick = {this.handleSignUpClick}
+          changeUsernameHandler = {this.changeUsernameHandler} 
+          changePasswordHandler = {this.changePasswordHandler} 
         />}
       />
     </React.StrictMode>
