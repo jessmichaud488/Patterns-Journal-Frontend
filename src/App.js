@@ -285,21 +285,23 @@ componentDidMount() {
   let totalSleepTime = 0
   let totalIntensityLevel = 0
   const entries = this.state.entry
-    
-  totalSleepTime += this.state.entry.hoursSlept
+  
+entries.forEach((entry) => {
+  totalSleepTime += entries.hoursSlept
     this.setState(() => {
       return {
-        avgSleepTime: (totalSleepTime / this.state.entry.length).toFixed(1)
+        avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
       }
     })
     
-  totalIntensityLevel += this.state.entry.instensityLevel
+  totalIntensityLevel += entries.instensityLevel
     this.setState(() => {
       return {
-        avgIntensityLevel: (totalIntensityLevel / this.state.entry.length).toFixed(1)
+        avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
       }
     })
-    };
+    })
+  };
 
   render () {
   return (
