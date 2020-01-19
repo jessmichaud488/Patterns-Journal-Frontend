@@ -13,7 +13,7 @@ class AveragesDashboard extends React.Component {
                 src={require('../src/images/entry.png')}
                 alt="Purple lotus"
                 />
-                <h2>{this.props.entryPct}</h2>
+                <h2>{this.props.contentEntryCount}</h2>
                 <h3>Total Entries by Mood</h3>
                 <p>Your current total number of entries. Journaling is an extremely therapetuic tool and you should be proud<br></br>
                 of what you've recorded so far. Write on!</p>

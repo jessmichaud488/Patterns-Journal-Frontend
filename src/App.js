@@ -33,7 +33,7 @@ class App extends React.Component {
       editEntryid: '',
       error: '',
       //these are for the Averages Dashboard
-      contentEntryCount : 0,
+      contentEntryCount: 0,
       avgSleepTime: 0,
       avgIntensityLevel: 0
     }
@@ -291,22 +291,27 @@ componentDidMount() {
       entries.forEach((entry) => {
         if (entry.mood === 'content') {
           contentEntryCount += 1 
-        }
-  
+        };
+
+      handleSleepTimeCount (e) {
         totalSleepTime += entry.hoursSlept
         this.setState(() => {
           return {
             avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
           }
         })
-  
+      };
+
+      handleIntensityLevel (e) {
         totalIntensityLevel += entry.IntensityLevel
         this.setState(() => {
           return {
             avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
           }
         })
+      };
 
+      handleContentEntriesPct (e) {
         entries.length !== 0 ? 
         this.setState(() => {
           return {
