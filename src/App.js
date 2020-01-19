@@ -289,10 +289,13 @@ componentDidMount() {
       let totalIntensityLevel = 0
   
       entries.forEach((entry) => {
+
+      handleContentEntryCount (e) {
         if (entry.mood === 'content') {
           contentEntryCount += 1 
-        };
-
+        }
+      }
+  
       handleSleepTimeCount (e) {
         totalSleepTime += entry.hoursSlept
         this.setState(() => {
@@ -300,7 +303,7 @@ componentDidMount() {
             avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
           }
         })
-      };
+      }
 
       handleIntensityLevel (e) {
         totalIntensityLevel += entry.IntensityLevel
@@ -309,7 +312,7 @@ componentDidMount() {
             avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
           }
         })
-      };
+      }
 
       handleContentEntriesPct (e) {
         entries.length !== 0 ? 
@@ -324,8 +327,9 @@ componentDidMount() {
             contentEntriesPct: '0%'
           }
         })
-    });
-}
+      }
+    })
+  };
 
   render () {
   return (
