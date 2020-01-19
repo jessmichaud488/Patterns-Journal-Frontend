@@ -282,7 +282,7 @@ componentDidMount() {
     console.log(err)
       )
 
-      const entries = this.props.entry
+      const entries = this.state.entryArray
       let contentEntryCount = 0
       let totalSleepTime = 0
       let totalIntensityLevel = 0
