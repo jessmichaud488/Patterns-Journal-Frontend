@@ -286,6 +286,9 @@ componentDidMount() {
       )
 
       const entries = this.state.entryArray
+      let contentEntryCount = 0
+      let totalSleepTime = 0
+      let totalIntensityLevel = 0
   
       entries.forEach((entry) => {
         if (entry.mood === 'content') {
