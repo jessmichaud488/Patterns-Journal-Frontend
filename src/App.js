@@ -341,6 +341,14 @@ componentDidMount() {
        />
 
         <Route exact path="/entries" render={() =>
+        <AveragesDashboard 
+          entryPct={this.state.entryPct}
+          avgSleepTime={this.state.avgSleepTime}
+          avgIntensityLevel={this.state.avgIntensityLevel}
+      />}
+      />
+      
+        <Route exact path="/entries" render={() =>
         <Form
           handleFormClick={this.handleFormClick}
           handleLiClick={this.handleLiClick}
@@ -372,9 +380,6 @@ componentDidMount() {
           editMood={this.state.editMood}
           editEmotions={this.state.editEmotions}
           editEntryid={this.state.editEntryid}
-          entryPct={this.state.entryPct}
-          avgSleepTime={this.state.avgSleepTime}
-          avgIntensityLevel={this.state.avgIntensityLevel}
         />}
         />
 
