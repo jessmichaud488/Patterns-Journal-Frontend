@@ -62,8 +62,6 @@ class App extends React.Component {
     this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this)
     this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this)
     this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this)
-
-    this.totalSleepTime = this.totalSleepTime.bind(this)
   }
 
   handleLiClick (e) {
