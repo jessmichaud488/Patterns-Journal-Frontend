@@ -305,6 +305,7 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <AveragesDashboard 
+          entryArray = {this.state.entryArray}
           contentEntryCount  = {this.state.contentEntryCount}
           avgSleepTime = {this.state.avgSleepTime}
           avgIntensityLevel = {this.state.avgIntensityLevel}

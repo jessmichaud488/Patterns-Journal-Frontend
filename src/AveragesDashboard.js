@@ -2,7 +2,7 @@ import React from 'react'
 
 class AveragesDashboard extends React.Component {
     componentDidMount() {
-        const entries = this.state.entryArray
+      const entries = this.props.entryArray
       let contentEntryCount = 0
       let totalSleepTime = 0
       let totalIntensityLevel = 0
