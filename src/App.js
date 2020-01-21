@@ -282,46 +282,7 @@ componentDidMount() {
   .catch(err =>
     console.log(err)
       )
-
-      const entries = this.state.entryArray
-      let contentEntryCount = 0
-      let totalSleepTime = 0
-      let totalIntensityLevel = 0
-  
-      entries.forEach((entry) => {
-        if (entry.mood === 'content') {
-          contentEntryCount += 1 
-        }
-  
-        totalSleepTime += entry.hoursSlept
-        this.setState(() => {
-          return {
-            avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
-          }
-        })
-  
-        totalIntensityLevel += entry.IntensityLevel
-        this.setState(() => {
-          return {
-            avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
-          }
-        })
-
-        entries.length !== 0 ? 
-        this.setState(() => {
-          return {
-            contentEntriesPct: ((contentEntryCount / entries.length) * 100).toFixed(2).toString() + '%'
-          }
-        })
-      :
-        this.setState(() => {
-          return {
-            contentEntriesPct: '0%'
-          }
-        })
-    });
 }
-
 
   render () {
   return (
