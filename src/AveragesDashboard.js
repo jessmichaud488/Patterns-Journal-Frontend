@@ -5,7 +5,6 @@ class AveragesDashboard extends React.Component {
         super(props)
         this.state = {
           contentEntriesPct: '',
-          totalEntries: this.props.entries.length,
           avgSleepTime: 0,
           avgIntensityLevel: 0
         }
