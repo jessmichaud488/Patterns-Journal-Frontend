@@ -31,11 +31,7 @@ class App extends React.Component {
       editMood: '',
       editEmotions: '',
       editEntryid: '',
-      error: '',
-      //these are for the Averages Dashboard
-      contentEntryCount: 0,
-      avgSleepTime: 0,
-      avgIntensityLevel: 0
+      error: ''
     }
 
     this.handleSignUpClick = this.handleSignUpClick.bind(this)
@@ -305,10 +301,6 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <AveragesDashboard 
-          entryArray = {this.state.entryArray}
-          contentEntryCount  = {this.state.contentEntryCount}
-          avgSleepTime = {this.state.avgSleepTime}
-          avgIntensityLevel = {this.state.avgIntensityLevel}
       />}
       />
 
