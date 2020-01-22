@@ -299,6 +299,11 @@ componentDidMount() {
        />
 
         <Route exact path="/entries" render={() =>
+        <AveragesDashboard 
+        />}
+        />
+        
+        <Route exact path="/entries" render={() =>
         <Form
           handleFormClick = {this.handleFormClick}
           handleLiClick = {this.handleLiClick}
