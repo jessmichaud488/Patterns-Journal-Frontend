@@ -301,6 +301,7 @@ componentDidMount() {
 
         <Route exact path="/entries" render={() =>
         <AveragesDashboard 
+          mood = {this.state.mood}
       />}
       />
 
