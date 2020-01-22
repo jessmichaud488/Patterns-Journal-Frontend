@@ -4,21 +4,24 @@ class AveragesDashboard extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          contentEntriesPct: '',
           avgSleepTime: 0,
+          contentEntryCount: 0,
           avgIntensityLevel: 0
         }
       }
 
     componentDidMount() {
       const entries = this.props.entryArray
-      let contentEntryCount = 0
       let totalSleepTime = 0
       let totalIntensityLevel = 0
   
         entries.forEach((entries) => {
         if (entries.this.props.mood === 'content') {
-          contentEntryCount += 1 
+          this.setState(() => {
+            return {
+            contentEntryCount: (contentEntryCount += 1)
+            }
+          }) 
         }
 
         totalSleepTime += entries.this.props.hoursSlept
@@ -34,19 +37,6 @@ class AveragesDashboard extends React.Component {
             avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
           }
         })
-
-        entries.length !== 0
-        this.setState(() => {
-          return {
-            contentEntriesPct: ((contentEntryCount / entries.length) * 100).toFixed(2).toString() + '%'
-          }
-        })
-      /*:
-        this.setState(() => {
-          return {
-            contentEntriesPct: '0%'
-          }
-        })*/
         });
     }
 
