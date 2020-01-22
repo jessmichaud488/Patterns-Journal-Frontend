@@ -16,19 +16,19 @@ class AveragesDashboard extends React.Component {
       let totalSleepTime = 0
       let totalIntensityLevel = 0
   
-        entries.forEach((entry) => {
-        if (entry.props.mood === 'content') {
+        entries.forEach((entries) => {
+        if (entries.props.mood === 'content') {
           contentEntryCount += 1 
         }
 
-        totalSleepTime += entry.hoursSlept
+        totalSleepTime += entries.hoursSlept
         this.setState(() => {
           return {
             avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
           }
         })
   
-        totalIntensityLevel += entry.IntensityLevel
+        totalIntensityLevel += entries.IntensityLevel
         this.setState(() => {
           return {
             avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
