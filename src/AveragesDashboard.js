@@ -11,9 +11,9 @@ class AveragesDashboard extends React.Component {
                 src={require('../src/images/entry.png')}
                 alt="Purple lotus"
                 />
-                <h3>My Entry Stats</h3>
-                <p>Here you will find your most current averages for your sleep, emotion, and mood patterns<br></br>
-                based on your entries</p>
+                <h2>My Entry Stats</h2>
+                <h3>Here you will find your most current averages for your sleep, emotion, and mood patterns<br></br>
+                based on your entries</h3>
             </div>
 
             <div className="entry-card">
