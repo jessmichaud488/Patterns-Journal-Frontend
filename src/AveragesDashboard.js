@@ -47,7 +47,7 @@ class AveragesDashboard extends React.Component {
             contentEntriesPct: '0%'
           }
         })
-    });
+    };
     }
 
     render () {
