@@ -3,7 +3,7 @@ import React from 'react'
 class Form extends React.Component {
     render () {
     return (
-        <div className="wrap">
+        <div className="wrapper" ref="wrapper">
         <div id="form">
             <h1>New Entry</h1>
             <input 
@@ -47,12 +47,12 @@ class Form extends React.Component {
                 required
             />
 
-            <textarea 
-                type="text"
+            <input id="entryInput"
+                type="text" 
                 placeholder="How was your day?" 
-                value={this.props.editEntry} 
-                onChange={this.props.changeEditEntryHandler}
-                id="dayParagraph"
+                value={this.props.entry} 
+                onChange={this.props.changeEntryHandler}
+                required
             />
             <br></br>
             <button type="submit" onClick={this.props.handleFormClick} className="submitFormButton">Submit</button>
@@ -78,6 +78,7 @@ class Form extends React.Component {
                 placeholder="Give your entry a title" 
                 value={this.props.editTitle} 
                 onChange={this.props.changeEditTitleHandler}
+                required
             />
 
             <input 
@@ -85,6 +86,7 @@ class Form extends React.Component {
                 placeholder="Today's date" 
                 value={this.props.editDate} 
                 onChange={this.props.changeEditDateHandler}
+                required
             />
 
             <input 
@@ -92,6 +94,7 @@ class Form extends React.Component {
                 placeholder="How many hours did you sleep?" 
                 value={this.props.editSleep} 
                 onChange={this.props.changeEditSleepHandler}
+                required
             />
 
             <select> 
@@ -108,6 +111,7 @@ class Form extends React.Component {
                 placeholder="Intensity of emotions (scale of 1 to 5)?" 
                 value={this.props.editEmotions} 
                 onChange={this.props.changeEditEmotionsHandler}
+                required
             />
 
             <textarea 

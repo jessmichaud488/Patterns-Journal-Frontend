@@ -1,16 +1,37 @@
-import React from 'react'
-import './App.css'
-import './Media.css'
-import './Stars.css'
-import LogIn from './LogIn'
-import SignUp from './SignUp'
-import Form from './Form'
-import HomePage from './HomePage'
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@jessmichaud488 
+jessmichaud488
+/
+Patterns-Journal-Frontend
+0
+00
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+Patterns-Journal-Frontend/src/App.js
+@jessmichaud488 jessmichaud488 Took out count to test
+37e1626 22 days ago
+392 lines (352 sloc)  11.4 KB
+  
+import React from 'react';
+import './App.css';
+import './Media.css';
+import './Stars.css';
+import LogIn from './LogIn';
+import SignUp from './SignUp';
+import Form from './Form';
+import HomePage from './HomePage';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import AveragesDashboard from './AveragesDashboard';
 
 class App extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       isLoggedIn: false,
       entryArray: [],
@@ -33,35 +54,35 @@ class App extends React.Component {
       error: ''
     }
 
-    this.handleSignUpClick = this.handleSignUpClick.bind(this)
-    this.handleLogInClick = this.handleLogInClick.bind(this)
-    this.handleLogOutClick = this.handleLogOutClick.bind(this)
-    this.handleFormClick = this.handleFormClick.bind(this)
-    this.handleEditEntry = this.handleEditEntry.bind(this)
-    this.showSignUp = this.showSignUp.bind(this)
-    this.showLogIn = this.showLogIn.bind(this)
-    this.handleLiClick = this.handleLiClick.bind(this)
+    this.handleSignUpClick=this.handleSignUpClick.bind(this);
+    this.handleLogInClick=this.handleLogInClick.bind(this);
+    this.handleLogOutClick=this.handleLogOutClick.bind(this);
+    this.handleFormClick=this.handleFormClick.bind(this);
+    this.handleEditEntry=this.handleEditEntry.bind(this);
+    this.showSignUp=this.showSignUp.bind(this);
+    this.showLogIn=this.showLogIn.bind(this)
+    this.handleLiClick=this.handleLiClick.bind(this);
 
-    this.changeUsernameHandler = this.changeUsernameHandler.bind(this)
-    this.changePasswordHandler = this.changePasswordHandler.bind(this)
+    this.changeUsernameHandler = this.changeUsernameHandler.bind(this);
+    this.changePasswordHandler = this.changePasswordHandler.bind(this);
 
-    this.changeEntryHandler = this.changeEntryHandler.bind(this)
-    this.changeTitleHandler = this.changeTitleHandler.bind(this)
-    this.changeDateHandler = this.changeDateHandler.bind(this)
-    this.changeSleepHandler = this.changeSleepHandler.bind(this)
-    this.changeMoodHandler = this.changeMoodHandler.bind(this)
-    this.changeEmotionsHandler = this.changeEmotionsHandler.bind(this)
-    this.changeEditEntryHandler = this.changeEditEntryHandler.bind(this)
-    this.changeEditTitleHandler = this.changeEditTitleHandler.bind(this)
-    this.changeEditDateHandler = this.changeEditDateHandler.bind(this)
-    this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this)
-    this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this)
-    this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this)
+    this.changeEntryHandler = this.changeEntryHandler.bind(this);
+    this.changeTitleHandler = this.changeTitleHandler.bind(this);
+    this.changeDateHandler = this.changeDateHandler.bind(this);
+    this.changeSleepHandler = this.changeSleepHandler.bind(this);
+    this.changeMoodHandler = this.changeMoodHandler.bind(this);
+    this.changeEmotionsHandler = this.changeEmotionsHandler.bind(this);
+    this.changeEditEntryHandler = this.changeEditEntryHandler.bind(this);
+    this.changeEditTitleHandler = this.changeEditTitleHandler.bind(this);
+    this.changeEditDateHandler = this.changeEditDateHandler.bind(this);
+    this.changeEditSleepHandler = this.changeEditSleepHandler.bind(this);
+    this.changeEditMoodHandler = this.changeEditMoodHandler.bind(this);
+    this.changeEditEmotionsHandler = this.changeEditEmotionsHandler.bind(this);
   }
 
   handleLiClick (e) {
-    e.preventDefault()
-    const item = this.state.entryArray[e.currentTarget.dataset.id]
+    e.preventDefault();
+    const item=this.state.entryArray[e.currentTarget.dataset.id]
     this.setState ({
       editEntryForm: true,
       editEntry: item.entry,
@@ -71,27 +92,28 @@ class App extends React.Component {
       editEntryid: e.currentTarget.dataset.id,
       editEmotions: item.emotions
     })
-};
+    };
 
   showLogIn (e) {
-    e.preventDefault()
-    this.history.pushState(null, 'logIn')
+    e.preventDefault();
+    this.history.pushState(null, 'logIn');
   };
 
   showSignUp (e) {
-    e.preventDefault()
-    this.history.pushState(null, 'signUp')
+    e.preventDefault();
+    this.history.pushState(null, 'signUp');
   };
 
   handleSignUpClick (e) {
     e.preventDefault();
-
+    
     fetch(`https://evening-thicket-00015.herokuapp.com/userRouter/signUp`, {
       method: 'POST',
-      body: JSON.stringify({ 
-      username: this.state.username, password: this.state.password }),
-      headers: { "Content-Type": "application/json; charset=utf-8" }
-
+      body: JSON.stringify({username: this.state.username, 
+                            password: this.state.password}),
+      headers: {
+        "Content-Type": "application/json; charset=utf-8"
+    }
   })
   .then(res => {
         return res.json();
@@ -262,7 +284,7 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-/*componentDidMount() {
+componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
     headers: {
@@ -277,12 +299,12 @@ changeEditEmotionsHandler (e) {
   .catch(err =>
     console.log(err)
       )
-  }*/
+  };
 
   render () {
   return (
     <Router>
-    <div className="main-wrap">
+    <div className="main-wrapper">
       <div id="stars1"></div>
       <div id="stars1-2"></div> 
       <div id="stars2"></div>
@@ -292,66 +314,65 @@ changeEditEmotionsHandler (e) {
 
       <Route exact path="/" render={() =>
         <HomePage
-          showSignUp = {this.showSignUp}
-          showLogIn = {this.showLogIn}
+          showSignUp={this.showSignUp}
+          showLogIn={this.showLogIn}
         />}
        />
 
         <Route exact path="/entries" render={() =>
         <Form
-          handleFormClick = {this.handleFormClick}
-          handleLiClick = {this.handleLiClick}
-          handleEditEntry = {this.handleEditEntry}
-          changeTitleHandler = {this.changeTitleHandler} 
-          changeDateHandler = {this.changeDateHandler}
-          changeEntryHandler = {this.changeEntryHandler} 
-          changeSleepHandler = {this.changeSleepHandler} 
-          changeMoodHandler = {this.changeMoodHandler} 
-          changeEmotionsHandler = {this.changeEmotionsHandler}
-          changeEditTitleHandler = {this.changeEditTitleHandler} 
-          changeEditDateHandler = {this.changeEditDateHandler} 
-          changeEditEntryHandler = {this.changeEditEntryHandler} 
-          changeEditSleepHandler = {this.changeEditSleepHandler} 
-          changeEditMoodHandler = {this.changeEditMoodHandler} 
-          changeEditEmotionsHandler = {this.changeEditEmotionsHandler}
-          handleLogOutClick = {this.handleLogOutClick}
-          title = {this.state.title}
-          date = {this.state.date}
-          entry = {this.state.entry}
-          sleep = {this.state.sleep}
-          mood = {this.state.mood}
-          emotions = {this.state.emotions}
-          entryArray = {this.state.entryArray}
-          editEntryForm = {this.state.editEntryForm}
-          editTitle = {this.state.editTitle}
-          editDate = {this.state.date}
-          editEntry = {this.state.editEntry}
-          editSleep = {this.state.editSleep}
-          editMood = {this.state.editMood}
-          editEmotions = {this.state.editEmotions}
-          editEntryid = {this.state.editEntryid}
+          handleFormClick={this.handleFormClick}
+          handleLiClick={this.handleLiClick}
+          handleEditEntry={this.handleEditEntry}
+          changeTitleHandler={this.changeTitleHandler} 
+          changeDateHandler={this.changeDateHandler}
+          changeEntryHandler={this.changeEntryHandler} 
+          changeSleepHandler={this.changeSleepHandler} 
+          changeMoodHandler={this.changeMoodHandler} 
+          changeEmotionsHandler={this.changeEmotionsHandler}
+          changeEditTitleHandler={this.changeEditTitleHandler} 
+          changeEditDateHandler={this.changeEditDateHandler} 
+          changeEditEntryHandler={this.changeEditEntryHandler} 
+          changeEditSleepHandler={this.changeEditSleepHandler} 
+          changeEditMoodHandler={this.changeEditMoodHandler} 
+          changeEditEmotionsHandler={this.changeEditEmotionsHandler}
+          title={this.state.title}
+          date={this.state.date}
+          entry={this.state.entry}
+          sleep={this.state.sleep}
+          mood={this.state.mood}
+          emotions={this.state.emotions}
+          entryArray={this.state.entryArray}
+          editEntryForm={this.state.editEntryForm}
+          editTitle={this.state.editTitle}
+          editDate={this.state.date}
+          editEntry={this.state.editEntry}
+          editSleep={this.state.editSleep}
+          editMood={this.state.editMood}
+          editEmotions={this.state.editEmotions}
+          editEntryid={this.state.editEntryid}
+          handleLogOutClick={this.handleLogOutClick}
         />}
         />
 
       <Route exact path="/logIn" render={() =>
         <LogIn 
-          handleLogInClick = {this.handleLogInClick}
-          changeUsernameHandler = {this.changeUsernameHandler} 
-          changePasswordHandler = {this.changePasswordHandler} 
+          handleLogInClick={this.handleLogInClick}
+          changeUsernameHandler={this.changeUsernameHandler} 
+          changePasswordHandler={this.changePasswordHandler} 
         />}
       />
 
       <Route exact path="/signUp" render={() =>
         <SignUp 
-          handleSignUpClick = {this.handleSignUpClick}
-          changeUsernameHandler = {this.changeUsernameHandler} 
-          changePasswordHandler = {this.changePasswordHandler} 
+          handleSignUpClick={this.handleSignUpClick}
+          changeUsernameHandler={this.changeUsernameHandler} 
+          changePasswordHandler={this.changePasswordHandler} 
         />}
       />
     </div>
     </Router>
   )
   }
+  
 }
-
-export default App
