@@ -48,7 +48,6 @@ class AveragesDashboard extends React.Component {
           }
         })
     };
-    }
 
     render () {
         return (
@@ -91,5 +90,5 @@ class AveragesDashboard extends React.Component {
             </div>
         </div>
         )}
-
+        }
 export default AveragesDashboard
