@@ -262,7 +262,7 @@ changeEditEmotionsHandler (e) {
   this.setState({ editEmotions: e.target.value });
 };
 
-componentDidMount() {
+/*componentDidMount() {
   fetch(`https://evening-thicket-00015.herokuapp.com/entryRouter`, {
     method: 'GET',
     headers: {
@@ -277,7 +277,7 @@ componentDidMount() {
   .catch(err =>
     console.log(err)
       )
-  }
+  }*/
 
   render () {
   return (

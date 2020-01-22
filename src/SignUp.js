@@ -16,7 +16,7 @@ class SignUp extends React.Component {
                 />
 
                 <input 
-                    type="password" 
+                    type="new-password" 
                     placeholder="your password" 
                     value={this.props.password} 
                     onChange={this.props.changePasswordHandler}
