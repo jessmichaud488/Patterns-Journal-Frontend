@@ -6,9 +6,9 @@ class LogIn extends React.Component {
 render () {
     return (
     <form>
-    <div className="wrapper" ref="wrapper">
+    <div className="login-wrap">
     <div className="login">
-    <h1>Weclome back, its great to see you again!</h1>
+    <h1>Weclome back,<br></br>its great to see you again!</h1>
     <input 
         type="text" 
         placeholder="Your username" 

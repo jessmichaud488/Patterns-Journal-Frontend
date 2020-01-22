@@ -5,14 +5,16 @@ import Footer from './Footer';
 class HomePage extends React.Component {
 render () {
     return (
-    <div className="wrapper" ref="wrapper">
+    <div className="homepage-wrap">
     <div id="main-div">
         <section id="intro">
             <h1 className="gradient">Welcome to Patterns!</h1>
             <p> Patterns Journaling app is a new kind of diary experience that
         assists users<br></br> in becoming aware of their moods and sleep
         schedules and<br></br> the affects they have on their mental health.</p>
+        <br></br>
         <h3 className="gradient">An easier way to manage mental health</h3>
+        <br></br>
          <p>See the patterns, identify needs, and communicate more clearly what you need most</p>
         </section>
 
@@ -51,8 +53,8 @@ render () {
                 <button className="homepageButton"><span><Link to="/logIn" className="homepageLink">Log In</Link></span></button>
                 <button className="homepageButton"><span><Link to="/signUp" className="homepageLink">Sign Up</Link></span></button>
             </div>
+            <Footer />
     </div>
-    <Footer />
     </div>
     );
 }
