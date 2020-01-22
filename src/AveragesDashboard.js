@@ -16,7 +16,7 @@ class AveragesDashboard extends React.Component {
       let totalIntensityLevel = 0
   
         entries.forEach((entries) => {
-        if (entries.this.props.mood === 'content') {
+        if (entries.this.props.mood === 'content', contentEntryCount) {
           this.setState(() => {
             return {
             contentEntryCount: (contentEntryCount += 1)
