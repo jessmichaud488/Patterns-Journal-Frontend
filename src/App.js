@@ -1,23 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@jessmichaud488 
-jessmichaud488
-/
-Patterns-Journal-Frontend
-0
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
-Patterns-Journal-Frontend/src/App.js
-@jessmichaud488 jessmichaud488 Took out count to test
-37e1626 22 days ago
-392 lines (352 sloc)  11.4 KB
-  
 import React from 'react';
 import './App.css';
 import './Media.css';
