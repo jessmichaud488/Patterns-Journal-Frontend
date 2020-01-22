@@ -31,10 +31,7 @@ class App extends React.Component {
       editMood: '',
       editEmotions: '',
       editEntryid: '',
-      error: '',
-      //these are for averages board
-      avgSleepTime: 0,
-      avgIntensityLevel: 0
+      error: ''
     }
 
     this.handleSignUpClick = this.handleSignUpClick.bind(this)
@@ -281,27 +278,7 @@ componentDidMount() {
   .catch(err =>
     console.log(err)
       )
-
-      const entries = this.state.entryArray
-      let totalSleepTime = 0
-      let totalIntensityLevel = 0
-  
-        entries.forEach((entries) => {
-        totalSleepTime += entries.hoursSlept
-        this.setState(() => {
-          return {
-            avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
-          }
-        })
-  
-        totalIntensityLevel += entries.IntensityLevel
-        this.setState(() => {
-          return {
-            avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
-          }
-        })
-        });
-}
+  }
 
   render () {
   return (
@@ -321,13 +298,6 @@ componentDidMount() {
           showLogIn = {this.showLogIn}
         />}
        />
-
-        <Route exact path="/entries" render={() =>
-        <AveragesDashboard 
-          avgSleepTime = {this.avgSleepTime}
-          avgIntensityLevel = {this.avgIntensityLevel}
-      />}
-      />
 
         <Route exact path="/entries" render={() =>
         <Form
