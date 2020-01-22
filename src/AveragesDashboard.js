@@ -17,36 +17,36 @@ class AveragesDashboard extends React.Component {
       let totalIntensityLevel = 0
   
         entries.forEach((entries) => {
-        if (entries.props.mood === 'content') {
+        if (entries.this.props.mood === 'content') {
           contentEntryCount += 1 
         }
 
-        totalSleepTime += entries.hoursSlept
+        totalSleepTime += entries.this.props.hoursSlept
         this.setState(() => {
           return {
             avgSleepTime: (totalSleepTime / entries.length).toFixed(1)
           }
         })
   
-        totalIntensityLevel += entries.IntensityLevel
+        totalIntensityLevel += entries.this.props.IntensityLevel
         this.setState(() => {
           return {
             avgIntensityLevel: (totalIntensityLevel / entries.length).toFixed(1)
           }
         })
 
-        entries.length !== 0 ? 
+        entries.length !== 0
         this.setState(() => {
           return {
             contentEntriesPct: ((contentEntryCount / entries.length) * 100).toFixed(2).toString() + '%'
           }
         })
-      :
+      /*:
         this.setState(() => {
           return {
             contentEntriesPct: '0%'
           }
-        })
+        })*/
         });
     }
 
@@ -62,7 +62,7 @@ class AveragesDashboard extends React.Component {
                 src={require('../src/images/entry.png')}
                 alt="Purple lotus"
                 />
-                <h2>{this.state.contentEntryCount}</h2>
+                <h2>{this.state.contentEntriesPct}</h2>
                 <h3>Total Entries by Mood</h3>
                 <p>Your current total number of entries. Journaling is an extremely therapetuic tool and you should be proud<br></br>
                 of what you've recorded so far. Write on!</p>
