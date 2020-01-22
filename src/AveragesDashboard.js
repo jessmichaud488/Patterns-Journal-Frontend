@@ -47,7 +47,8 @@ class AveragesDashboard extends React.Component {
             contentEntriesPct: '0%'
           }
         })
-    };
+        });
+    }
 
     render () {
         return (
@@ -90,5 +91,6 @@ class AveragesDashboard extends React.Component {
             </div>
         </div>
         )}
-        }
+    };
+
 export default AveragesDashboard
