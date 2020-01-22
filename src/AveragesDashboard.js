@@ -13,7 +13,7 @@ class AveragesDashboard extends React.Component {
     var totalSleepTime = 0;
     var totalIntensityLevel = 0;
 
-    for(var i = 0; i < avgSleepTime.length; i++) {
+    for(var i = 0; i < this.state.avgSleepTime.length; i++) {
       totalSleepTime += this.state.hoursSlept[i];
         this.setState(() => {
           return {
@@ -22,7 +22,7 @@ class AveragesDashboard extends React.Component {
         })
       }
 
-      for(var i = 0; i < avgIntensityLevel.length; i++) {
+      for(var i = 0; i < this.state.avgIntensityLevel.length; i++) {
         totalIntensityLevel += this.state.emotions[i];
           this.setState(() => {
             return {
