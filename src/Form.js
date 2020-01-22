@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 class Form extends React.Component {
+
     render () {
     return (
         <div className="wrapper" ref="wrapper">
@@ -11,7 +12,6 @@ class Form extends React.Component {
                 placeholder="Give your entry a title" 
                 value={this.props.title} 
                 onChange={this.props.changeTitleHandler}
-                required
             />
 
             <input 
@@ -19,7 +19,6 @@ class Form extends React.Component {
                 placeholder="Today's date" 
                 value={this.props.date} 
                 onChange={this.props.changeDateHandler}
-                required
             />
         
             <input 
@@ -27,37 +26,31 @@ class Form extends React.Component {
                 placeholder="How many hours did you sleep?" 
                 value={this.props.sleep} 
                 onChange={this.props.changeSleepHandler}
-                required
             />
 
-            <select> 
+            <input 
+                type="text" 
+                placeholder="What is your mood?" 
                 value={this.props.mood} 
                 onChange={this.props.changeMoodHandler}
-                <option value="content">Content</option>
-                <option value="undecided">Undecided</option>
-                <option value="depressed">Depressed</option>
-                required
-            </select>
+            />
 
             <input 
                 type="text" 
                 placeholder="Intensity of emotions (scale of 1 to 5)?" 
                 value={this.props.emotions} 
                 onChange={this.props.changeEmotionsHandler}
-                required
             />
 
-            <textarea 
-                type="text"
+            <input id="entryInput"
+                type="text" 
                 placeholder="How was your day?" 
-                value={this.props.editEntry} 
+                value={this.props.entry} 
                 onChange={this.props.changeEntryHandler}
-                id="dayParagraph"
             />
             <br></br>
             <button type="submit" onClick={this.props.handleFormClick} className="submitFormButton">Submit</button>
         </div>
-
 
         <div id="pastEntries">
         <ul>
@@ -79,7 +72,6 @@ class Form extends React.Component {
                 placeholder="Give your entry a title" 
                 value={this.props.editTitle} 
                 onChange={this.props.changeEditTitleHandler}
-                required
             />
 
             <input 
@@ -87,7 +79,6 @@ class Form extends React.Component {
                 placeholder="Today's date" 
                 value={this.props.editDate} 
                 onChange={this.props.changeEditDateHandler}
-                required
             />
 
             <input 
@@ -95,24 +86,20 @@ class Form extends React.Component {
                 placeholder="How many hours did you sleep?" 
                 value={this.props.editSleep} 
                 onChange={this.props.changeEditSleepHandler}
-                required
             />
 
-            <select> 
-                value={this.props.mood} 
-                onChange={this.props.changeMoodHandler}
-                <option value="content">Content</option>
-                <option value="undecided">Undecided</option>
-                <option value="depressed">Depressed</option>
-                required
-            </select>
+            <input 
+                type="text" 
+                placeholder="What is your mood?" 
+                value={this.props.editMood} 
+                onChange={this.props.changeEditMoodHandler}
+            />
 
             <input 
                 type="text" 
                 placeholder="Intensity of emotions (scale of 1 to 5)?" 
                 value={this.props.editEmotions} 
                 onChange={this.props.changeEditEmotionsHandler}
-                required
             />
 
             <textarea 

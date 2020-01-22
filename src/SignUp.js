@@ -5,9 +5,9 @@ class SignUp extends React.Component {
 
     render () {
         return (
-            <div className="wrap">
+            <div className="wrapper" ref="wrapper">
             <div className="signup">
-                <h1>Weclome,<br></br>sign up below!</h1>
+                <h1>Weclome, sign up below!</h1>
                 <input 
                     type="text" 
                     placeholder="Your username" 
@@ -16,7 +16,7 @@ class SignUp extends React.Component {
                 />
 
                 <input 
-                    type="new-password" 
+                    type="password" 
                     placeholder="your password" 
                     value={this.props.password} 
                     onChange={this.props.changePasswordHandler}
